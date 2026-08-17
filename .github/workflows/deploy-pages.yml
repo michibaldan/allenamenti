@@ -35,6 +35,7 @@ jobs:
             -e 's|href="/js/|href="/allenamenti/js/|g' \
             -e 's|src="/js/|src="/allenamenti/js/|g' \
             -e 's|src="/admin/|src="/allenamenti/admin/|g' \
+            -e 's|href="/ciclo/|href="/allenamenti/ciclo/|g' \
             -e 's|href="/trasparenza-ai/|href="/allenamenti/trasparenza-ai/|g' \
             -e 's|href="/privacy/|href="/allenamenti/privacy/|g' \
             -e 's|href="/cookie/|href="/allenamenti/cookie/|g' \

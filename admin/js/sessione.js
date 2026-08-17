@@ -26,6 +26,10 @@
     return node;
   }
 
+  function u(path) {
+    return window.fqUrl ? window.fqUrl(path) : path;
+  }
+
   function formatDate(iso) {
     return new Date(iso + "T12:00:00").toLocaleDateString("it-IT", {
       day: "numeric", month: "long", year: "numeric"
@@ -42,8 +46,8 @@
   }
 
   function sessionHref(faseId, sessionKey) {
-    return "/admin/sessione/?ciclo=" + encodeURIComponent(faseId) +
-      "&sessione=" + sessionKey + querySuffix();
+    return u("/admin/sessione/?ciclo=" + encodeURIComponent(faseId) +
+      "&sessione=" + sessionKey) + querySuffix();
   }
 
   function renderSessionBasic(data, faseId, sessionKey, root) {
@@ -57,26 +61,35 @@
     document.title = sessionKey.toUpperCase() + " · " + fase.nome + " | Admin";
 
     var nav = el("nav", { className: "admin-breadcrumb" });
-    nav.innerHTML = "<a href=\"/admin/\">Dashboard</a> · <strong>" + sessionKey.toUpperCase() + "</strong>";
+    nav.innerHTML = "<a href=\"" + u("/admin/") + "\">Schede</a> · <a href=\"" + u("/ciclo/#" + faseId) + "\">Ciclo</a> · <strong>" + sessionKey.toUpperCase() + "</strong>";
     root.appendChild(nav);
 
     var head = el("header", { className: "admin-session-head" });
     var ir = fase.intensitaRecupero || {};
-    var lead = (fase.perche ? fase.perche + " " : "") + (s.notaSeduta || fase.obiettivo || "");
+    var num = { "ipertrofia-accumulo": "1", "tensione-forza": "2", "ipertrofia-classica-ii": "3", "ricondizionamento": "4" }[faseId] || "";
+    var titoloFase = num ? "FASE " + num : (fase.nome || "");
     head.innerHTML = "<p class=\"tagline\">" + formatDate(fase.inizio) + " – " + formatDate(fase.fine) +
-      " · " + (ir.durataSeduta || "obiettivo 75 min · tetto 90") + "</p><h1>" + sessionKey.toUpperCase() + " — " + s.nome + "</h1><p class=\"lead\">" + lead + "</p>";
+      " · " + (ir.durataSeduta || "obiettivo 75 min · tetto 90") + "</p><h1>" + sessionKey.toUpperCase() + " – " + titoloFase + "</h1><p class=\"lead\">" + (s.nome || "") + " · 3 allenamenti/settimana</p>";
     root.appendChild(head);
-    if (ir.intensita || ir.recupero) {
-      var irBox = el("aside", { className: "admin-fase__ir" });
-      if (ir.intensita) irBox.appendChild(el("p", { html: "<strong>Intensità.</strong> " + ir.intensita }));
-      if (ir.recupero) irBox.appendChild(el("p", { html: "<strong>Recupero.</strong> " + ir.recupero }));
-      root.appendChild(irBox);
-    }
+    var irBox = el("aside", { className: "admin-fase__ir" });
+    if (fase.perche) irBox.appendChild(el("p", { html: "<strong>A cosa serve.</strong> " + fase.perche }));
+    if (ir.intensita) irBox.appendChild(el("p", { html: "<strong>Intensità.</strong> " + ir.intensita }));
+    if (ir.recupero) irBox.appendChild(el("p", { html: "<strong>Recupero.</strong> " + ir.recupero }));
+    irBox.appendChild(el("p", { className: "admin-fase__durata", text: (ir.durataSeduta || "obiettivo 75 min, tetto 90 min") + " · " + (ir.deload || "settimana 13 · −40% volume") }));
+    if (s.notaSeduta) irBox.appendChild(el("p", { text: s.notaSeduta }));
+    root.appendChild(irBox);
 
     var actions = el("div", { className: "admin-session-actions no-print" });
-    actions.innerHTML =
-      "<a class=\"btn btn-primary\" href=\"/admin/sessione/pdf/?ciclo=" + encodeURIComponent(faseId) +
-      "&sessione=" + sessionKey + querySuffix() + "\" target=\"_blank\">PDF scheda</a>";
+    var pdfSess = u("/admin/sessione/pdf/?ciclo=" + encodeURIComponent(faseId) + "&sessione=" + sessionKey) + querySuffix();
+    var pdfFase = u("/admin/prototipi/periodizzazione/fase/?fase=" + encodeURIComponent(faseId));
+    var html = "<a class=\"btn btn-primary\" href=\"" + pdfSess + "\" target=\"_blank\" rel=\"noopener\">Stampa scheda con spiegazioni</a>" +
+      "<a class=\"btn btn-ghost\" href=\"" + pdfFase + "\" target=\"_blank\" rel=\"noopener\">PDF fase completa AB–CB</a>" +
+      "<a class=\"btn btn-ghost\" href=\"" + u("/admin/mappa-esercizi/") + "\">Mappa esercizi</a>";
+    if (faseId === BLOCCO1_ID) {
+      html = "<a class=\"btn btn-primary\" href=\"" + u("/admin/metodo-blocco1/pdf/") + "\">PDF metodo blocco</a>" + html;
+    }
+    html += "<a class=\"btn btn-ghost\" href=\"" + u("/ciclo/#" + faseId) + "\">Spiegazione della fase</a>";
+    actions.innerHTML = html;
     root.appendChild(actions);
 
     var tableWrap = el("div", { className: "table-wrap" });
@@ -112,7 +125,7 @@
     var faseId = params.get("ciclo");
     var sessionKey = (params.get("sessione") || "ab").toLowerCase();
     if (!faseId) {
-      root.innerHTML = "<p>Parametro <code>ciclo</code> mancante. <a href=\"/admin/\">Dashboard</a>.</p>";
+      root.innerHTML = "<p>Parametro <code>ciclo</code> mancante. <a href=\"" + u("/admin/") + "\">Schede</a>.</p>";
       return;
     }
 

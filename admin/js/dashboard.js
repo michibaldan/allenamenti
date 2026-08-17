@@ -94,8 +94,9 @@
     root.appendChild(el("h2", { id: "ciclo-title", text: "Ciclo dell’anno" }));
     root.appendChild(el("p", {
       className: "ciclo-lead",
-      text: formatDate(data.macrociclo.inizio) + " → " + formatDate(data.macrociclo.fine) +
-        " · 4 fasi × 13 settimane · 3 schede a settimana (AB · AC · CB) · glutei in enfasi"
+      html: formatDate(data.macrociclo.inizio) + " → " + formatDate(data.macrociclo.fine) +
+        " · 4 fasi × 13 settimane · 3 schede a settimana (AB · AC · CB). " +
+        "<a href=\"" + u("/ciclo/") + "\">Cosa vuol dire il ciclo e come leggere intensità e recupero</a>."
     }));
 
     renderPrincipi(data, root);
@@ -111,6 +112,38 @@
         " · " + fase.settimane + " settimane</p></div>";
       block.appendChild(head);
       block.appendChild(renderIr(fase));
+
+      var downloads = el("div", { className: "admin-fase__downloads no-print" });
+      SESSIONI.forEach(function (key) {
+        if (!fase.sessioni[key]) return;
+        downloads.appendChild(el("a", {
+          className: "btn btn-primary",
+          href: u("/admin/sessione/pdf/?ciclo=" + encodeURIComponent(fase.id) + "&sessione=" + key),
+          target: "_blank",
+          rel: "noopener",
+          text: "PDF " + key.toUpperCase()
+        }));
+      });
+      downloads.appendChild(el("a", {
+        className: "btn btn-ghost",
+        href: u("/admin/prototipi/periodizzazione/fase/?fase=" + encodeURIComponent(fase.id)),
+        target: "_blank",
+        rel: "noopener",
+        text: "PDF fase completa AB–CB"
+      }));
+      if (fase.id === "ipertrofia-accumulo") {
+        downloads.appendChild(el("a", {
+          className: "btn btn-ghost",
+          href: u("/admin/metodo-blocco1/pdf/"),
+          text: "PDF metodo"
+        }));
+      }
+      downloads.appendChild(el("a", {
+        className: "btn btn-ghost",
+        href: u("/ciclo/#" + fase.id),
+        text: "Spiegazione"
+      }));
+      block.appendChild(downloads);
 
       var grid = el("div", { className: "admin-sessioni-grid admin-sessioni-grid--3" });
       SESSIONI.forEach(function (key) {

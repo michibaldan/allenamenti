@@ -7,7 +7,7 @@
 <meta name="robots" content="noindex, nofollow">
 <meta name="description" content="Cookie e localStorage: solo tecnici. Linee guida Garante 10 giugno 2021, ePrivacy, GDPR, art. 122 Codice Privacy.">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="/css/styles.css?v=50">
+<link rel="stylesheet" href="/css/styles.css?v=51">
 <script src="/js/site-base.js"></script>
 </head>
 <body>
@@ -15,9 +15,13 @@
 <header class="site-header">
   <div class="wrap">
     <a class="logo" href="/">Michele Baldan<small>Macrociclo</small></a>
-    <nav class="site-nav" aria-label="Principale">
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-principale" aria-label="Apri il menu">
+      <span class="nav-toggle__bars" aria-hidden="true"></span>
+    </button>
+    <nav class="site-nav" id="nav-principale" aria-label="Principale">
       <ul>
-        <li><a href="/">Ciclo</a></li>
+        <li><a href="/">Schede</a></li>
+        <li><a href="/ciclo/">Ciclo</a></li>
         <li><a href="/privacy/">Privacy</a></li>
         <li><a href="/cookie/" aria-current="page">Cookie</a></li>
         <li><a href="/trasparenza-ai/">Trasparenza AI</a></li>
@@ -72,7 +76,7 @@
   </div>
 </main>
 <footer class="site-footer"><div class="wrap"><p><small>Garante Privacy · cookie tecnici</small></p></div></footer>
-<script src="/js/main.js?v=19" defer></script>
+<script src="/js/main.js?v=21" defer></script>
 <script src="/js/cookie-consent.js?v=4" defer></script>
 </body>
 </html>

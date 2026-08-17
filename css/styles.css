@@ -259,13 +259,36 @@ a.session-card:hover {
 }
 .nav-toggle {
   display: none;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
   background: transparent;
   border: 1px solid var(--line);
   color: var(--text);
-  padding: 0.45rem 0.65rem;
+  padding: 0;
   border-radius: 8px;
   cursor: pointer;
+  flex-shrink: 0;
 }
+.nav-toggle__bars,
+.nav-toggle__bars::before,
+.nav-toggle__bars::after {
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: var(--text);
+  position: relative;
+  border-radius: 1px;
+}
+.nav-toggle__bars::before,
+.nav-toggle__bars::after {
+  content: "";
+  position: absolute;
+  left: 0;
+}
+.nav-toggle__bars::before { top: -6px; }
+.nav-toggle__bars::after { top: 6px; }
 .site-nav ul {
   list-style: none;
   margin: 0;
@@ -3459,6 +3482,39 @@ button.linkish {
   border-radius: 4px;
 }
 
+.ciclo-toc {
+  padding: 1.1rem 1.25rem;
+  margin: 1.5rem 0 2rem;
+}
+.ciclo-toc p { margin: 0 0 0.5rem; }
+.ciclo-toc ol { margin: 0; padding-left: 1.2rem; }
+.ciclo-toc li { margin: 0.25rem 0; }
+.ciclo-dl dt {
+  margin-top: 0.85rem;
+  font-weight: 700;
+  color: var(--accent);
+}
+.ciclo-dl dd { margin: 0.25rem 0 0; color: #ccc4b8; }
+.ciclo-fase { padding: 1.25rem 1.35rem; margin: 1.75rem 0; }
+.ciclo-fase h2 { margin-top: 0.2rem; }
+.ciclo-fase__num {
+  margin: 0;
+  font-size: 0.78rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+.ciclo-fase__meta {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+.ciclo-downloads {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin: 1rem 0 0;
+}
+
 /* Organigramma trimestre → schede → sessioni */
 .org-chart {
   margin: 2rem 0;
@@ -3951,7 +4007,7 @@ body.theme-allenamenti .hero.allenamenti-hero .hero__overlay {
 }
 
 @media (max-width: 720px) {
-  .nav-toggle { display: block; }
+  .nav-toggle { display: flex; }
   .site-nav { display: none; width: 100%; }
   .site-nav.is-open { display: block; }
   .site-nav ul { flex-direction: column; padding: 0.5rem 0 0; }

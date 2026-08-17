@@ -155,6 +155,7 @@ JSON: `fase.perche` + `fase.intensitaRecupero` in `admin/data/macrociclo-2026-20
 | Scheda online | `/admin/sessione/?ciclo=<fase-id>&sessione=ab\|ac\|cb` |
 | PDF sessione | `/admin/sessione/pdf/?ciclo=<id>&sessione=ab` |
 | PDF fase (3 schede) | `/admin/prototipi/periodizzazione/fase/?fase=<id>` |
+| Ciclo spiegato | `/ciclo/` — 4 mesocicli, glossario, PDF per fase |
 | Privacy / cookie | `/privacy/` · `/cookie/` |
 
 PDF:

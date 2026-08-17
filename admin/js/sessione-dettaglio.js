@@ -165,9 +165,13 @@
     return anno ? "&anno=" + encodeURIComponent(anno) : "";
   }
 
+  function u(path) {
+    return window.fqUrl ? window.fqUrl(path) : path;
+  }
+
   function sessionHref(bloccoId, sessionKey) {
-    return "/admin/sessione/?ciclo=" + encodeURIComponent(bloccoId) +
-      "&sessione=" + sessionKey + querySuffix();
+    return u("/admin/sessione/?ciclo=" + encodeURIComponent(bloccoId) +
+      "&sessione=" + sessionKey) + querySuffix();
   }
 
   function renderBlocco1Session(blocco, sessionKey, catalogo, root) {
@@ -182,8 +186,8 @@
 
     var nav = el("nav", { className: "admin-breadcrumb" });
     nav.innerHTML =
-      "<a href=\"/admin/\">Dashboard</a> · " +
-      "<a href=\"/admin/prototipi/periodizzazione/#schede-hub\">Periodizzazione</a> · " +
+      "<a href=\"" + u("/admin/") + "\">Schede</a> · " +
+      "<a href=\"" + u("/ciclo/#ipertrofia-accumulo") + "\">Ciclo</a> · " +
       "<strong>" + s.codice + " – " + blocco.codice + "</strong>";
     root.appendChild(nav);
 
@@ -206,10 +210,11 @@
 
     var actions = el("div", { className: "admin-session-actions no-print" });
     actions.innerHTML =
-      "<a class=\"btn btn-primary\" href=\"/admin/metodo-blocco1/pdf/\">PDF metodo blocco</a>" +
-      "<a class=\"btn btn-primary\" href=\"/admin/sessione/pdf/?ciclo=" + encodeURIComponent(blocco.id) + "&sessione=" + sessionKey + querySuffix() + "\" target=\"_blank\">Stampa scheda con spiegazioni</a>" +
-      "<a class=\"btn btn-ghost\" href=\"/admin/prototipi/periodizzazione/fase/?fase=" + encodeURIComponent(blocco.id) + "\" target=\"_blank\">PDF fase completa AB–CB</a>" +
-      "<a class=\"btn btn-ghost\" href=\"/admin/mappa-esercizi/\">Mappa esercizi</a>";
+      "<a class=\"btn btn-primary\" href=\"" + u("/admin/metodo-blocco1/pdf/") + "\">PDF metodo blocco</a>" +
+      "<a class=\"btn btn-primary\" href=\"" + u("/admin/sessione/pdf/?ciclo=" + encodeURIComponent(blocco.id) + "&sessione=" + sessionKey) + querySuffix() + "\" target=\"_blank\" rel=\"noopener\">Stampa scheda con spiegazioni</a>" +
+      "<a class=\"btn btn-ghost\" href=\"" + u("/admin/prototipi/periodizzazione/fase/?fase=" + encodeURIComponent(blocco.id)) + "\" target=\"_blank\" rel=\"noopener\">PDF fase completa AB–CB</a>" +
+      "<a class=\"btn btn-ghost\" href=\"" + u("/admin/mappa-esercizi/") + "\">Mappa esercizi</a>" +
+      "<a class=\"btn btn-ghost\" href=\"" + u("/ciclo/#ipertrofia-accumulo") + "\">Spiegazione della fase</a>";
     root.appendChild(actions);
 
     if (s.priorita) {
@@ -269,8 +274,8 @@
       shared.appendChild(el("h2", { text: "Come usare il blocco" }));
       shared.appendChild(el("p", {
         html: blocco.guidaOperativa.sintesi +
-          " <a class=\"btn btn-ghost btn-sm\" href=\"/admin/metodo-blocco1/pdf/\">PDF / Stampa metodo →</a> · " +
-          "<a class=\"btn btn-ghost btn-sm\" href=\"/admin/metodo-blocco1/\">Guida online</a>"
+          " <a class=\"btn btn-ghost btn-sm\" href=\"" + u("/admin/metodo-blocco1/pdf/") + "\">PDF / Stampa metodo →</a> · " +
+          "<a class=\"btn btn-ghost btn-sm\" href=\"" + u("/admin/metodo-blocco1/") + "\">Guida online</a>"
       }));
       if (blocco.guidaOperativa.periodizzazioneIntensita) {
         shared.appendChild(el("h3", { text: "Periodizzazione 13 settimane" }));

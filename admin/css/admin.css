@@ -465,6 +465,13 @@
 .admin-fase__ir p { margin: 0; font-size: 0.88rem; color: #ccc4b8; line-height: 1.45; }
 .admin-fase__perche { color: var(--text) !important; }
 .admin-fase__durata { font-size: 0.8rem !important; color: var(--muted) !important; }
+.ciclo-lead a { color: var(--accent); }
+.admin-fase__downloads {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin: 0 0 1rem;
+}
 
 .ciclo-principi { padding: 1.15rem 1.25rem; margin: 0 0 1.5rem; }
 .ciclo-principi h3 { margin: 0 0 0.6rem; font-size: 1.05rem; }
@@ -733,3 +740,9 @@
   margin-top: 0.55rem;
 }
 .scheda-mini__actions .btn { font-size: 0.82rem; padding: 0.4rem 0.75rem; }
+.admin-session-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0 1.25rem;
+}

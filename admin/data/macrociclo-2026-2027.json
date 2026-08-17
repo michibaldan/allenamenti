@@ -587,12 +587,12 @@
           ]
         }
       },
-      "guida": "Trasformare la base in carico. Stessi esercizi: scendono le ripetizioni, salgono i kg. Sett. 1–6 tensione 6–8 rep, RIR 1–2. Sett. 7–12 forza 4–6, RIR 1–2. Sett. 13 deload −40%. Sui * 2,5–3 min: il recupero lungo è il metodo, non tempo perso. Isolamento 60–75 s. Tetto 75 min. Fase in cui i kg sugli esercizi * salgono. Prime ~6 settimane: tensione meccanica (6–8 rep). Poi forza (4–6 rep). Stessi esercizi della fase 1: cambia solo il range. Non aggiungere nuovi movimenti. Beneficio: forza più alta che tornerà utile quando rifai volume in fase 3.",
+      "guida": "Trasformare la base in carico. Stessi esercizi: scendono le ripetizioni, salgono i kg. Sett. 1–6 tensione 6–8 rep, RIR 1–2. Sett. 7–12 forza 4–6, RIR 1–2. Sett. 13 deload −40%. Sui * 2,5–3 min: il recupero lungo è il metodo, non tempo perso. Isolamento 60–75 s. Tetto 90 min. Fase in cui i kg sugli esercizi * salgono. Prime ~6 settimane: tensione meccanica (6–8 rep). Poi forza (4–6 rep). Stessi esercizi della fase 1: cambia solo il range. Non aggiungere nuovi movimenti. Beneficio: forza più alta che tornerà utile quando rifai volume in fase 3.",
       "schedaIntro": "3 allenamenti: Lun AB · Mer AC · Ven CB. Petto e tricipiti in AB e AC. Glutei in AB e CB. Bicipiti in AC e CB. Halo ultimo in AC. Pesi a penna. PDF anonimo. Foto in costume: da aggiungere dopo verifica visiva.",
       "perche": "Trasformare la base in carico. Stessi esercizi: scendono le ripetizioni, salgono i kg.",
       "intensitaRecupero": {
         "intensita": "Sett. 1–6 tensione 6–8 rep, RIR 1–2. Sett. 7–12 forza 4–6, RIR 1–2. Sett. 13 deload −40%.",
-        "recupero": "Sui * 2,5–3 min: il recupero lungo è il metodo, non tempo perso. Isolamento 60–75 s. Tetto 75 min.",
+        "recupero": "Sui * 2,5–3 min: il recupero lungo è il metodo, non tempo perso. Isolamento 60–75 s. Tetto 90 min.",
         "durataSeduta": "obiettivo 75 min, tetto 90 min",
         "deload": "settimana 13 · −40% volume",
         "split": "AB – AC / C–B"
@@ -872,12 +872,12 @@
           ]
         }
       },
-      "guida": "Riconvertire la forza nuova in volume. I kg della fase 2 restano, le ripetizioni tornano su. 8–12 rep, RIR 1–2, volume pieno. Eventuale +1 serie sui * nelle sett. 9–12. Deload sett. 13. Come fase 1: * 2–2,5 min, isolamento ~60 s, accoppiamenti per stare ≤75 min. Secondo accumulo. Ora puoi spingere un po’ più di volume (verso sett. 9–12 +1 serie sui multiarticolari) perché arrivi dalla fase forza con carichi migliori. Obiettivo: densità e progressione sulle rep, non reinventare la scheda. Deload in sett. 13 prima dell’estate.",
+      "guida": "Riconvertire la forza nuova in volume. I kg della fase 2 restano, le ripetizioni tornano su. 8–12 rep, RIR 1–2, volume pieno. Eventuale +1 serie sui * nelle sett. 9–12. Deload sett. 13. Come fase 1: * 2–2,5 min, isolamento ~60 s, accoppiamenti per stare ≤90 min. Secondo accumulo. Ora puoi spingere un po’ più di volume (verso sett. 9–12 +1 serie sui multiarticolari) perché arrivi dalla fase forza con carichi migliori. Obiettivo: densità e progressione sulle rep, non reinventare la scheda. Deload in sett. 13 prima dell’estate.",
       "schedaIntro": "3 allenamenti: Lun AB · Mer AC · Ven CB. Petto e tricipiti in AB e AC. Glutei in AB e CB. Bicipiti in AC e CB. Halo ultimo in AC. Pesi a penna. PDF anonimo. Foto in costume: da aggiungere dopo verifica visiva.",
       "perche": "Riconvertire la forza nuova in volume. I kg della fase 2 restano, le ripetizioni tornano su.",
       "intensitaRecupero": {
         "intensita": "8–12 rep, RIR 1–2, volume pieno. Eventuale +1 serie sui * nelle sett. 9–12. Deload sett. 13.",
-        "recupero": "Come fase 1: * 2–2,5 min, isolamento ~60 s, accoppiamenti per stare ≤75 min.",
+        "recupero": "Come fase 1: * 2–2,5 min, isolamento ~60 s, accoppiamenti per stare ≤90 min.",
         "durataSeduta": "obiettivo 75 min, tetto 90 min",
         "deload": "settimana 13 · −40% volume",
         "split": "AB – AC / C–B"
@@ -1157,12 +1157,12 @@
           ]
         }
       },
-      "guida": "Chiudere l’anno integri, non bruciati. Mantenimento, non peaking. 10–12 rep, RIR 2–3, niente cedimento. Deload sett. 13 prima del macrociclo successivo. Recuperi un po’ più corti va bene (seduta più facile). Tetto comunque 75 min. Deload 13 resta obbligatorio. Mantenimento e recupero di stagione. 10–12 rep, RIR più alto (2–3), zero pressione da peaking. Serve ad arrivare al macrociclo successivo integri, non bruciati. Se viaggi o salti sessioni, questa fase perdona di più — ma non abbandonare del tutto AB–CB.",
+      "guida": "Chiudere l’anno integri, non bruciati. Mantenimento, non peaking. 10–12 rep, RIR 2–3, niente cedimento. Deload sett. 13 prima del macrociclo successivo. Recuperi un po’ più corti va bene (seduta più facile). Tetto comunque 90 min. Deload 13 resta obbligatorio. Mantenimento e recupero di stagione. 10–12 rep, RIR più alto (2–3), zero pressione da peaking. Serve ad arrivare al macrociclo successivo integri, non bruciati. Se viaggi o salti sessioni, questa fase perdona di più — ma non abbandonare del tutto AB–CB.",
       "schedaIntro": "3 allenamenti: Lun AB · Mer AC · Ven CB. Petto e tricipiti in AB e AC. Glutei in AB e CB. Bicipiti in AC e CB. Halo ultimo in AC. Pesi a penna. PDF anonimo. Foto in costume: da aggiungere dopo verifica visiva.",
       "perche": "Chiudere l’anno integri, non bruciati. Mantenimento, non peaking.",
       "intensitaRecupero": {
         "intensita": "10–12 rep, RIR 2–3, niente cedimento. Deload sett. 13 prima del macrociclo successivo.",
-        "recupero": "Recuperi un po’ più corti va bene (seduta più facile). Tetto comunque 75 min. Deload 13 resta obbligatorio.",
+        "recupero": "Recuperi un po’ più corti va bene (seduta più facile). Tetto comunque 90 min. Deload 13 resta obbligatorio.",
         "durataSeduta": "obiettivo 75 min, tetto 90 min",
         "deload": "settimana 13 · −40% volume",
         "split": "AB – AC / C–B"
