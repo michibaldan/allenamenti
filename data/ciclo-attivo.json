@@ -1,0 +1,47 @@
+{
+  "nome": "Ciclo 1 — Ipertrofia",
+  "settimane": 8,
+  "fase": "ipertrofia",
+  "split": "3 giorni: Push / Pull / Gambe",
+  "inizio": "2026-08-17",
+  "fine": "2026-10-11",
+  "progressione": "Settimane 1–2: presa di confidenza con i carichi (RPE 6–7). Settimane 3–6: aumentare 1–2 kg quando tutte le ripetizioni restano pulite. Settimana 7: picco di sforzo (RPE 8). Settimana 8: deload, stesse alzate con circa −30% di volume (togli una serie su ogni esercizio).",
+  "settimana_tipo": [
+    {
+      "giorno": "Lunedì",
+      "scheda_id": "1",
+      "focus": "Petto, spalle, tricipiti"
+    },
+    {
+      "giorno": "Martedì",
+      "scheda_id": null,
+      "focus": "Riposo o camminata"
+    },
+    {
+      "giorno": "Mercoledì",
+      "scheda_id": "2",
+      "focus": "Dorso, bicipiti, posteriori di spalla"
+    },
+    {
+      "giorno": "Giovedì",
+      "scheda_id": null,
+      "focus": "Riposo o camminata"
+    },
+    {
+      "giorno": "Venerdì",
+      "scheda_id": "3",
+      "focus": "Quadricipiti, femorali, glutei, polpacci"
+    },
+    {
+      "giorno": "Sabato",
+      "scheda_id": null,
+      "focus": "Riposo"
+    },
+    {
+      "giorno": "Domenica",
+      "scheda_id": null,
+      "focus": "Riposo"
+    }
+  ],
+  "note": "Almeno un giorno di distacco tra le sedute. Nei giorni off: 8–10 mila passi e mobilità di anche e spalle. Non inseguire il cedimento muscolare su squat, panca e stacco."
+}

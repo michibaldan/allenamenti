@@ -1,0 +1,45 @@
+/* Admin PDF overrides */
+.scheda-a4--admin .scheda-a4__head-period { font-size: 6.5pt; }
+.scheda-a4--admin table th,
+.scheda-a4--admin table td { font-size: 6pt; padding: 0.45mm 0.8mm; }
+.scheda-a4--admin .scheda-a4__quad h2 { font-size: 6.5pt; }
+.scheda-a4--admin .scheda-a4__osservazioni {
+  margin-bottom: 1.5mm;
+}
+
+.pdf-cycle-select {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 1rem;
+}
+.pdf-cycle-select button {
+  font: inherit;
+  font-size: 0.78rem;
+  padding: 0.35rem 0.65rem;
+  border: 1px solid #444;
+  background: #1a1a1a;
+  color: #f4efe6;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.pdf-cycle-select button.is-active {
+  background: #c9783a;
+  border-color: #c9783a;
+  color: #fff;
+}
+
+@media print {
+  .admin-page.schede-peso { background: #fff; }
+  .pdf-cycle-select { display: none !important; }
+}
+
+.scheda-a4__intro-fase {
+  margin-bottom: 2mm !important;
+}
+.scheda-a4__intro-text {
+  margin: 0.8mm 0 0;
+  font-size: 6pt;
+  line-height: 1.25;
+  color: #333;
+}

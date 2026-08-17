@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PDF scheda sessione | Admin</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="stylesheet" href="/css/styles.css?v=48">
+<link rel="stylesheet" href="/admin/css/admin-pdf-sessione.css?v=4">
+<script src="/js/site-base.js"></script>
+</head>
+<body class="admin-pdf-page">
+<div class="admin-pdf-toolbar no-print">
+  <div class="admin-pdf-toolbar__inner">
+    <p><strong>Scheda sessione · PDF stampabile</strong></p>
+    <div class="btn-row">
+      <button type="button" class="btn btn-primary" id="pdf-print-btn">Stampa / Salva PDF</button>
+      <a class="btn btn-ghost" id="pdf-back-link" href="/admin/prototipi/periodizzazione/">Hub periodizzazione</a>
+      <a class="btn btn-ghost" href="/admin/">Sessioni</a>
+    </div>
+    <p class="admin-pdf-toolbar__tip"><small>Stampa in <strong>verticale (A4)</strong> · margini <strong>8 mm</strong> · fascia osservazioni in alto · sidebar log (S1–Sn kg/rep) · Atleta compilabile</small></p>
+  </div>
+</div>
+
+<main id="pdf-root"><p style="text-align:center;padding:2rem">Caricamento PDF…</p></main>
+
+<script>
+(function () {
+  var p = new URLSearchParams(location.search);
+  var back = document.getElementById("pdf-back-link");
+  if (back && p.get("ciclo")) {
+    var href = "/admin/sessione/?ciclo=" + encodeURIComponent(p.get("ciclo")) + "&sessione=" + (p.get("sessione") || "ab");
+    back.href = window.fqUrl ? window.fqUrl(href) : href;
+    back.textContent = "Scheda online";
+  }
+})();
+</script>
+<script src="/admin/js/sprite-esercizi.js?v=2" defer></script>
+<script src="/admin/js/sessione-pdf.js?v=6" defer></script>
+</body>
+</html>

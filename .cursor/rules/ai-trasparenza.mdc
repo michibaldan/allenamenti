@@ -1,0 +1,31 @@
+---
+description: Trasparenza AI obbligatoria (AI Act UE) su immagini e contenuti di Michele Baldan
+alwaysApply: true
+---
+
+# Trasparenza AI — priorità permanente
+
+Riferimento: **Regolamento (UE) 2024/1689 (AI Act)** — obblighi di trasparenza (art. 50). L’obbligo concreto dipende da come l’IA è usata; su questo sito la regola operativa è sempre la chiarezza verso il lettore.
+
+## Sempre
+
+1. Non pubblicare immagini generate/abbellite/modificate con IA senza trafiletto visibile **e** marchio sull’immagine.
+2. Markup minimo:
+   - `data-ai="generated"` | `edited` | `illustrative` sull’`<img>`
+   - **Marchio visivo** in basso a destra: testo **«Foto AI»** (classe `.ai-photo-mark` dentro `.ai-photo-wrap`)
+   - testo sotto figura: `.ai-media-note` o `.fig-credit` con `.ai-badge` + link `/trasparenza-ai/`
+3. Ogni pagina pubblica deve includere `cookie-consent.js` (notice footer + link Trasparenza AI) e `main.js` (applica marchio alle img `data-ai` esistenti).
+4. Aggiornare `/trasparenza-ai/` se cambia la prassi d’uso dell’IA.
+5. Non etichettare come IA foto/video documentali reali (palestra, vita, Amazfit) salvo ritocco sostanziale.
+
+## Esempio
+
+```html
+<span class="ai-photo-wrap">
+  <img src="..." alt="..." data-ai="generated">
+  <span class="ai-photo-mark" aria-hidden="true">Foto AI</span>
+</span>
+<span class="fig-credit"><span class="ai-badge" aria-hidden="true">IA</span> Immagine generata o abbellita con intelligenza artificiale · <a href="/trasparenza-ai/">Trasparenza</a></span>
+```
+
+Dettaglio: `SKILL.md` — PRIORITÀ PERMANENTE — Trasparenza AI. Ritratto originale di Michele: niente `data-ai`. Figure schede: SVG tecnico, non IA.

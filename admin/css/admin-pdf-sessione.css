@@ -1,0 +1,281 @@
+/* PDF scheda sessione admin — A4 portrait con sidebar log */
+.admin-pdf-page {
+  background: #e8e4dc;
+  color: #1a1a1a;
+  min-height: 100vh;
+}
+
+.admin-pdf-toolbar {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: #0c0c0c;
+  color: #f4efe6;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+.admin-pdf-toolbar__inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem 0.75rem;
+  width: min(100% - 2rem, 1120px);
+  margin-inline: auto;
+}
+.admin-pdf-toolbar p { margin: 0; font-size: 0.9rem; }
+.admin-pdf-toolbar__tip { width: 100%; color: #aaa; font-size: 0.78rem; }
+
+.scheda-sessione-pdf {
+  width: 210mm;
+  min-height: 297mm;
+  margin: 1rem auto 2rem;
+  background: #fff;
+  box-shadow: 0 8px 40px rgba(0,0,0,0.12);
+  font-family: "Segoe UI", system-ui, sans-serif;
+  font-size: 8pt;
+  line-height: 1.35;
+  color: #1a1a1a;
+  display: block;
+}
+
+.scheda-sessione-pdf__head {
+  padding: 5mm 6mm 4mm;
+  border-bottom: 2px solid #c9783a;
+  background: linear-gradient(180deg, #faf7f2 0%, #fff 100%);
+}
+.scheda-sessione-pdf__brand {
+  font-size: 7pt;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #8b4513;
+  margin-bottom: 1mm;
+}
+.scheda-sessione-pdf__head h1 {
+  margin: 0 0 1.5mm;
+  font-size: 13pt;
+  line-height: 1.2;
+  color: #1a1a1a;
+}
+.scheda-sessione-pdf__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2mm 5mm;
+  font-size: 7pt;
+  color: #444;
+}
+.scheda-sessione-pdf__badge {
+  display: inline-block;
+  background: #c9783a;
+  color: #fff;
+  font-size: 6.5pt;
+  font-weight: 700;
+  padding: 0.5mm 2mm;
+  border-radius: 2px;
+  margin-right: 1.5mm;
+}
+.scheda-sessione-pdf__obiettivo {
+  margin: 2mm 0 0;
+  font-size: 7pt;
+  color: #555;
+  max-width: 95%;
+  line-height: 1.3;
+}
+
+.scheda-sessione-pdf__osservazioni {
+  margin: 0 6mm 2mm;
+  padding: 1.5mm 2mm;
+  border: 1px solid #c9b8a4;
+  border-radius: 2px;
+  background: #faf7f2;
+}
+.scheda-sessione-pdf__osservazioni-label {
+  font-size: 6pt;
+  font-weight: 700;
+  color: #8b4513;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 1mm;
+}
+.scheda-sessione-pdf__osservazioni-line {
+  border-bottom: 1px solid #c9b8a4;
+  min-height: 4mm;
+  margin-bottom: 0.8mm;
+}
+.scheda-sessione-pdf__osservazioni-line:last-child { margin-bottom: 0; }
+
+.scheda-sessione-pdf__main {
+  padding: 3mm 6mm;
+}
+
+.scheda-sessione-pdf__session-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3mm 6mm;
+  padding: 2mm 3mm;
+  margin-bottom: 2mm;
+  background: #faf7f2;
+  border: 1px dashed #c9783a;
+  border-radius: 2px;
+  font-size: 6.5pt;
+}
+
+.ex-pdf-row {
+  display: grid;
+  grid-template-columns: 16mm 1fr 46mm;
+  gap: 2.5mm;
+  padding: 2.5mm 0;
+  border-bottom: 1px solid #e8e0d4;
+  break-inside: avoid;
+  page-break-inside: avoid;
+  align-items: start;
+}
+.ex-pdf-row:last-child { border-bottom: none; }
+.ex-pdf-row--prog {
+  background: rgba(201, 120, 58, 0.06);
+  margin: 0 -2mm;
+  padding-left: 2mm;
+  padding-right: 2mm;
+  border-left: 2px solid #c9783a;
+}
+
+.ex-pdf-row__fig {
+  width: 16mm;
+  height: 16mm;
+  border-radius: 2px;
+  background: #f0ebe3;
+  border: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ex-pdf-row__fig svg { width: 19mm; height: 19mm; }
+.ex-pdf-row__fig {
+  --fx-body: #1a1a1a;
+  --fx-equip: #6b6b6b;
+  --fx-frame: #8a8a8a;
+  --fx-pad: #e0e0e0;
+  --fx-target: #b8622a;
+}
+.ex-pdf-row__fig .muscle-hot { fill: #c9783a; }
+.ex-pdf-row__fig .muscle-warm { fill: #8b7355; opacity: 0.85; }
+.ex-pdf-row__fig .muscle-base { fill: none; stroke: #666; stroke-width: 1.2; }
+
+.ex-pdf-row__name {
+  margin: 0 0 0.5mm;
+  font-size: 8.5pt;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.ex-pdf-row__prog {
+  font-size: 5.5pt;
+  font-weight: 700;
+  color: #c9783a;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.ex-pdf-row__muscles {
+  margin: 0 0 1mm;
+  font-size: 6.5pt;
+  color: #666;
+}
+.ex-pdf-row__muscles strong { color: #8b4513; font-weight: 600; }
+.ex-pdf-row__params {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1mm 3mm;
+  font-size: 6.5pt;
+  margin-bottom: 1mm;
+}
+.ex-pdf-row__params span {
+  background: #f0ebe3;
+  padding: 0.3mm 1.5mm;
+  border-radius: 2px;
+}
+.ex-pdf-row__params .target-kg { font-weight: 700; color: #1a1a1a; }
+.ex-pdf-row__tech {
+  margin: 0;
+  padding-left: 3mm;
+  font-size: 6pt;
+  color: #444;
+}
+.ex-pdf-row__tech li { margin-bottom: 0.3mm; }
+
+.ex-pdf-log {
+  border: 1px solid #d4c8b8;
+  border-radius: 2px;
+  background: #faf7f2;
+  padding: 1.5mm;
+  break-inside: avoid;
+}
+.ex-pdf-log__label {
+  font-size: 5pt;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #8b4513;
+  margin: 0 0 1mm;
+}
+.ex-pdf-log__sets {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.6mm;
+  font-size: 5.5pt;
+  margin-bottom: 1mm;
+}
+.ex-pdf-log__set {
+  display: flex;
+  align-items: baseline;
+  gap: 1mm;
+}
+.ex-pdf-log__kg {
+  font-weight: 700;
+  white-space: nowrap;
+}
+.ex-pdf-log__set-line {
+  flex: 1;
+  border-bottom: 1px solid #aaa;
+  min-height: 3mm;
+}
+.ex-pdf-log__note {
+  font-size: 5.5pt;
+  color: #666;
+}
+.ex-pdf-log__note-line {
+  border-bottom: 1px solid #bbb;
+  min-height: 5mm;
+  margin-top: 0.5mm;
+}
+
+.scheda-sessione-pdf__foot {
+  padding: 2mm 6mm;
+  font-size: 5.5pt;
+  color: #888;
+  text-align: center;
+  border-top: 1px solid #e8e0d4;
+}
+
+@media print {
+  @page { size: A4 portrait; margin: 8mm; }
+  .no-print { display: none !important; }
+  .admin-pdf-page { background: #fff; }
+  .scheda-sessione-pdf {
+    width: auto;
+    min-height: auto;
+    margin: 0;
+    box-shadow: none;
+    page-break-after: avoid;
+    padding-bottom: 3mm;
+  }
+  .scheda-sessione-pdf__foot {
+    border-bottom: none;
+    padding-bottom: 3mm;
+  }
+}
+
+@media (max-width: 800px) {
+  .scheda-sessione-pdf { width: 100%; }
+  .ex-pdf-row { grid-template-columns: 14mm 1fr; }
+  .ex-pdf-row__log { grid-column: 1 / -1; }
+}

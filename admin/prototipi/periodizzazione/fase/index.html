@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PDF scheda fase | Admin</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="stylesheet" href="/css/styles.css?v=48">
+<link rel="stylesheet" href="/css/schede-peso-print.css?v=3">
+<link rel="stylesheet" href="/admin/css/admin.css?v=5">
+<link rel="stylesheet" href="/admin/css/admin-print.css?v=3">
+<script src="/js/site-base.js"></script>
+</head>
+<body class="admin-page schede-peso" data-perio-mode="fase-pdf">
+<a class="skip-link" href="#contenuto">Vai al contenuto</a>
+
+<div class="schede-peso-toolbar no-print">
+  <div class="wrap schede-peso-toolbar__inner">
+    <p><strong>PDF scheda fase</strong> · A4 orizzontale · anonimo</p>
+    <div class="btn-row">
+      <button type="button" class="btn btn-primary" id="scheda-print-btn">Stampa / Salva PDF</button>
+      <a class="btn btn-ghost" href="/admin/prototipi/periodizzazione/">← Hub periodizzazione</a>
+    </div>
+    <p class="schede-peso-toolbar__tip"><small>Stampa in <strong>orizzontale</strong> · margini <strong>8 mm</strong> · scala 100%</small></p>
+  </div>
+</div>
+
+<main id="contenuto" class="wrap" style="padding:1.5rem 0">
+  <div id="fase-pdf-root"><p>Caricamento scheda fase…</p></div>
+</main>
+
+<script src="/js/schede-peso.js?v=1" defer></script>
+<script src="/admin/js/fase-pdf.js?v=1" defer></script>
+</body>
+</html>

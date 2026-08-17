@@ -1,0 +1,627 @@
+{
+  "id": "ipertrofia-accumulo",
+  "codice": "BLOCCO 1",
+  "tipo": "IPERTROFIA • ACCUMULO",
+  "nome": "Fase 1 · Ipertrofia accumulo",
+  "inizio": "2026-09-01",
+  "fine": "2026-11-30",
+  "settimane": 13,
+  "frequenza": "3 allenamenti/settimana",
+  "durataSeduta": "obiettivo 60 minuti · tetto 75 minuti",
+  "guida": "Fase di costruzione in 13 settimane con intensità ondulata: parti soft (RIR 3–2), accumuli a RIR 2 e poi 1, scarico parziale in sett. 9, picco controllato in sett. 10–12 (cedimento solo sull’ultima serie dei fondamentali), deload obbligatorio in sett. 13 (−40% volume). Non cercare PR nelle prime settimane: cerca serie pulite e progressione sul carico quando completi il tetto di rep col RIR target per due sedute di fila.",
+  "schedaIntro": "3 allenamenti/settimana: Lun AB · Mer AC · Ven CB (o Mar/Gio/Sab). AB e AC condividono A (spinta). CB chiude C e B, lontano da AB così le gambe recuperano. Priorità parte alta ~55% delle serie. Obiettivo 60 min, tetto 75. Halo sempre ultimo se presente. Pesi a penna. PDF anonimo.",
+  "periodizzazione": [
+    {
+      "fase": "Adattamento",
+      "settimane": "1-2",
+      "rir": "3-2",
+      "obiettivo": "Tecnica, ricerca carichi, zero cedimento"
+    },
+    {
+      "fase": "Accumulo leggero",
+      "settimane": "3-5",
+      "rir": "2",
+      "obiettivo": "Volume stabile, progressione rep e kg"
+    },
+    {
+      "fase": "Accumulo intenso",
+      "settimane": "6-8",
+      "rir": "1",
+      "obiettivo": "Massimo stimolo sostenibile prima dello scarico"
+    },
+    {
+      "fase": "Scarico parziale",
+      "settimane": "9",
+      "rir": "2",
+      "obiettivo": "−25% volume, recupero parziale"
+    },
+    {
+      "fase": "Picco controllato",
+      "settimane": "10-12",
+      "rir": "0-1 ultima serie fondamentali",
+      "obiettivo": "Ultima serie dei * a RIR 0-1; le altre a RIR 1"
+    },
+    {
+      "fase": "Deload",
+      "settimane": "13",
+      "rir": "4-5",
+      "obiettivo": "−40% volume, carichi ~80-85%, nessun cedimento"
+    }
+  ],
+  "recuperi": [
+    {
+      "tipologia": "Fondamentali",
+      "recupero": "150 sec"
+    },
+    {
+      "tipologia": "Multiarticolari",
+      "recupero": "120 sec"
+    },
+    {
+      "tipologia": "Complementari",
+      "recupero": "90 sec"
+    },
+    {
+      "tipologia": "Isolamento",
+      "recupero": "60 sec"
+    },
+    {
+      "tipologia": "Polpacci",
+      "recupero": "60 sec"
+    }
+  ],
+  "regoleBlocco": {
+    "sett1_2": [
+      "RIR 3-2 su tutte le serie",
+      "Tecnica impeccabile, nessun cedimento",
+      "Compila i kg dopo aver trovato i carichi di lavoro"
+    ],
+    "sett3_5": [
+      "RIR 2 su tutte le serie",
+      "Progressione: +rep fino al tetto, poi +kg",
+      "Isolamento: ultime serie vicine al cedimento tecnico solo se la forma regge"
+    ],
+    "sett6_8": [
+      "RIR 1 su tutte le serie (target della scheda)",
+      "Fondamentali (*): progredisci se completi il tetto rep per 2 sedute",
+      "Leg Extension CB: RIR 0-1 solo ultimo set"
+    ],
+    "sett9": [
+      "Scarico parziale: −25% serie totali (es. 4→3, 3→2)",
+      "RIR 2, nessun cedimento",
+      "Stessi esercizi, meno volume"
+    ],
+    "sett10_12": [
+      "RIR 1 sulle serie 1-(n-1) dei fondamentali (*)",
+      "Ultima serie dei fondamentali (*): RIR 0-1 se la tecnica regge",
+      "Isolamento: ultima serie a cedimento tecnico; le altre RIR 1"
+    ],
+    "sett13": [
+      "Deload: −40% volume",
+      "Carichi all'80-85% di quelli abituali",
+      "RIR 4-5, nessun cedimento",
+      "Obbligatorio prima del blocco successivo"
+    ]
+  },
+  "valutazioneProgramma": {
+    "note": "Volume settimanale AB+AC+CB. Priorità parte alta ~55% delle serie. Deload sett. 13 non incluso. Le liste esercizi si chiudono con Michele; i principi non cambiano."
+  },
+  "guidaOperativa": {
+    "titolo": "Metodo Blocco 1 — come usare le 3 schede",
+    "sintesi": "Stesso programma per 13 settimane: cambiano solo RIR, volume (settimana 9 e 13) e kg. Tre schede: AB, AC, CB. Non mescolare gli esercizi tra sedute.",
+    "distribuzioneSettimanale": {
+      "schema": "AB – AC / C–B · 3 giorni + 4 riposi",
+      "consigliata": [
+        {
+          "giorno": "Lunedì",
+          "sessione": "AB",
+          "tipo": "A+B",
+          "focus": "Spinta parte alta + gambe brevi"
+        },
+        {
+          "giorno": "Martedì",
+          "sessione": "Riposo",
+          "tipo": "—",
+          "focus": "Recupero"
+        },
+        {
+          "giorno": "Mercoledì",
+          "sessione": "AC",
+          "tipo": "A+C",
+          "focus": "Parte alta: spinta e tirata · Halo ultimo"
+        },
+        {
+          "giorno": "Giovedì",
+          "sessione": "Riposo",
+          "tipo": "—",
+          "focus": "Recupero"
+        },
+        {
+          "giorno": "Venerdì",
+          "sessione": "CB",
+          "tipo": "C+B",
+          "focus": "Gambe principali + chiusura braccia"
+        },
+        {
+          "giorno": "Sabato",
+          "sessione": "Riposo",
+          "tipo": "—",
+          "focus": "Recupero"
+        },
+        {
+          "giorno": "Domenica",
+          "sessione": "Riposo",
+          "tipo": "—",
+          "focus": "Recupero"
+        }
+      ],
+      "alternative": [
+        "Mar AB · Gio AC · Sab CB",
+        "Lun AB · Gio AC · Sab CB (se il mercoledì non è libero)"
+      ],
+      "regoleRecupero": [
+        "Non fare AB e CB in due giorni consecutivi: entrambi toccano B (gambe)",
+        "AC sta in mezzo: condivide A con AB e C con CB, e dà 48 ore alle gambe",
+        "Se salti una seduta: riprendi da quella saltata, non comprimere AB e CB nello stesso giorno",
+        "Ordine fisso: AB → AC → CB",
+        "Obiettivo 60 min, tetto 75: accoppia isolamento durante il recupero dei *"
+      ]
+    },
+    "regoleRirECedimento": {
+      "principio": "Il RIR stampato è il target nelle settimane 6–8. Non significa cedimento su tutte le serie.",
+      "fondamentali": [
+        "Esercizi con *: Panca inclinata AB, Pressa AB, Lento AC, Trap bar CB",
+        "Settimane 1–8: nessuna serie a cedimento sui fondamentali",
+        "Settimane 10–12: solo l’ultima serie di ogni * può andare a RIR 0–1",
+        "Settimana 13: RIR 4–5, mai cedimento"
+      ],
+      "isolamento": [
+        "Alzate, croci, leg extension, leg curl, curl: ultime serie più vicine al cedimento tecnico",
+        "Leg Extension CB: RIR 0–1 solo ultimo set (anche in sett. 6–8)",
+        "Polpacci e Halo: RIR 1, stop prima del cedimento tranne isolamento polpacci"
+      ],
+      "tabellaCedimento": [
+        {
+          "periodo": "Sett. 1–8",
+          "fondamentali": "Mai cedimento",
+          "isolamento": "Ultima serie vicina al cedimento tecnico (se forma OK)"
+        },
+        {
+          "periodo": "Sett. 9",
+          "fondamentali": "Mai cedimento (scarico)",
+          "isolamento": "RIR 2, niente cedimento"
+        },
+        {
+          "periodo": "Sett. 10–12",
+          "fondamentali": "Solo ultima serie * a RIR 0–1",
+          "isolamento": "Ultima serie a cedimento tecnico"
+        },
+        {
+          "periodo": "Sett. 13",
+          "fondamentali": "RIR 4–5",
+          "isolamento": "RIR 4–5, zero cedimento"
+        }
+      ]
+    },
+    "periodizzazioneIntensita": [
+      {
+        "settimane": "1-2",
+        "intensita": "RIR 3-2",
+        "volume": "100%",
+        "nota": "Adattamento tendini e tecnica"
+      },
+      {
+        "settimane": "3-5",
+        "intensita": "RIR 2",
+        "volume": "100%",
+        "nota": "Accumulo controllato"
+      },
+      {
+        "settimane": "6-8",
+        "intensita": "RIR 1",
+        "volume": "100%",
+        "nota": "Target della scheda — massimo stimolo sostenibile"
+      },
+      {
+        "settimane": "9",
+        "intensita": "RIR 2",
+        "volume": "−25%",
+        "nota": "Scarico parziale — evita fatica accumulata"
+      },
+      {
+        "settimane": "10-12",
+        "intensita": "RIR 0-1 ultima serie *",
+        "volume": "100%",
+        "nota": "Picco controllato sui fondamentali"
+      },
+      {
+        "settimane": "13",
+        "intensita": "RIR 4-5",
+        "volume": "−40%",
+        "nota": "Deload obbligatorio"
+      }
+    ],
+    "volumeSettimanaleFinale": [
+      {
+        "gruppo": "Petto",
+        "serie": 7,
+        "note": "AB: panca inclinata 4 + croci 3"
+      },
+      {
+        "gruppo": "Schiena",
+        "serie": 7,
+        "note": "AC: lat 4 + rematore 3"
+      },
+      {
+        "gruppo": "Spalle anteriori",
+        "serie": 3,
+        "note": "AC: lento 3 (+ overlap panca)"
+      },
+      {
+        "gruppo": "Spalle laterali",
+        "serie": 3,
+        "note": "AB: alzate 3"
+      },
+      {
+        "gruppo": "Deltoide posteriore",
+        "serie": 3,
+        "note": "AC: reverse pec (fase 1)"
+      },
+      {
+        "gruppo": "Quadricipiti",
+        "serie": 7,
+        "note": "AB pressa 4 · CB extension 3"
+      },
+      {
+        "gruppo": "Femorali / catena",
+        "serie": 7,
+        "note": "AB leg curl 3 · CB trap 4"
+      },
+      {
+        "gruppo": "Glutei",
+        "serie": 3,
+        "note": "CB hip thrust 3"
+      },
+      {
+        "gruppo": "Polpacci",
+        "serie": 6,
+        "note": "AB in piedi 3 · CB seduto 3"
+      },
+      {
+        "gruppo": "Bicipiti",
+        "serie": 6,
+        "note": "AC Scott 3 · CB martello 3"
+      },
+      {
+        "gruppo": "Finisher",
+        "serie": 2,
+        "note": "AC Halo ultimo"
+      }
+    ],
+    "volumePerSeduta": [
+      {
+        "sessione": "AB",
+        "petto": 7,
+        "spalleLat": 3,
+        "quad": 4,
+        "femorali": 3,
+        "polpacci": 3
+      },
+      {
+        "sessione": "AC",
+        "schiena": 7,
+        "spalleAnt": 3,
+        "deltoPost": 3,
+        "bicipiti": 3,
+        "halo": 2
+      },
+      {
+        "sessione": "CB",
+        "trap": 4,
+        "glutei": 3,
+        "quad": 3,
+        "bicipiti": 3,
+        "polpacci": 3
+      }
+    ],
+    "progressioneCarico": [
+      "Quando completi il tetto di ripetizioni con il RIR target per 2 sedute consecutive sullo stesso esercizio *, aumenta il carico",
+      "Fondamentali: +2,5–5 kg (upper) o +5% (lower/macchine)",
+      "Isolamento: +1 rep per serie, poi +2,5 kg o +5%",
+      "Settimana 9: stessi kg, meno serie",
+      "Settimana 13: stessi esercizi, −40% serie, kg all'80–85%"
+    ],
+    "checklistSeduta": [
+      "1. Riscaldamento 8–10 min",
+      "2. Esercizi nell’ordine della scheda; accoppia isolamento nel recupero dei *",
+      "3. Chiudi in 60 min se puoi, mai oltre 75",
+      "4. Annota kg, rep e RIR reale (PDF: campo Atleta vuoto)",
+      "5. Finisher Halo in AC sempre ultimo"
+    ]
+  },
+  "sessioni": {
+    "ab": {
+      "codice": "AB",
+      "nome": "Spinta A + gambe B brevi",
+      "accoppiamento": "A + B",
+      "notaSeduta": "Spinta parte alta (petto, laterali) + gambe brevi (pressa, curl, polpacci). Non accostare a CB: entrambi toccano B.",
+      "durataMinuti": {
+        "obiettivo": 60,
+        "tetto": 75
+      },
+      "esercizi": [
+        {
+          "nome": "Panca inclinata manubri",
+          "gruppo": "Petto alto",
+          "serie": 4,
+          "ripetizioni": "6-8",
+          "tempo": "3-1-X-1",
+          "recupero": "150 sec",
+          "progressione": true,
+          "rir": "2→1",
+          "figura": "fig-press-incl",
+          "progressionePrincipale": true,
+          "note": "Progressione principale · panca 30°, scapole addotte, gomiti ~45°. · AB: spinta A. Accoppia croci o laterali nel recupero.",
+          "peso": "—"
+        },
+        {
+          "nome": "Croci ai cavi",
+          "gruppo": "Petto",
+          "serie": 3,
+          "ripetizioni": "10-12",
+          "tempo": "2-1-2-1",
+          "recupero": "60 sec",
+          "progressione": "+5% quando completi 3×12 con RIR 1",
+          "rir": "1",
+          "figura": "fig-croci",
+          "progressionePrincipale": false,
+          "note": "Gomiti leggermente flessi, squeeze 1 sec in chiusura. · Isolamento petto — recuperi corti.",
+          "peso": "—"
+        },
+        {
+          "nome": "Alzate laterali",
+          "gruppo": "Deltoide laterale",
+          "serie": 3,
+          "ripetizioni": "12-15",
+          "tempo": "2-1-3-1",
+          "recupero": "60 sec",
+          "progressione": "+ quando completi 3×15 con RIR 1",
+          "rir": "1",
+          "figura": "fig-alzate",
+          "progressionePrincipale": false,
+          "note": "Priorità deltoide laterale. Discesa lenta, niente slancio col busto. · Deltoide laterale: priorità parte alta.",
+          "peso": "—"
+        },
+        {
+          "nome": "Pressa",
+          "gruppo": "Quadricipiti",
+          "serie": 4,
+          "ripetizioni": "8-10",
+          "tempo": "3-1-2-1",
+          "recupero": "120 sec",
+          "progressione": true,
+          "rir": "1",
+          "figura": "fig-pressa",
+          "progressionePrincipale": true,
+          "note": "Pressa 45° · ROM completo, bacino appoggiato, eccentrica lenta. · AB: gambe B brevi. Accoppia leg curl nel recupero.",
+          "peso": "—"
+        },
+        {
+          "nome": "Leg Curl",
+          "gruppo": "Femorali",
+          "serie": 3,
+          "ripetizioni": "10-12",
+          "tempo": "2-1-2-1",
+          "recupero": "75 sec",
+          "progressione": "+5% quando completi 3×12 con RIR 1",
+          "rir": "1",
+          "figura": "fig-legcurl",
+          "progressionePrincipale": false,
+          "note": "Sdraiato o seduto · volume femorali ridotto Femorali in AB, volume contenuto.",
+          "peso": "—"
+        },
+        {
+          "nome": "Polpacci in piedi",
+          "gruppo": "Polpacci",
+          "serie": 3,
+          "ripetizioni": "8-10",
+          "tempo": "3-2-X-2",
+          "recupero": "60 sec",
+          "progressione": "+5% quando completi 4×10 con RIR 1",
+          "rir": "1",
+          "figura": "fig-polpacci",
+          "progressionePrincipale": false,
+          "note": "Standing calf raise · ROM completo, pausa 2 sec in stretch. · Polpacci in piedi — ROM completo.",
+          "peso": "—"
+        }
+      ]
+    },
+    "ac": {
+      "codice": "AC",
+      "nome": "Spinta A + tirata C",
+      "accoppiamento": "A + C",
+      "notaSeduta": "Giorno parte alta: spalle/lento (A) + schiena (C). Halo ultimo. Separa AB e CB.",
+      "durataMinuti": {
+        "obiettivo": 60,
+        "tetto": 75
+      },
+      "esercizi": [
+        {
+          "nome": "Lat machine",
+          "gruppo": "Dorsali",
+          "serie": 4,
+          "ripetizioni": "8-10",
+          "tempo": "3-1-2-1",
+          "recupero": "120 sec",
+          "progressione": "+5% quando completi 4×10 con RIR 1",
+          "rir": "1",
+          "figura": "fig-lat",
+          "progressionePrincipale": false,
+          "note": "Presa larga. Deprime le scapole prima di tirare, sbarra al petto alto. · AC: tirata C. Accoppia curl nel recupero.",
+          "peso": "—"
+        },
+        {
+          "nome": "Rematore bilanciere",
+          "gruppo": "Dorsali",
+          "serie": 3,
+          "ripetizioni": "8-10",
+          "tempo": "3-1-2-1",
+          "recupero": "120 sec",
+          "progressione": "+2,5-5% quando completi 3×10 con RIR 1",
+          "rir": "1",
+          "figura": "fig-rematore",
+          "progressionePrincipale": false,
+          "note": "Busto ~45°, squeeze scapole 1 sec in chiusura. · Trazione orizzontale.",
+          "peso": "—"
+        },
+        {
+          "nome": "Lento avanti bilanciere",
+          "gruppo": "Deltoide anteriore",
+          "serie": 3,
+          "ripetizioni": "6-8",
+          "tempo": "3-1-X-1",
+          "recupero": "150 sec",
+          "progressione": true,
+          "rir": "1-2",
+          "figura": "fig-lento",
+          "progressionePrincipale": false,
+          "note": "Volume moderato deltoide anteriore — evita sovraccarico rispetto al petto. · AC: spinta A (spalle). Recupero pieno sui *.",
+          "peso": "—"
+        },
+        {
+          "nome": "Reverse Pec Deck",
+          "gruppo": "Deltoide posteriore",
+          "serie": 3,
+          "ripetizioni": "15",
+          "tempo": "2-1-2-1",
+          "recupero": "60 sec",
+          "progressione": "+5% carico quando completi 3×15 con RIR 1",
+          "rir": "1",
+          "figura": "fig-reverse-pec",
+          "progressionePrincipale": false,
+          "note": "Deltoide posteriore e romboidi — equilibra il volume spalle anteriori/laterali. · Equilibrio deltoide posteriore.",
+          "peso": "—"
+        },
+        {
+          "nome": "Curl Scott",
+          "gruppo": "Bicipiti",
+          "serie": 3,
+          "ripetizioni": "8-10",
+          "tempo": "2-1-2-1",
+          "recupero": "60 sec",
+          "progressione": "+ quando completi 4×10 con RIR 1",
+          "rir": "1",
+          "figura": "fig-curl-scott",
+          "progressionePrincipale": false,
+          "note": "Panca Scott curva · gomiti fermi sul supporto. · Bicipiti in AC (parte alta).",
+          "peso": "—"
+        },
+        {
+          "nome": "Halo",
+          "gruppo": "Spalle",
+          "serie": 2,
+          "ripetizioni": "12",
+          "tempo": "2-1-2-1",
+          "recupero": "60 sec",
+          "progressione": false,
+          "rir": "1",
+          "figura": "fig-halo",
+          "progressionePrincipale": false,
+          "note": "Finisher kettlebell — sempre ultimo esercizio della seduta. Halo lento, core attivo.",
+          "peso": "—"
+        }
+      ]
+    },
+    "cb": {
+      "codice": "CB",
+      "nome": "Tirata C + gambe B",
+      "accoppiamento": "C + B",
+      "notaSeduta": "Gambe principali (trap, hip, extension) + chiusura braccia. Lontano da AB per recuperare B.",
+      "durataMinuti": {
+        "obiettivo": 60,
+        "tetto": 75
+      },
+      "esercizi": [
+        {
+          "nome": "Trap Bar",
+          "gruppo": "Femorali",
+          "serie": 4,
+          "ripetizioni": "6-8",
+          "tempo": "3-1-X-1",
+          "recupero": "150 sec",
+          "progressione": true,
+          "rir": "1",
+          "figura": "fig-trapbar",
+          "progressionePrincipale": true,
+          "note": "Progressione principale CB · stacco omega, schiena neutra, spinta col bacino. · CB: gambe B principali. Recupero pieno.",
+          "peso": "—"
+        },
+        {
+          "nome": "Hip Thrust",
+          "gruppo": "Glutei",
+          "serie": 3,
+          "ripetizioni": "8-10",
+          "tempo": "2-1-X-1",
+          "recupero": "90 sec",
+          "progressione": "+ quando completi 3×10 con RIR 1",
+          "rir": "1",
+          "figura": "fig-hip",
+          "progressionePrincipale": false,
+          "note": "Dominante anca — pausa 1-2 sec in alto, mento al petto, squeeze glutei. · Dominante anca.",
+          "peso": "—"
+        },
+        {
+          "nome": "Leg Extension",
+          "gruppo": "Quadricipiti",
+          "serie": 3,
+          "ripetizioni": "10-12",
+          "tempo": "2-1-2-1",
+          "recupero": "75 sec",
+          "progressione": "+5% quando completi 4×12",
+          "rir": "0-1 ultimo set",
+          "figura": "fig-legext",
+          "progressionePrincipale": false,
+          "note": "Ultime serie vicino al cedimento tecnico · wafer se serve. · Quadricipiti — accoppia col curl martello.",
+          "peso": "—"
+        },
+        {
+          "nome": "Curl Martello",
+          "gruppo": "Bicipiti",
+          "serie": 3,
+          "ripetizioni": "8-10",
+          "tempo": "3-1-2-1",
+          "recupero": "60 sec",
+          "progressione": "+ quando completi 3×10 con RIR 1",
+          "rir": "1",
+          "figura": "fig-curl-mart",
+          "progressionePrincipale": false,
+          "note": "Presa neutra, gomiti fermi · brachiale e brachioradiale. · CB: chiusura C (braccia).",
+          "peso": "—"
+        },
+        {
+          "nome": "Polpacci seduto",
+          "gruppo": "Polpacci",
+          "serie": 3,
+          "ripetizioni": "15-20",
+          "tempo": "2-1-3-1",
+          "recupero": "60 sec",
+          "progressione": "+5% quando completi 4×20 con RIR 1",
+          "rir": "1",
+          "figura": "fig-calf-seated",
+          "progressionePrincipale": false,
+          "note": "Soleo — complementare ai polpacci in piedi di AB. ROM completo, pausa in stretch.",
+          "peso": "—"
+        }
+      ]
+    }
+  },
+  "perche": "Costruire tessuto e abituare tendini e tecnica. Non è la fase dei record: è la base da cui partono le altre tre.",
+  "intensitaRecupero": {
+    "intensita": "Sett. 1–2 RIR 3–2 · 3–5 RIR 2 · 6–8 RIR 1 · 9 scarico −25% · 10–12 picco controllato (cedimento solo sull’ultima serie dei *) · 13 deload −40%.",
+    "recupero": "Fondamentali * 2–2,5 min. Isolamento ~60 s. Accoppia l’isolamento durante il riposo dei * per chiudere in ~60 min (tetto 75).",
+    "durataSeduta": "obiettivo 60 min, tetto 75 min",
+    "deload": "settimana 13 · −40% volume",
+    "split": "AB – AC / C–B"
+  },
+  "rir": "sett. 6–8: RIR 1"
+}

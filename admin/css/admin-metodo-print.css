@@ -1,0 +1,220 @@
+/**
+ * Metodo Blocco 1 — schermo PDF + stampa A4
+ * Stampa: Verticale · margini ~10 mm · «Salva come PDF» dal browser
+ */
+
+.metodo-print-toolbar {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: #0c0c0c;
+  color: #f4efe6;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.metodo-print-toolbar__inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem 0.75rem;
+  max-width: var(--wrap, 72rem);
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+.metodo-print-toolbar p { margin: 0; }
+.metodo-print-toolbar__tip {
+  width: 100%;
+  margin: 0;
+  color: #aaa;
+  font-size: 0.82rem;
+}
+
+body.admin-metodo-pdf {
+  background: #f5f2ec;
+}
+body.admin-metodo-pdf #metodo-root {
+  max-width: 210mm;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.metodo-a4 {
+  background: #fff;
+  color: #111;
+  border-radius: 4px;
+  padding: 1.25rem 1.5rem;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+.admin-metodo-pdf .metodo-a4 {
+  padding: 0;
+  box-shadow: none;
+  border-radius: 0;
+}
+
+.metodo-a4__head {
+  border-bottom: 2px solid #111;
+  padding-bottom: 0.75rem;
+  margin-bottom: 1rem;
+}
+.metodo-a4__head-main {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #666;
+}
+.metodo-a4__head h1 {
+  margin: 0.25rem 0 0.35rem;
+  font-size: 1.35rem;
+  line-height: 1.2;
+  color: #111;
+}
+.metodo-a4__head-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.25rem;
+  font-size: 0.82rem;
+  color: #333;
+}
+.metodo-a4__foot {
+  margin-top: 1.25rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid #ccc;
+  font-size: 0.72rem;
+  color: #666;
+  text-align: center;
+}
+
+.admin-metodo-pdf .admin-metodo-section h2 {
+  font-size: 0.95rem;
+  margin: 1rem 0 0.4rem;
+  color: #111;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 0.2rem;
+}
+.admin-metodo-pdf .admin-metodo-section h3 {
+  font-size: 0.85rem;
+  color: #333;
+}
+.admin-metodo-pdf .admin-metodo-lead,
+.admin-metodo-pdf .admin-metodo-intro p {
+  color: #333;
+  font-size: 0.85rem;
+}
+.admin-metodo-pdf .admin-callout {
+  background: #f8f6f2;
+  border: 1px solid #ddd;
+  color: #111;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1rem;
+}
+.admin-metodo-pdf .admin-metodo-table {
+  font-size: 0.78rem;
+  width: 100%;
+}
+.admin-metodo-pdf .admin-metodo-table th,
+.admin-metodo-pdf .admin-metodo-table td {
+  border: 1px solid #bbb;
+  padding: 0.3rem 0.45rem;
+  color: #111;
+  background: #fff;
+}
+.admin-metodo-pdf .admin-metodo-table th {
+  background: #f0ebe3;
+  font-weight: 700;
+}
+.admin-metodo-pdf .admin-metodo-list {
+  font-size: 0.82rem;
+  color: #222;
+}
+
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 10mm 9mm 12mm;
+  }
+
+  html, body.admin-page, body.admin-metodo-pdf, body {
+    background: #ffffff !important;
+    color: #111111 !important;
+    font-size: 9pt !important;
+    line-height: 1.32 !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  .no-print,
+  .skip-link,
+  .site-header,
+  .site-footer,
+  .metodo-print-toolbar,
+  .admin-hero,
+  .admin-session-nav,
+  .nav-toggle {
+    display: none !important;
+  }
+
+  .page-veiled::before,
+  .page-veiled::after {
+    display: none !important;
+  }
+
+  body.admin-metodo-pdf #metodo-root,
+  #metodo-root {
+    max-width: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .metodo-a4 {
+    box-shadow: none !important;
+    padding: 0 !important;
+  }
+
+  .admin-metodo-section {
+    break-inside: avoid;
+    page-break-inside: avoid;
+    margin-bottom: 0.75rem;
+  }
+
+  .admin-metodo-section h2 {
+    font-size: 10pt !important;
+    margin-top: 0.6rem !important;
+  }
+
+  .admin-metodo-table {
+    font-size: 7.5pt !important;
+    page-break-inside: auto;
+  }
+
+  .admin-metodo-table tr {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .admin-metodo-table th,
+  .admin-metodo-table td {
+    padding: 0.2rem 0.35rem !important;
+    border-color: #999 !important;
+  }
+
+  .admin-metodo-list {
+    font-size: 8pt !important;
+    margin: 0.2rem 0 0.4rem !important;
+  }
+
+  .admin-callout {
+    background: #f5f5f5 !important;
+    border: 1px solid #999 !important;
+    padding: 0.4rem 0.6rem !important;
+    margin-bottom: 0.5rem !important;
+  }
+
+  .table-wrap {
+    overflow: visible !important;
+  }
+
+  a[href]::after {
+    content: none !important;
+  }
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Ciclo attivo, settimana tipo e link alle schede di Michele.">
+  <meta name="theme-color" content="#100e0c">
+  <title>Programma — hub allenamenti</title>
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,650;0,9..40,700;1,9..40,400&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/stile.css">
+</head>
+<body>
+  <a class="skip" href="#contenuto">Vai al contenuto</a>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="../">
+        <strong>Hub allenamenti</strong>
+        <span>Michele</span>
+      </a>
+      <nav class="nav" aria-label="Principale">
+        <a href="../">Home</a>
+        <a href="./" aria-current="page">Programma</a>
+      </nav>
+    </div>
+  </header>
+  <main id="contenuto">
+    <div class="wrap">
+      <p id="status" class="status" role="status">Caricamento programma…</p>
+      <section class="panel" id="ciclo"></section>
+      <section class="panel">
+        <h2>Settimana tipo</h2>
+        <p class="lead">Tre sedute, quattro giorni off. Tocca un giorno di allenamento per aprire la scheda.</p>
+        <div class="week stack" id="settimana"></div>
+      </section>
+      <section class="panel stack">
+        <h2>Schede</h2>
+        <div class="schede-list" id="schede"></div>
+      </section>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>Push · Pull · Gambe</span>
+      <span>JSON: <code>data/ciclo-attivo.json</code></span>
+    </div>
+  </footer>
+  <script src="../js/core.js"></script>
+  <script src="../js/allenamenti.js"></script>
+</body>
+</html>

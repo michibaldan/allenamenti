@@ -1,0 +1,247 @@
+{
+  "schede": [
+    {
+      "id": "1",
+      "file": "scheda-1.html",
+      "titolo": "Scheda 1 — Push",
+      "sottotitolo": "Petto · Spalle · Tricipiti",
+      "durata_min": 70,
+      "riscaldamento": "5 minuti di cyclette o voga. Poi 2 serie leggere di panca e 1 serie di alzate laterali a corpo quasi vuoto. Mobilità di spalla: cerchi e wall slide, 8 ripetizioni per lato.",
+      "esercizi": [
+        {
+          "ordine": 1,
+          "nome": "Panca piana bilanciere",
+          "gruppo": "Petto",
+          "serie": 4,
+          "ripetizioni": "6–8",
+          "recupero_sec": 150,
+          "intensita": "RPE 7–8 · ~75% 1RM",
+          "note": "Scapole strette, piedi piantati. Ferma un attimo al petto. Non far rimbalzare il bilanciere."
+        },
+        {
+          "ordine": 2,
+          "nome": "Panca inclinata manubri (30°)",
+          "gruppo": "Petto alto",
+          "serie": 3,
+          "ripetizioni": "8–10",
+          "recupero_sec": 120,
+          "intensita": "RPE 7–8",
+          "note": "Manubri che si toccano in alto senza sbattere. Gomiti a circa 45° dal busto."
+        },
+        {
+          "ordine": 3,
+          "nome": "Military press in piedi (bilanciere o manubri)",
+          "gruppo": "Spalle",
+          "serie": 3,
+          "ripetizioni": "6–8",
+          "recupero_sec": 120,
+          "intensita": "RPE 7",
+          "note": "Glutei contratti, coste giù. Se la schiena inarca, passa ai manubri da seduto."
+        },
+        {
+          "ordine": 4,
+          "nome": "Croci ai cavi (o pec deck)",
+          "gruppo": "Petto",
+          "serie": 3,
+          "ripetizioni": "12–15",
+          "recupero_sec": 75,
+          "intensita": "RPE 8",
+          "note": "Pausa di un secondo in chiusura. Non iperestendere le spalle in apertura."
+        },
+        {
+          "ordine": 5,
+          "nome": "Alzate laterali manubri",
+          "gruppo": "Deltoide laterale",
+          "serie": 3,
+          "ripetizioni": "12–15",
+          "recupero_sec": 60,
+          "intensita": "RPE 8",
+          "note": "Mignolo un filo più alto del pollice. Niente slancio. Se serve, fai l’ultima serie a rest-pause."
+        },
+        {
+          "ordine": 6,
+          "nome": "French press bilanciere EZ",
+          "gruppo": "Tricipiti",
+          "serie": 3,
+          "ripetizioni": "10–12",
+          "recupero_sec": 75,
+          "intensita": "RPE 8",
+          "note": "Gomiti fermi. Alternativa: pushdown al cavo con la stessa schema di serie."
+        },
+        {
+          "ordine": 7,
+          "nome": "Estensioni sopra la testa al cavo",
+          "gruppo": "Tricipiti (capo lungo)",
+          "serie": 2,
+          "ripetizioni": "12–15",
+          "recupero_sec": 60,
+          "intensita": "RPE 8",
+          "note": "Tieni le costole basse. Serie di finisher: qualità del pompaggio, non ego."
+        }
+      ],
+      "note_scheda": "Se il military press ruba troppa spalla alla panca, inverti l’ordine una settimana sì e una no. Bevi tra le serie. Fine seduta: 5 minuti di camminata lenta."
+    },
+    {
+      "id": "2",
+      "file": "scheda-2.html",
+      "titolo": "Scheda 2 — Pull",
+      "sottotitolo": "Dorso · Bicipiti · Posteriori di spalla",
+      "durata_min": 70,
+      "riscaldamento": "5 minuti di voga leggera. 2 serie di lat machine con presa larga e 15 face pull leggere. Mobilità toracica: open book da sdraiato, 6 per lato.",
+      "esercizi": [
+        {
+          "ordine": 1,
+          "nome": "Trazioni o lat machine presa prona",
+          "gruppo": "Dorsali",
+          "serie": 4,
+          "ripetizioni": "6–8",
+          "recupero_sec": 150,
+          "intensita": "RPE 7–8",
+          "note": "Se le trazioni sono sotto le 5 reps, usa la lat machine o l’elastico. Petto verso la sbarra, non spalle alle orecchie."
+        },
+        {
+          "ordine": 2,
+          "nome": "Rematore bilanciere (pennaia)",
+          "gruppo": "Dorso spessore",
+          "serie": 4,
+          "ripetizioni": "6–8",
+          "recupero_sec": 150,
+          "intensita": "RPE 7–8 · ~70–75% 1RM",
+          "note": "Busto a ~30° dal parallelo. Tira verso l’ombelico. Schiena neutra: se perdi la posizione, scendi di carico."
+        },
+        {
+          "ordine": 3,
+          "nome": "Rematore manubrio su panca (o seated row)",
+          "gruppo": "Dorsali / romboidi",
+          "serie": 3,
+          "ripetizioni": "8–12",
+          "recupero_sec": 90,
+          "intensita": "RPE 7–8",
+          "note": "Fai un lato alla volta. Pausa in contrazione. Niente rotazione del busto."
+        },
+        {
+          "ordine": 4,
+          "nome": "Face pull al cavo",
+          "gruppo": "Posteriori di spalla",
+          "serie": 3,
+          "ripetizioni": "12–15",
+          "recupero_sec": 60,
+          "intensita": "RPE 8",
+          "note": "Cavo all’altezza del viso. Esterni ruotati in chiusura, come se volessi mostrare i gomiti indietro."
+        },
+        {
+          "ordine": 5,
+          "nome": "Curl bilanciere EZ",
+          "gruppo": "Bicipiti",
+          "serie": 3,
+          "ripetizioni": "8–10",
+          "recupero_sec": 75,
+          "intensita": "RPE 8",
+          "note": "Gomiti lungo i fianchi. Non dondolare. Ultima ripetizione lenta in discesa (3 secondi)."
+        },
+        {
+          "ordine": 6,
+          "nome": "Curl inclinato manubri",
+          "gruppo": "Bicipiti (capo lungo)",
+          "serie": 3,
+          "ripetizioni": "10–12",
+          "recupero_sec": 60,
+          "intensita": "RPE 8",
+          "note": "Panca a 45–60°. Braccia a piombo, senza slancio. Alternativa: curl al cavo."
+        },
+        {
+          "ordine": 7,
+          "nome": "Hyperextension o reverse fly ai cavi",
+          "gruppo": "Lombari / posteriori",
+          "serie": 3,
+          "ripetizioni": "12–15",
+          "recupero_sec": 60,
+          "intensita": "RPE 7",
+          "note": "Sulle hyperextension fermati in linea col busto, non in iperestensione. Carico moderato."
+        }
+      ],
+      "note_scheda": "Tra rematore e trazioni lascia davvero i 2 minuti e mezzo: il dorso cresce col recupero, non con le serie affrettate. Se i trapezi sono già stanchi, togli lo shrugg — qui non serve."
+    },
+    {
+      "id": "3",
+      "file": "scheda-3.html",
+      "titolo": "Scheda 3 — Gambe",
+      "sottotitolo": "Quadricipiti · Femorali · Glutei · Polpacci",
+      "durata_min": 75,
+      "riscaldamento": "5 minuti di cyclette. 2 serie di goblet squat leggere e 10 swing di anca a corpo libero. Ankle rock e 90/90 hips, un minuto in tutto.",
+      "esercizi": [
+        {
+          "ordine": 1,
+          "nome": "Squat bilanciere (o hack squat)",
+          "gruppo": "Quadricipiti / glutei",
+          "serie": 4,
+          "ripetizioni": "6–8",
+          "recupero_sec": 180,
+          "intensita": "RPE 7 · ~70–75% 1RM",
+          "note": "Profondità: piega almeno parallela, ginocchia in linea con le punte. Non inseguire il massimale. Alternativa macchina se la tecnica libera non è solida."
+        },
+        {
+          "ordine": 2,
+          "nome": "Stacco rumeno bilanciere",
+          "gruppo": "Femorali / glutei",
+          "serie": 3,
+          "ripetizioni": "8–10",
+          "recupero_sec": 150,
+          "intensita": "RPE 7–8",
+          "note": "Anche indietro, schiena neutra, bilanciere rasente le cosce. Fermati quando sparisce la tensione sui femorali, non quando arrivi a terra."
+        },
+        {
+          "ordine": 3,
+          "nome": "Leg press",
+          "gruppo": "Quadricipiti",
+          "serie": 3,
+          "ripetizioni": "10–12",
+          "recupero_sec": 120,
+          "intensita": "RPE 8",
+          "note": "Piedi a metà piattaforma. Non chiudere a scatto le ginocchia. Ultima serie puoi avvicinarti di più al cedimento."
+        },
+        {
+          "ordine": 4,
+          "nome": "Bulgarian split squat (manubri)",
+          "gruppo": "Quadricipiti / glutei",
+          "serie": 3,
+          "ripetizioni": "8–10 per gamba",
+          "recupero_sec": 90,
+          "intensita": "RPE 7–8",
+          "note": "Torso quasi verticale. Se l’equilibrio è scarso, tieniti a un rack. Inizia dalla gamba più debole."
+        },
+        {
+          "ordine": 5,
+          "nome": "Leg curl sdraiato o seduto",
+          "gruppo": "Femorali",
+          "serie": 3,
+          "ripetizioni": "10–12",
+          "recupero_sec": 75,
+          "intensita": "RPE 8",
+          "note": "Pausa di un secondo in chiusura. Niente slancio del bacino."
+        },
+        {
+          "ordine": 6,
+          "nome": "Calf raise in piedi",
+          "gruppo": "Polpacci",
+          "serie": 4,
+          "ripetizioni": "10–15",
+          "recupero_sec": 60,
+          "intensita": "RPE 8–9",
+          "note": "Salita completa, discesa di 2 secondi, pausa in basso. Ginocchia morbide, non bloccate."
+        },
+        {
+          "ordine": 7,
+          "nome": "Sollevamenti ginocchia da appendere (o plank)",
+          "gruppo": "Core",
+          "serie": 3,
+          "ripetizioni": "10–12 (o 40 s di plank)",
+          "recupero_sec": 60,
+          "intensita": "RPE 7",
+          "note": "Bacino in retroversione. Se i flessori dell’anca rubano il lavoro, passa al plank o dead bug."
+        }
+      ],
+      "note_scheda": "Questa è la seduta più lunga: se superi i 75 minuti, togli i polpacci e falli a casa. Dopo le gambe, cammina 10 minuti — aiuta il recupero più di un altro esercizio."
+    }
+  ]
+}

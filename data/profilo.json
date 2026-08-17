@@ -1,0 +1,13 @@
+{
+  "nome": "Michele",
+  "eta": 34,
+  "altezza_cm": 178,
+  "peso_kg": 82,
+  "livello": "intermedio",
+  "allenamenti_settimana": 3,
+  "obiettivo": "Ipertrofia e ricomposizione corporea, con un minimo di forza sui fondamentali",
+  "attrezzatura": "palestra",
+  "limitazioni": "Nessuna in atto. Se la schiena bassa è affaticata, sostituire lo stacco rumeno con leg curl e hip thrust.",
+  "durata_seduta_min": 70,
+  "note": "Schede pensate per palestra commerciale: bilanciere, manubri, cavi e macchine. Niente email né dati di contatto in questo sito."
+}

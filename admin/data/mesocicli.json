@@ -1,0 +1,3049 @@
+{
+  "split": {
+    "nome": "AB – AC / C–B · 3 giorni · priorità parte alta",
+    "descrizione": "Tre sedute. A = spinta parte alta, B = gambe, C = tirata parte alta. AB e AC condividono A (petto/spalle due volte a settimana). CB mette C e B lontano da AB così le gambe recuperano. Circa 55% delle serie sulla parte alta. Obiettivo 60 min, tetto 75.",
+    "giorni": {
+      "AB": "A + B — spinta parte alta + gambe brevi",
+      "AC": "A + C — spinta e tirata parte alta (Halo ultimo)",
+      "CB": "C + B — chiusura tirata/braccia + gambe principali"
+    },
+    "frequenza": "3 allenamenti a settimana con almeno 48 ore tra AB e CB",
+    "progressione": "Su ogni giornata, l’esercizio principale (*) segue progressione a carico fisso: tetto rep col RIR target per 2 sedute di fila → +kg.",
+    "prioritaVolume": "parte alta ~55%",
+    "durataSeduta": "obiettivo 60 min, tetto 75 min"
+  },
+  "periodizzazioneAnnuale": [
+    {
+      "successione": 1,
+      "ciclo": "ipertrofia-accumulo",
+      "nome": "Fase 1 · Ipertrofia accumulo",
+      "durata": "13 settimane",
+      "obiettivo": "Soft start → volume 8–12 rep → deload sett. 13",
+      "motivo": "Costruisci tessuto e tolleranza al lavoro prima di alzare i carichi",
+      "deload": true
+    },
+    {
+      "successione": 2,
+      "ciclo": "tensione-forza",
+      "nome": "Fase 2 · Tensione + forza",
+      "durata": "13 settimane",
+      "obiettivo": "Tensione 6–8 (sett. 1–6) → forza 4–6 (7–12) → deload 13",
+      "motivo": "Alza i kg sugli * usando la base costruita in fase 1",
+      "deload": true
+    },
+    {
+      "successione": 3,
+      "ciclo": "ipertrofia-classica-ii",
+      "nome": "Fase 3 · Ipertrofia II",
+      "durata": "13 settimane",
+      "obiettivo": "Secondo accumulo + saturazione volume sett. 9–12 → deload 13",
+      "motivo": "Riconverti la forza nuova in volume e densità muscolare",
+      "deload": true
+    },
+    {
+      "successione": 4,
+      "ciclo": "ricondizionamento",
+      "nome": "Fase 4 · Ricondizionamento",
+      "durata": "13 settimane",
+      "obiettivo": "Mantenimento 10–12 rep, RIR 2–3, fino a fine anno",
+      "motivo": "Arrivi fresco al macrociclo successivo senza mesi di stop",
+      "deload": true
+    }
+  ],
+  "eserciziBase": {
+    "panca-piana": {
+      "nome": "Panca piana con bilanciere",
+      "gruppo": "Petto",
+      "figura": "panca-piana",
+      "posturaIniziale": "Sdraiato su panca, piedi a terra, scapole addotte e depresse, presa leggermente più larga delle spalle, bilanciere sopra il petto con braccia tese.",
+      "posturaFinale": "Bilanciere abbassato al petto con gomiti a circa 45°, petto alto, polsi neutri.",
+      "arcoMovimento": "Abbassamento controllato fino al tocco leggero sul petto (sternale), spinta verticale fino a estensione completa senza lock aggressivo.",
+      "errori": [
+        "Gomiti troppo aperti (rischio spalla)",
+        "Rimbalzo del bilanciere sul petto",
+        "Sollevamento del bacino dalla panca",
+        "Perdita della retrazione scapolare"
+      ],
+      "suggerimenti": [
+        "Pensa di piegare la sbarra sul petto",
+        "Mantieni i piedi saldi e spingi verso il basso",
+        "Inspirazione profonda prima della discesa, bracing addominale"
+      ]
+    },
+    "panca-inclinata": {
+      "nome": "Panca inclinata con manubri",
+      "gruppo": "Petto",
+      "figura": "panca-inclinata",
+      "posturaIniziale": "Sdraiato su panca inclinata 30-45°, manubri all'altezza del petto alto, scapole stabili, piedi a terra.",
+      "posturaFinale": "Manubri sopra il petto alto con braccia quasi estese, contrazione del petto superiore.",
+      "arcoMovimento": "Discesa controllata con gomiti leggermente addotti, spinta verso l'alto e leggermente verso l'interno.",
+      "errori": [
+        "Inclinazione eccessiva (>45°) che trasforma in pressa spalle",
+        "Manubri che si toccano in alto",
+        "Perdita del controllo in fase eccentrica"
+      ],
+      "suggerimenti": [
+        "Mantieni i gomiti a 45-60° rispetto al busto",
+        "Contrai il petto in alto senza far collidere i manubri",
+        "Usa un arco di movimento completo ma controllato"
+      ]
+    },
+    "croci-cavi": {
+      "nome": "Croci ai cavi",
+      "gruppo": "Petto",
+      "figura": "croci-cavi",
+      "posturaIniziale": "In piedi tra i cavi, un passo avanti per stabilità, braccia aperte con leggera flessione dei gomiti, petto alto.",
+      "posturaFinale": "Mani unite davanti al petto con forte contrazione, gomiti leggermente flessi.",
+      "arcoMovimento": "Movimento ad arco dall'alto verso il basso (cavi alti) o orizzontale, adduzione orizzontale delle braccia.",
+      "errori": [
+        "Gomiti che si estendono trasformando in pressa",
+        "Spalle che ruotano in avanti",
+        "Uso del momentum del busto"
+      ],
+      "suggerimenti": [
+        "Immagina di abbracciare un albero",
+        "Mantieni la flessione del gomito costante",
+        "Spremi il petto nella fase concentrica"
+      ]
+    },
+    "chest-press": {
+      "nome": "Chest press alla macchina",
+      "gruppo": "Petto",
+      "figura": "chest-press",
+      "posturaIniziale": "Seduto con schienale regolato, spalle appoggiate, presa sulle maniglie all'altezza del petto medio.",
+      "posturaFinale": "Braccia estese senza lock completo, petto in contrazione.",
+      "arcoMovimento": "Spinta controllata in avanti fino quasi all'estensione, ritorno lento fino allo stiramento moderato del petto.",
+      "errori": [
+        "Schienale troppo verticale",
+        "Stacco delle spalle dal supporto",
+        "Movimento troppo rapido e sbilanciato"
+      ],
+      "suggerimenti": [
+        "Regola il sedile per allineare le maniglie al petto",
+        "Mantieni le scapole addotte durante tutto il movimento",
+        "Utile come accessorio dopo i movimenti liberi"
+      ]
+    },
+    "lat-machine": {
+      "nome": "Lat machine presa larga",
+      "gruppo": "Schiena",
+      "figura": "lat-machine",
+      "posturaIniziale": "Seduto con cosce bloccate, presa larga pronata, braccia tese sopra la testa, busto leggermente inclinato.",
+      "posturaFinale": "Sbarra portata al petto alto con gomiti verso il basso e indietro, dorsali contratti.",
+      "arcoMovimento": "Trazione verticale della sbarra verso il petto alto, controllo nella risalita.",
+      "errori": [
+        "Tirare con le braccia invece che con i dorsali",
+        "Inclinazione eccessiva del busto all'indietro",
+        "Sbarra portata dietro la nuca"
+      ],
+      "suggerimenti": [
+        "Inizia il movimento deprimendo le scapole",
+        "Pensa di tirare i gomiti verso le tasche posteriori",
+        "Mantieni il petto alto durante la trazione"
+      ]
+    },
+    "rematore": {
+      "nome": "Rematore con bilanciere",
+      "gruppo": "Schiena",
+      "figura": "rematore",
+      "posturaIniziale": "Busto inclinato 45-70°, ginocchia leggermente flesse, presa prona larghezza spalle, schiena neutra.",
+      "posturaFinale": "Bilanciere tirato verso l'ombelico, gomiti stretti al corpo, scapole in retrazione.",
+      "arcoMovimento": "Trazione orizzontale del bilanciere verso l'addome, discesa controllata fino a stiramento completo.",
+      "errori": [
+        "Rotazione lombare (cat back)",
+        "Uso del slancio del busto",
+        "Tirare troppo in alto verso il petto"
+      ],
+      "suggerimenti": [
+        "Mantieni il core contratto per proteggere la schiena",
+        "Tira con i gomiti, non con le mani",
+        "Pausa breve in contrazione massima"
+      ]
+    },
+    "trazioni": {
+      "nome": "Trazioni alla sbarra",
+      "gruppo": "Schiena",
+      "figura": "trazioni",
+      "posturaIniziale": "Presa prona larghezza spalle, braccia tese, scapole depresse, core attivo, gambe ferme o leggermente incrociate.",
+      "posturaFinale": "Mento sopra la sbarra, petto verso la barra, gomiti verso il basso e indietro.",
+      "arcoMovimento": "Trazione verticale fino a portare il petto verso la sbarra, discesa controllata fino a estensione completa.",
+      "errori": [
+        "Kipping eccessivo",
+        "Non raggiungere l'estensione completa",
+        "Spalle che salgono verso le orecchie"
+      ],
+      "suggerimenti": [
+        "Inizia ogni ripetizione con retrazione scapolare",
+        "Se necessario usa elastico o macchina assistita",
+        "Variante presa supina coinvolge maggiormente i bicipiti"
+      ]
+    },
+    "lento-avanti": {
+      "nome": "Lento avanti con manubri",
+      "gruppo": "Spalle",
+      "figura": "lento-avanti",
+      "posturaIniziale": "In piedi o seduto, manubri all'altezza delle spalle, gomiti leggermente davanti al corpo, core attivo.",
+      "posturaFinale": "Manubri sopra la testa con braccia quasi estese, senza iper-estensione lombare.",
+      "arcoMovimento": "Spinta verticale sopra la testa, discesa controllata fino all'altezza delle orecchie.",
+      "errori": [
+        "Iper-estensione lombare in fase concentrica",
+        "Gomiti che si aprono eccessivamente",
+        "Mancanza di controllo in fase eccentrica"
+      ],
+      "suggerimenti": [
+        "Contrai i glutei per stabilizzare il bacino",
+        "Non bloccare i gomiti in alto",
+        "Alterna con varianti seduto per maggiore stabilità"
+      ]
+    },
+    "alzate-laterali": {
+      "nome": "Alzate laterali con manubri",
+      "gruppo": "Spalle",
+      "figura": "alzate-laterali",
+      "posturaIniziale": "In piedi, manubri ai fianchi, leggera flessione dei gomiti, petto alto, scapole depresse.",
+      "posturaFinale": "Manubri all'altezza delle spalle, gomiti leggermente più alti dei polsi.",
+      "arcoMovimento": "Abduzione orizzontale delle braccia fino all'altezza delle spalle, discesa lenta e controllata.",
+      "errori": [
+        "Slancio con il busto",
+        "Alzare troppo in alto coinvolgendo i trapezi",
+        "Polsi più alti dei gomiti"
+      ],
+      "suggerimenti": [
+        "Pensa di versare acqua da un secchio",
+        "Mantieni il movimento controllato senza slancio",
+        "Leggera inclinazione in avanti può migliorare il reclutamento del deltoide medio"
+      ]
+    },
+    "squat": {
+      "nome": "Squat con bilanciere",
+      "gruppo": "Quadricipiti",
+      "figura": "squat",
+      "posturaIniziale": "Bilanciere sul trapezio, piedi larghezza spalle con leggera rotazione esterna, petto alto, core contratto.",
+      "posturaFinale": "Coscia almeno parallela al pavimento, ginocchia allineate con le punte, schiena neutra.",
+      "arcoMovimento": "Discesa controllata flettendo anca e ginocchia, risalita spingendo attraverso i talloni e il mid-foot.",
+      "errori": [
+        "Valgo delle ginocchia",
+        "Inclinazione eccessiva del busto",
+        "Profondità insufficiente o butt wink eccessivo"
+      ],
+      "suggerimenti": [
+        "Spingi le ginocchia verso l'esterno",
+        "Mantieni il petto alto durante tutta la discesa",
+        "Usa cintura solo su serie pesanti"
+      ]
+    },
+    "pressa": {
+      "nome": "Leg press 45°",
+      "gruppo": "Quadricipiti",
+      "figura": "pressa",
+      "posturaIniziale": "Seduto con schiena appoggiata, piedi larghezza spalle sulla pedana, ginocchia leggermente flesse senza lock.",
+      "posturaFinale": "Ginocchia flesse a 90° o oltre senza sollevare il bacino dalla seduta.",
+      "arcoMovimento": "Discesa controllata della pedana, spinta fino quasi all'estensione completa senza lock.",
+      "errori": [
+        "Bacino che si stacca dalla seduta (lombare arrotondata)",
+        "Ginocchia che collassano verso l'interno",
+        "Lock completo aggressivo"
+      ],
+      "suggerimenti": [
+        "Posiziona i piedi per enfatizzare quadricipiti (più in basso) o glutei (più in alto)",
+        "Mantieni sempre il contatto lombare con la seduta",
+        "Non usare carichi eccessivi rispetto allo squat"
+      ]
+    },
+    "leg-extension": {
+      "nome": "Leg extension",
+      "gruppo": "Quadricipiti",
+      "figura": "leg-extension",
+      "posturaIniziale": "Seduto con schienale regolato, caviglie dietro il rullo, ginocchia allineate con l'asse della macchina.",
+      "posturaFinale": "Gambe estese con contrazione massima del quadricipite, pausa breve.",
+      "arcoMovimento": "Estensione completa delle ginocchia, discesa controllata fino a 90° o leggermente oltre.",
+      "errori": [
+        "Slancio in fase concentrica",
+        "Estensione iperestesa con carico",
+        "Velocità eccessiva in fase eccentrica"
+      ],
+      "suggerimenti": [
+        "Punta i piedi leggermente verso l'interno per enfatizzare il vasto laterale",
+        "Usa come esercizio di isolamento dopo i composti",
+        "Evita carichi massimali per proteggere le ginocchia"
+      ]
+    },
+    "leg-curl": {
+      "nome": "Leg curl sdraiato",
+      "gruppo": "Femorali",
+      "figura": "leg-curl",
+      "posturaIniziale": "Sdraiato prono, caviglie sotto il rullo, anche appoggiate, bacino premuto sulla panca.",
+      "posturaFinale": "Talloni verso i glutei con contrazione massima dei femorali.",
+      "arcoMovimento": "Flessione delle ginocchia portando il rullo verso i glutei, discesa lenta fino a quasi estensione.",
+      "errori": [
+        "Sollevamento del bacino in fase concentrica",
+        "Movimento troppo rapido",
+        "Range di movimento incompleto"
+      ],
+      "suggerimenti": [
+        "Mantieni i fianchi premuti sulla panca",
+        "Pausa di 1 secondo in contrazione massima",
+        "Alterna con leg curl seduto per variare lo stimolo"
+      ]
+    },
+    "stacco-rdl": {
+      "nome": "Stacco rumeno (RDL)",
+      "gruppo": "Femorali",
+      "figura": "stacco-rdl",
+      "posturaIniziale": "In piedi con bilanciere/manubri, presa prona, ginocchia leggermente flesse, petto alto.",
+      "posturaFinale": "Busto inclinato in avanti con bilanciere sotto le ginocchia, stiramento dei femorali, schiena neutra.",
+      "arcoMovimento": "Inclinazione anteriore del busto spingendo i fianchi indietro, risalita estendendo le anche.",
+      "errori": [
+        "Flettere troppo le ginocchia (diventa squat)",
+        "Rotazione lombare",
+        "Bilanciere troppo lontano dalle gambe"
+      ],
+      "suggerimenti": [
+        "Mantieni il bilanciere a contatto con le gambe",
+        "Senti lo stiramento nei femorali, non nella schiena bassa",
+        "Range limitato se la flessibilità lo richiede"
+      ]
+    },
+    "hip-thrust": {
+      "nome": "Hip thrust con bilanciere",
+      "gruppo": "Glutei",
+      "figura": "hip-thrust",
+      "posturaIniziale": "Schiena alta su panca, bilanciere sui fianchi (con protezione), piedi larghezza spalle, mento al petto.",
+      "posturaFinale": "Anche in estensione completa, ginocchia a 90°, glutei fortemente contratti.",
+      "arcoMovimento": "Spinta dei fianchi verso l'alto fino all'allineamento spalle-anche-ginocchia, discesa controllata.",
+      "errori": [
+        "Iper-estensione lombare invece di estensione dell'anca",
+        "Piedi troppo vicini o lontani",
+        "Non raggiungere l'estensione completa"
+      ],
+      "suggerimenti": [
+        "Mantieni il mento al petto durante il movimento",
+        "Pausa di 1-2 secondi in alto",
+        "Regola la posizione dei piedi per massimizzare l'attivazione dei glutei"
+      ]
+    },
+    "curl-bicipiti": {
+      "nome": "Curl bicipiti con bilanciere EZ",
+      "gruppo": "Bicipiti",
+      "figura": "curl-bicipiti",
+      "posturaIniziale": "In piedi, presa supina larghezza spalle, gomiti fermi ai fianchi, petto alto.",
+      "posturaFinale": "Bilanciere portato verso le spalle con contrazione massima del bicipite.",
+      "arcoMovimento": "Flessione dei gomiti senza movimento delle spalle, discesa controllata fino a quasi estensione.",
+      "errori": [
+        "Slancio con il busto",
+        "Gomiti che avanzano in fase concentrica",
+        "Mancanza di controllo eccentrico"
+      ],
+      "suggerimenti": [
+        "Mantieni i gomiti fissi dietro un piano immaginario verticale",
+        "Evita il lock completo in basso per mantenere la tensione",
+        "Alterna con manubri per maggiore range"
+      ]
+    },
+    "curl-martello": {
+      "nome": "Curl martello con manubri",
+      "gruppo": "Bicipiti",
+      "figura": "curl-martello",
+      "posturaIniziale": "In piedi, manubri ai fianchi con presa neutra, gomiti fermi, core attivo.",
+      "posturaFinale": "Manubri portati verso le spalle con presa neutra, brachioradiale e brachiale contratti.",
+      "arcoMovimento": "Flessione dei gomiti mantenendo la presa neutra, discesa lenta.",
+      "errori": [
+        "Rotazione del polso durante il movimento",
+        "Slancio con il trapezio",
+        "Un braccio che lavora più dell'altro"
+      ],
+      "suggerimenti": [
+        "Alterna braccia o lavora simultaneamente per simmetria",
+        "Ottimo per spessore complessivo del braccio",
+        "Mantieni i polsi neutri per tutto il movimento"
+      ]
+    }
+  },
+  "cicli": [
+    {
+      "id": "adattamento-anatomico",
+      "nome": "Adattamento Anatomico",
+      "obiettivo": "Preparare tessuti connettivi, articolazioni e sistema neuromuscolare all'allenamento strutturato. Apprendere i pattern motori fondamentali e stabilire la baseline di forza.",
+      "durata": "12 settimane",
+      "rangeRipetizioni": "10-15",
+      "intensita": "60-70% 1RM (RPE 6-7)",
+      "seriePerGruppo": "12-16 serie/settimana per gruppo muscolare maggiore",
+      "recuperi": "90-120 secondi tra le serie",
+      "volumeComplessivo": "Medio-basso: 10-14 serie per gruppo muscolare maggiore a settimana",
+      "tecnicheIntensita": [
+        "Nessuna tecnica avanzata — focus su esecuzione perfetta"
+      ],
+      "faticaSistemica": "Bassa-moderata. Il sistema nervoso centrale si adatta senza accumulo eccessivo di fatica.",
+      "quandoInserire": "All'inizio di ogni macrociclo annuale, dopo periodi di inattività prolungata (>2 settimane) o quando si introducono nuovi esercizi.",
+      "cicloPrecedente": null,
+      "cicloSuccessivo": "ipertrofia-classica",
+      "benefici": [
+        "Riduce il rischio di infortuni nei cicli successivi",
+        "Consolida i pattern motori dei big lift",
+        "Permette di identificare squilibri e limitazioni mobilità",
+        "Crea la baseline per progressioni future"
+      ],
+      "limiti": [
+        "Stimolo ipertrofico limitato",
+        "Non adatto ad atleti già ben condizionati che necessitano di nuovo stimolo",
+        "Può risultare monotono per chi cerca varietà"
+      ],
+      "erroriComuni": [
+        "Saltare questo ciclo per impazienza",
+        "Usare carichi troppo elevati fin da subito",
+        "Trascurare la qualità esecutiva per aumentare il peso",
+        "Durata insufficiente (<2 settimane)"
+      ],
+      "allenamenti": {
+        "A1": {
+          "nome": "Petto · Schiena · Spalle",
+          "esercizi": [
+            {
+              "id": "panca-piana",
+              "serie": 3,
+              "ripetizioni": "10-12",
+              "recupero": "90-120s",
+              "rir": 3,
+              "tecnica": null,
+              "note": "Esercizio principale petto — progressione a carico fisso",
+              "progressione": true
+            },
+            {
+              "id": "lat-machine",
+              "serie": 3,
+              "ripetizioni": "12-15",
+              "recupero": "90-120s",
+              "rir": 3,
+              "tecnica": null,
+              "note": "Focus retrazione scapolare",
+              "progressione": false
+            },
+            {
+              "id": "rematore",
+              "serie": 2,
+              "ripetizioni": "12-15",
+              "recupero": "90-120s",
+              "rir": 4,
+              "tecnica": null,
+              "note": "Trazione orizzontale complementare",
+              "progressione": false
+            },
+            {
+              "id": "panca-inclinata",
+              "serie": 3,
+              "ripetizioni": "12-15",
+              "recupero": "90-120s",
+              "rir": 3,
+              "tecnica": null,
+              "note": "Petto superiore",
+              "progressione": false
+            },
+            {
+              "id": "alzate-laterali",
+              "serie": 3,
+              "ripetizioni": "15-20",
+              "recupero": "90-120s",
+              "rir": 3,
+              "tecnica": null,
+              "note": "Deltoide medio",
+              "progressione": false
+            },
+            {
+              "id": "lento-avanti",
+              "serie": 3,
+              "ripetizioni": "12-15",
+              "recupero": "90-120s",
+              "rir": 3,
+              "tecnica": null,
+              "note": "Deltoide anteriore",
+              "progressione": false
+            }
+          ]
+        },
+        "B1": {
+          "nome": "Gambe focus accosciata · Braccia",
+          "esercizi": [
+            {
+              "id": "squat",
+              "serie": 3,
+              "ripetizioni": "10-12",
+              "recupero": "90-120s",
+              "rir": 3,
+              "tecnica": null,
+              "note": "Esercizio principale quadricipiti — progressione a carico fisso",
+              "progressione": true
+            },
+            {
+              "id": "leg-extension",
+              "serie": 3,
+              "ripetizioni": "15-20",
+              "recupero": "90-120s",
+              "rir": 3,
+              "tecnica": null,
+              "note": "Isolamento quadricipiti",
+              "progressione": false
+            },
+            {
+              "id": "leg-curl",
+              "serie": 3,
+              "ripetizioni": "12-15",
+              "recupero": "90-120s",
+              "rir": 3,
+              "tecnica": null,
+              "note": "Bilanciamento femorali",
+              "progressione": false
+            },
+            {
+              "id": "pressa",
+              "serie": 2,
+              "ripetizioni": "12-15",
+              "recupero": "90-120s",
+              "rir": 4,
+              "tecnica": null,
+              "note": "Volume complementare quadricipiti",
+              "progressione": false
+            },
+            {
+              "id": "curl-bicipiti",
+              "serie": 3,
+              "ripetizioni": "15-20",
+              "recupero": "60s",
+              "rir": 3,
+              "tecnica": null,
+              "note": "Bicipiti",
+              "progressione": false
+            },
+            {
+              "id": "curl-martello",
+              "serie": 3,
+              "ripetizioni": "15-20",
+              "recupero": "60s",
+              "rir": 3,
+              "tecnica": null,
+              "note": "Brachioradiale e brachiale",
+              "progressione": false
+            }
+          ]
+        },
+        "A2": {
+          "nome": "Schiena · Petto · Spalle",
+          "esercizi": [
+            {
+              "id": "trazioni",
+              "serie": 3,
+              "ripetizioni": "10-12",
+              "recupero": "90-120s",
+              "rir": 3,
+              "tecnica": null,
+              "note": "Esercizio principale schiena — progressione a carico fisso",
+              "progressione": true
+            },
+            {
+              "id": "rematore",
+              "serie": 3,
+              "ripetizioni": "12-15",
+              "recupero": "90-120s",
+              "rir": 3,
+              "tecnica": null,
+              "note": "Spessore dorsale",
+              "progressione": false
+            },
+            {
+              "id": "chest-press",
+              "serie": 3,
+              "ripetizioni": "12-15",
+              "recupero": "90-120s",
+              "rir": 3,
+              "tecnica": null,
+              "note": "Volume petto complementare",
+              "progressione": false
+            },
+            {
+              "id": "croci-cavi",
+              "serie": 3,
+              "ripetizioni": "15-20",
+              "recupero": "90-120s",
+              "rir": 3,
+              "tecnica": null,
+              "note": "Isolamento petto",
+              "progressione": false
+            },
+            {
+              "id": "alzate-laterali",
+              "serie": 3,
+              "ripetizioni": "15-20",
+              "recupero": "90-120s",
+              "rir": 3,
+              "tecnica": null,
+              "note": "Deltoide medio — progressione",
+              "progressione": true
+            },
+            {
+              "id": "lat-machine",
+              "serie": 2,
+              "ripetizioni": "12-15",
+              "recupero": "90-120s",
+              "rir": 4,
+              "tecnica": null,
+              "note": "Volume dorsale aggiuntivo",
+              "progressione": false
+            }
+          ]
+        },
+        "B2": {
+          "nome": "Gambe focus anca · Braccia",
+          "esercizi": [
+            {
+              "id": "stacco-rdl",
+              "serie": 3,
+              "ripetizioni": "10-12",
+              "recupero": "90-120s",
+              "rir": 3,
+              "tecnica": null,
+              "note": "Esercizio principale catena posteriore — progressione a carico fisso",
+              "progressione": true
+            },
+            {
+              "id": "hip-thrust",
+              "serie": 3,
+              "ripetizioni": "12-15",
+              "recupero": "90-120s",
+              "rir": 3,
+              "tecnica": null,
+              "note": "Isolamento glutei",
+              "progressione": false
+            },
+            {
+              "id": "pressa",
+              "serie": 3,
+              "ripetizioni": "12-15",
+              "recupero": "90-120s",
+              "rir": 3,
+              "tecnica": null,
+              "note": "Piedi alti per enfatizzare glutei e femorali",
+              "progressione": false
+            },
+            {
+              "id": "leg-curl",
+              "serie": 3,
+              "ripetizioni": "15-20",
+              "recupero": "90-120s",
+              "rir": 3,
+              "tecnica": null,
+              "note": "Femorali isolati",
+              "progressione": false
+            },
+            {
+              "id": "curl-bicipiti",
+              "serie": 3,
+              "ripetizioni": "15-20",
+              "recupero": "60s",
+              "rir": 3,
+              "tecnica": null,
+              "note": "Bicipiti",
+              "progressione": false
+            },
+            {
+              "id": "trazioni",
+              "serie": 3,
+              "ripetizioni": "12-15",
+              "recupero": "90s",
+              "rir": 3,
+              "tecnica": null,
+              "note": "Presa supina per braccia e dorsali",
+              "progressione": false
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "ipertrofia-classica",
+      "nome": "Ipertrofia Classica",
+      "obiettivo": "Massimizzare l'ipertrofia attraverso volume moderato-alto nel range ottimale di 8-12 ripetizioni, bilanciando tensione meccanica e stress metabolico.",
+      "durata": "12 settimane",
+      "rangeRipetizioni": "8-12",
+      "intensita": "70-80% 1RM (RPE 7-8, RIR 1-2)",
+      "seriePerGruppo": "16-20 serie/settimana per gruppo muscolare maggiore",
+      "recuperi": "90-120 secondi tra le serie",
+      "volumeComplessivo": "Alto: 16-20 serie per gruppo muscolare maggiore a settimana",
+      "tecnicheIntensita": [
+        "Serie straight set",
+        "Doppia progressione (ripetizioni poi carico)"
+      ],
+      "faticaSistemica": "Moderata-alta. Accumulo graduale di fatica muscolare locale.",
+      "quandoInserire": "Dopo l'adattamento anatomico, come blocco principale di accumulo ipertrofico nella prima metà dell'anno.",
+      "cicloPrecedente": "adattamento-anatomico",
+      "cicloSuccessivo": "ipertrofia-alto-volume",
+      "benefici": [
+        "Range ripetizioni scientificamente validato per ipertrofia",
+        "Ottimo equilibrio volume/recupero",
+        "Permette progressione lineare del carico",
+        "Adatto alla maggior parte dei natural bodybuilder"
+      ],
+      "limiti": [
+        "Può diventare ripetitivo dopo 6+ settimane",
+        "Fatica accumulata se non gestita con deload",
+        "Stimolo metabolico inferiore ad altri cicli"
+      ],
+      "erroriComuni": [
+        "Non rispettare il RIR target",
+        "Aumentare il volume oltre la capacità di recupero",
+        "Trascurare la progressione sui movimenti principali",
+        "Recuperi troppo brevi compromettendo la qualità"
+      ],
+      "allenamenti": {
+        "A1": {
+          "nome": "Petto · Schiena · Spalle",
+          "esercizi": [
+            {
+              "id": "panca-piana",
+              "serie": 4,
+              "ripetizioni": "8-10",
+              "recupero": "90-120s",
+              "rir": 2,
+              "tecnica": null,
+              "note": "Esercizio principale petto — progressione a carico fisso",
+              "progressione": true
+            },
+            {
+              "id": "lat-machine",
+              "serie": 4,
+              "ripetizioni": "10-12",
+              "recupero": "90-120s",
+              "rir": 2,
+              "tecnica": null,
+              "note": "Focus retrazione scapolare",
+              "progressione": false
+            },
+            {
+              "id": "rematore",
+              "serie": 3,
+              "ripetizioni": "10-12",
+              "recupero": "90-120s",
+              "rir": 3,
+              "tecnica": null,
+              "note": "Trazione orizzontale complementare",
+              "progressione": false
+            },
+            {
+              "id": "panca-inclinata",
+              "serie": 4,
+              "ripetizioni": "10-12",
+              "recupero": "90-120s",
+              "rir": 2,
+              "tecnica": null,
+              "note": "Petto superiore",
+              "progressione": false
+            },
+            {
+              "id": "alzate-laterali",
+              "serie": 3,
+              "ripetizioni": "12-15",
+              "recupero": "90-120s",
+              "rir": 2,
+              "tecnica": null,
+              "note": "Deltoide medio",
+              "progressione": false
+            },
+            {
+              "id": "lento-avanti",
+              "serie": 3,
+              "ripetizioni": "10-12",
+              "recupero": "90-120s",
+              "rir": 2,
+              "tecnica": null,
+              "note": "Deltoide anteriore",
+              "progressione": false
+            }
+          ]
+        },
+        "B1": {
+          "nome": "Gambe focus accosciata · Braccia",
+          "esercizi": [
+            {
+              "id": "squat",
+              "serie": 4,
+              "ripetizioni": "8-10",
+              "recupero": "90-120s",
+              "rir": 2,
+              "tecnica": null,
+              "note": "Esercizio principale quadricipiti — progressione a carico fisso",
+              "progressione": true
+            },
+            {
+              "id": "leg-extension",
+              "serie": 4,
+              "ripetizioni": "12-15",
+              "recupero": "90-120s",
+              "rir": 2,
+              "tecnica": null,
+              "note": "Isolamento quadricipiti",
+              "progressione": false
+            },
+            {
+              "id": "leg-curl",
+              "serie": 4,
+              "ripetizioni": "10-12",
+              "recupero": "90-120s",
+              "rir": 2,
+              "tecnica": null,
+              "note": "Bilanciamento femorali",
+              "progressione": false
+            },
+            {
+              "id": "pressa",
+              "serie": 3,
+              "ripetizioni": "10-12",
+              "recupero": "90-120s",
+              "rir": 3,
+              "tecnica": null,
+              "note": "Volume complementare quadricipiti",
+              "progressione": false
+            },
+            {
+              "id": "curl-bicipiti",
+              "serie": 3,
+              "ripetizioni": "12-15",
+              "recupero": "60s",
+              "rir": 2,
+              "tecnica": null,
+              "note": "Bicipiti",
+              "progressione": false
+            },
+            {
+              "id": "curl-martello",
+              "serie": 3,
+              "ripetizioni": "12-15",
+              "recupero": "60s",
+              "rir": 2,
+              "tecnica": null,
+              "note": "Brachioradiale e brachiale",
+              "progressione": false
+            }
+          ]
+        },
+        "A2": {
+          "nome": "Schiena · Petto · Spalle",
+          "esercizi": [
+            {
+              "id": "trazioni",
+              "serie": 4,
+              "ripetizioni": "8-10",
+              "recupero": "90-120s",
+              "rir": 2,
+              "tecnica": null,
+              "note": "Esercizio principale schiena — progressione a carico fisso",
+              "progressione": true
+            },
+            {
+              "id": "rematore",
+              "serie": 4,
+              "ripetizioni": "10-12",
+              "recupero": "90-120s",
+              "rir": 2,
+              "tecnica": null,
+              "note": "Spessore dorsale",
+              "progressione": false
+            },
+            {
+              "id": "chest-press",
+              "serie": 4,
+              "ripetizioni": "10-12",
+              "recupero": "90-120s",
+              "rir": 2,
+              "tecnica": null,
+              "note": "Volume petto complementare",
+              "progressione": false
+            },
+            {
+              "id": "croci-cavi",
+              "serie": 3,
+              "ripetizioni": "12-15",
+              "recupero": "90-120s",
+              "rir": 2,
+              "tecnica": null,
+              "note": "Isolamento petto",
+              "progressione": false
+            },
+            {
+              "id": "alzate-laterali",
+              "serie": 4,
+              "ripetizioni": "12-15",
+              "recupero": "90-120s",
+              "rir": 2,
+              "tecnica": null,
+              "note": "Deltoide medio — progressione",
+              "progressione": true
+            },
+            {
+              "id": "lat-machine",
+              "serie": 3,
+              "ripetizioni": "10-12",
+              "recupero": "90-120s",
+              "rir": 3,
+              "tecnica": null,
+              "note": "Volume dorsale aggiuntivo",
+              "progressione": false
+            }
+          ]
+        },
+        "B2": {
+          "nome": "Gambe focus anca · Braccia",
+          "esercizi": [
+            {
+              "id": "stacco-rdl",
+              "serie": 4,
+              "ripetizioni": "8-10",
+              "recupero": "90-120s",
+              "rir": 2,
+              "tecnica": null,
+              "note": "Esercizio principale catena posteriore — progressione a carico fisso",
+              "progressione": true
+            },
+            {
+              "id": "hip-thrust",
+              "serie": 4,
+              "ripetizioni": "10-12",
+              "recupero": "90-120s",
+              "rir": 2,
+              "tecnica": null,
+              "note": "Isolamento glutei",
+              "progressione": false
+            },
+            {
+              "id": "pressa",
+              "serie": 4,
+              "ripetizioni": "10-12",
+              "recupero": "90-120s",
+              "rir": 2,
+              "tecnica": null,
+              "note": "Piedi alti per enfatizzare glutei e femorali",
+              "progressione": false
+            },
+            {
+              "id": "leg-curl",
+              "serie": 3,
+              "ripetizioni": "12-15",
+              "recupero": "90-120s",
+              "rir": 2,
+              "tecnica": null,
+              "note": "Femorali isolati",
+              "progressione": false
+            },
+            {
+              "id": "curl-bicipiti",
+              "serie": 3,
+              "ripetizioni": "12-15",
+              "recupero": "60s",
+              "rir": 2,
+              "tecnica": null,
+              "note": "Bicipiti",
+              "progressione": false
+            },
+            {
+              "id": "trazioni",
+              "serie": 3,
+              "ripetizioni": "10-12",
+              "recupero": "90s",
+              "rir": 2,
+              "tecnica": null,
+              "note": "Presa supina per braccia e dorsali",
+              "progressione": false
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "ipertrofia-alto-volume",
+      "nome": "Ipertrofia Alto Volume (Accumulo)",
+      "obiettivo": "Accumulare il massimo volume tolerabile (MRV) per saturare le fibre muscolari e preparare il corpo a cicli di intensificazione. Fase di accumulo del periodo ipertrofico.",
+      "durata": "12 settimane",
+      "rangeRipetizioni": "10-15",
+      "intensita": "65-75% 1RM (RPE 7-8, RIR 1-2)",
+      "seriePerGruppo": "20-25 serie/settimana per gruppo muscolare maggiore",
+      "recuperi": "60-90 secondi tra le serie",
+      "volumeComplessivo": "Molto alto: 20-25 serie per gruppo muscolare maggiore a settimana",
+      "tecnicheIntensita": [
+        "Myo-reps",
+        "Serie back-off",
+        "Superset non competitivi"
+      ],
+      "faticaSistemica": "Alta. Fatica metabolica e muscolare significativa, richiede attenzione al sonno e nutrizione.",
+      "quandoInserire": "Dopo 1-2 cicli di ipertrofia classica, quando la progressione lineare rallenta. Prima di un deload o di un ciclo di tensione meccanica.",
+      "cicloPrecedente": "ipertrofia-classica",
+      "cicloSuccessivo": "ipertrofia-tensione-meccanica",
+      "benefici": [
+        "Massimizza il volume di lavoro per gruppo muscolare",
+        "Aumenta la tolleranza al lattato",
+        "Prepara il tessuto connettivo a carichi maggiori",
+        "Stimolo ipertrofico elevato per ipertrofia sarcoplasmatica"
+      ],
+      "limiti": [
+        "Alto rischio di overreaching se prolungato",
+        "Recupero compromesso se nutrizione/sonno non ottimali",
+        "Performance può temporaneamente calare"
+      ],
+      "erroriComuni": [
+        "Prolungare oltre 4-5 settimane senza deload",
+        "Aggiungere volume su TUTTI i gruppi contemporaneamente",
+        "Ignorare i segnali di overreaching (sonno, libido, performance)",
+        "Usare tecniche di intensità su ogni esercizio"
+      ],
+      "allenamenti": {
+        "A1": {
+          "nome": "Petto · Schiena · Spalle",
+          "esercizi": [
+            {
+              "id": "panca-piana",
+              "serie": 4,
+              "ripetizioni": "10-12",
+              "recupero": "60-90s",
+              "rir": 2,
+              "tecnica": null,
+              "note": "Esercizio principale petto — progressione a carico fisso",
+              "progressione": true
+            },
+            {
+              "id": "lat-machine",
+              "serie": 4,
+              "ripetizioni": "12-15",
+              "recupero": "60-90s",
+              "rir": 2,
+              "tecnica": null,
+              "note": "Focus retrazione scapolare",
+              "progressione": false
+            },
+            {
+              "id": "rematore",
+              "serie": 3,
+              "ripetizioni": "12-15",
+              "recupero": "60-90s",
+              "rir": 3,
+              "tecnica": null,
+              "note": "Trazione orizzontale complementare",
+              "progressione": false
+            },
+            {
+              "id": "panca-inclinata",
+              "serie": 4,
+              "ripetizioni": "12-15",
+              "recupero": "60-90s",
+              "rir": 2,
+              "tecnica": null,
+              "note": "Petto superiore",
+              "progressione": false
+            },
+            {
+              "id": "alzate-laterali",
+              "serie": 3,
+              "ripetizioni": "15-20",
+              "recupero": "60-90s",
+              "rir": 2,
+              "tecnica": null,
+              "note": "Deltoide medio",
+              "progressione": false
+            },
+            {
+              "id": "lento-avanti",
+              "serie": 3,
+              "ripetizioni": "12-15",
+              "recupero": "60-90s",
+              "rir": 2,
+              "tecnica": null,
+              "note": "Deltoide anteriore",
+              "progressione": false
+            }
+          ]
+        },
+        "B1": {
+          "nome": "Gambe focus accosciata · Braccia",
+          "esercizi": [
+            {
+              "id": "squat",
+              "serie": 4,
+              "ripetizioni": "10-12",
+              "recupero": "60-90s",
+              "rir": 2,
+              "tecnica": null,
+              "note": "Esercizio principale quadricipiti — progressione a carico fisso",
+              "progressione": true
+            },
+            {
+              "id": "leg-extension",
+              "serie": 4,
+              "ripetizioni": "15-20",
+              "recupero": "60-90s",
+              "rir": 2,
+              "tecnica": "myo-reps",
+              "note": "Isolamento quadricipiti",
+              "progressione": false
+            },
+            {
+              "id": "leg-curl",
+              "serie": 4,
+              "ripetizioni": "12-15",
+              "recupero": "60-90s",
+              "rir": 2,
+              "tecnica": null,
+              "note": "Bilanciamento femorali",
+              "progressione": false
+            },
+            {
+              "id": "pressa",
+              "serie": 3,
+              "ripetizioni": "12-15",
+              "recupero": "60-90s",
+              "rir": 3,
+              "tecnica": null,
+              "note": "Volume complementare quadricipiti",
+              "progressione": false
+            },
+            {
+              "id": "curl-bicipiti",
+              "serie": 3,
+              "ripetizioni": "15-20",
+              "recupero": "60s",
+              "rir": 2,
+              "tecnica": null,
+              "note": "Bicipiti",
+              "progressione": false
+            },
+            {
+              "id": "curl-martello",
+              "serie": 3,
+              "ripetizioni": "15-20",
+              "recupero": "60s",
+              "rir": 2,
+              "tecnica": null,
+              "note": "Brachioradiale e brachiale",
+              "progressione": false
+            }
+          ]
+        },
+        "A2": {
+          "nome": "Schiena · Petto · Spalle",
+          "esercizi": [
+            {
+              "id": "trazioni",
+              "serie": 4,
+              "ripetizioni": "10-12",
+              "recupero": "60-90s",
+              "rir": 2,
+              "tecnica": null,
+              "note": "Esercizio principale schiena — progressione a carico fisso",
+              "progressione": true
+            },
+            {
+              "id": "rematore",
+              "serie": 4,
+              "ripetizioni": "12-15",
+              "recupero": "60-90s",
+              "rir": 2,
+              "tecnica": null,
+              "note": "Spessore dorsale",
+              "progressione": false
+            },
+            {
+              "id": "chest-press",
+              "serie": 4,
+              "ripetizioni": "12-15",
+              "recupero": "60-90s",
+              "rir": 2,
+              "tecnica": null,
+              "note": "Volume petto complementare",
+              "progressione": false
+            },
+            {
+              "id": "croci-cavi",
+              "serie": 3,
+              "ripetizioni": "15-20",
+              "recupero": "60-90s",
+              "rir": 2,
+              "tecnica": "myo-reps",
+              "note": "Isolamento petto",
+              "progressione": false
+            },
+            {
+              "id": "alzate-laterali",
+              "serie": 4,
+              "ripetizioni": "15-20",
+              "recupero": "60-90s",
+              "rir": 2,
+              "tecnica": null,
+              "note": "Deltoide medio — progressione",
+              "progressione": true
+            },
+            {
+              "id": "lat-machine",
+              "serie": 3,
+              "ripetizioni": "12-15",
+              "recupero": "60-90s",
+              "rir": 3,
+              "tecnica": null,
+              "note": "Volume dorsale aggiuntivo",
+              "progressione": false
+            }
+          ]
+        },
+        "B2": {
+          "nome": "Gambe focus anca · Braccia",
+          "esercizi": [
+            {
+              "id": "stacco-rdl",
+              "serie": 4,
+              "ripetizioni": "10-12",
+              "recupero": "60-90s",
+              "rir": 2,
+              "tecnica": null,
+              "note": "Esercizio principale catena posteriore — progressione a carico fisso",
+              "progressione": true
+            },
+            {
+              "id": "hip-thrust",
+              "serie": 4,
+              "ripetizioni": "12-15",
+              "recupero": "60-90s",
+              "rir": 2,
+              "tecnica": null,
+              "note": "Isolamento glutei",
+              "progressione": false
+            },
+            {
+              "id": "pressa",
+              "serie": 4,
+              "ripetizioni": "12-15",
+              "recupero": "60-90s",
+              "rir": 2,
+              "tecnica": null,
+              "note": "Piedi alti per enfatizzare glutei e femorali",
+              "progressione": false
+            },
+            {
+              "id": "leg-curl",
+              "serie": 3,
+              "ripetizioni": "15-20",
+              "recupero": "60-90s",
+              "rir": 2,
+              "tecnica": null,
+              "note": "Femorali isolati",
+              "progressione": false
+            },
+            {
+              "id": "curl-bicipiti",
+              "serie": 3,
+              "ripetizioni": "15-20",
+              "recupero": "60s",
+              "rir": 2,
+              "tecnica": null,
+              "note": "Bicipiti",
+              "progressione": false
+            },
+            {
+              "id": "trazioni",
+              "serie": 3,
+              "ripetizioni": "12-15",
+              "recupero": "90s",
+              "rir": 2,
+              "tecnica": null,
+              "note": "Presa supina per braccia e dorsali",
+              "progressione": false
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "ipertrofia-tensione-meccanica",
+      "nome": "Ipertrofia a Tensione Meccanica",
+      "obiettivo": "Enfatizzare la tensione meccanica attraverso carichi più elevati nel range 6-10 ripetizioni, stimolando principalmente l'ipertrofia miofibrillare.",
+      "durata": "12 settimane",
+      "rangeRipetizioni": "6-10",
+      "intensita": "75-85% 1RM (RPE 8-9, RIR 0-1)",
+      "seriePerGruppo": "14-18 serie/settimana per gruppo muscolare maggiore",
+      "recuperi": "120-180 secondi tra le serie",
+      "volumeComplessivo": "Moderato-alto: 14-18 serie per gruppo muscolare maggiore a settimana",
+      "tecnicheIntensita": [
+        "Pause reps (1-2s in stretched)",
+        "Tempo controllato (3-1-1-0)"
+      ],
+      "faticaSistemica": "Moderata-alta. Maggiore stress sul SNC rispetto all'alto volume, ma volume totale inferiore.",
+      "quandoInserire": "Dopo un ciclo di alto volume, come transizione verso la forza. Ideale nella fase intermedia del macrociclo.",
+      "cicloPrecedente": "ipertrofia-alto-volume",
+      "cicloSuccessivo": "forza",
+      "benefici": [
+        "Aumenta la forza relativa e assoluta",
+        "Stimola ipertrofia miofibrillare (densità contrattile)",
+        "Migliora il reclutamento delle unità motorie ad alta soglia",
+        "Prepara il corpo a carichi massimali"
+      ],
+      "limiti": [
+        "Volume metabolico ridotto",
+        "Richiede tecnica impeccabile sotto carico",
+        "Recuperi più lunghi = sessioni più lunghe"
+      ],
+      "erroriComuni": [
+        "Sacrificare la forma per il carico",
+        "Recuperi insufficienti tra le serie pesanti",
+        "Non scalare il volume rispetto al ciclo precedente",
+        "Trascurare il riscaldamento specifico"
+      ],
+      "allenamenti": {
+        "A1": {
+          "nome": "Petto · Schiena · Spalle",
+          "esercizi": [
+            {
+              "id": "panca-piana",
+              "serie": 4,
+              "ripetizioni": "6-8",
+              "recupero": "120-180s",
+              "rir": 1,
+              "tecnica": null,
+              "note": "Esercizio principale petto — progressione a carico fisso",
+              "progressione": true
+            },
+            {
+              "id": "lat-machine",
+              "serie": 4,
+              "ripetizioni": "8-10",
+              "recupero": "120-180s",
+              "rir": 1,
+              "tecnica": null,
+              "note": "Focus retrazione scapolare",
+              "progressione": false
+            },
+            {
+              "id": "rematore",
+              "serie": 3,
+              "ripetizioni": "8-10",
+              "recupero": "120-180s",
+              "rir": 2,
+              "tecnica": null,
+              "note": "Trazione orizzontale complementare",
+              "progressione": false
+            },
+            {
+              "id": "panca-inclinata",
+              "serie": 4,
+              "ripetizioni": "8-10",
+              "recupero": "120-180s",
+              "rir": 1,
+              "tecnica": null,
+              "note": "Petto superiore",
+              "progressione": false
+            },
+            {
+              "id": "alzate-laterali",
+              "serie": 3,
+              "ripetizioni": "10-12",
+              "recupero": "120-180s",
+              "rir": 1,
+              "tecnica": null,
+              "note": "Deltoide medio",
+              "progressione": false
+            },
+            {
+              "id": "lento-avanti",
+              "serie": 3,
+              "ripetizioni": "8-10",
+              "recupero": "120-180s",
+              "rir": 1,
+              "tecnica": null,
+              "note": "Deltoide anteriore",
+              "progressione": false
+            }
+          ]
+        },
+        "B1": {
+          "nome": "Gambe focus accosciata · Braccia",
+          "esercizi": [
+            {
+              "id": "squat",
+              "serie": 4,
+              "ripetizioni": "6-8",
+              "recupero": "120-180s",
+              "rir": 1,
+              "tecnica": null,
+              "note": "Esercizio principale quadricipiti — progressione a carico fisso",
+              "progressione": true
+            },
+            {
+              "id": "leg-extension",
+              "serie": 4,
+              "ripetizioni": "10-12",
+              "recupero": "120-180s",
+              "rir": 1,
+              "tecnica": null,
+              "note": "Isolamento quadricipiti",
+              "progressione": false
+            },
+            {
+              "id": "leg-curl",
+              "serie": 4,
+              "ripetizioni": "8-10",
+              "recupero": "120-180s",
+              "rir": 1,
+              "tecnica": null,
+              "note": "Bilanciamento femorali",
+              "progressione": false
+            },
+            {
+              "id": "pressa",
+              "serie": 3,
+              "ripetizioni": "8-10",
+              "recupero": "120-180s",
+              "rir": 2,
+              "tecnica": null,
+              "note": "Volume complementare quadricipiti",
+              "progressione": false
+            },
+            {
+              "id": "curl-bicipiti",
+              "serie": 3,
+              "ripetizioni": "10-12",
+              "recupero": "60s",
+              "rir": 1,
+              "tecnica": null,
+              "note": "Bicipiti",
+              "progressione": false
+            },
+            {
+              "id": "curl-martello",
+              "serie": 3,
+              "ripetizioni": "10-12",
+              "recupero": "60s",
+              "rir": 1,
+              "tecnica": null,
+              "note": "Brachioradiale e brachiale",
+              "progressione": false
+            }
+          ]
+        },
+        "A2": {
+          "nome": "Schiena · Petto · Spalle",
+          "esercizi": [
+            {
+              "id": "trazioni",
+              "serie": 4,
+              "ripetizioni": "6-8",
+              "recupero": "120-180s",
+              "rir": 1,
+              "tecnica": null,
+              "note": "Esercizio principale schiena — progressione a carico fisso",
+              "progressione": true
+            },
+            {
+              "id": "rematore",
+              "serie": 4,
+              "ripetizioni": "8-10",
+              "recupero": "120-180s",
+              "rir": 1,
+              "tecnica": null,
+              "note": "Spessore dorsale",
+              "progressione": false
+            },
+            {
+              "id": "chest-press",
+              "serie": 4,
+              "ripetizioni": "8-10",
+              "recupero": "120-180s",
+              "rir": 1,
+              "tecnica": null,
+              "note": "Volume petto complementare",
+              "progressione": false
+            },
+            {
+              "id": "croci-cavi",
+              "serie": 3,
+              "ripetizioni": "10-12",
+              "recupero": "120-180s",
+              "rir": 1,
+              "tecnica": null,
+              "note": "Isolamento petto",
+              "progressione": false
+            },
+            {
+              "id": "alzate-laterali",
+              "serie": 4,
+              "ripetizioni": "10-12",
+              "recupero": "120-180s",
+              "rir": 1,
+              "tecnica": null,
+              "note": "Deltoide medio — progressione",
+              "progressione": true
+            },
+            {
+              "id": "lat-machine",
+              "serie": 3,
+              "ripetizioni": "8-10",
+              "recupero": "120-180s",
+              "rir": 2,
+              "tecnica": null,
+              "note": "Volume dorsale aggiuntivo",
+              "progressione": false
+            }
+          ]
+        },
+        "B2": {
+          "nome": "Gambe focus anca · Braccia",
+          "esercizi": [
+            {
+              "id": "stacco-rdl",
+              "serie": 4,
+              "ripetizioni": "6-8",
+              "recupero": "120-180s",
+              "rir": 1,
+              "tecnica": null,
+              "note": "Esercizio principale catena posteriore — progressione a carico fisso",
+              "progressione": true
+            },
+            {
+              "id": "hip-thrust",
+              "serie": 4,
+              "ripetizioni": "8-10",
+              "recupero": "120-180s",
+              "rir": 1,
+              "tecnica": null,
+              "note": "Isolamento glutei",
+              "progressione": false
+            },
+            {
+              "id": "pressa",
+              "serie": 4,
+              "ripetizioni": "8-10",
+              "recupero": "120-180s",
+              "rir": 1,
+              "tecnica": null,
+              "note": "Piedi alti per enfatizzare glutei e femorali",
+              "progressione": false
+            },
+            {
+              "id": "leg-curl",
+              "serie": 3,
+              "ripetizioni": "10-12",
+              "recupero": "120-180s",
+              "rir": 1,
+              "tecnica": null,
+              "note": "Femorali isolati",
+              "progressione": false
+            },
+            {
+              "id": "curl-bicipiti",
+              "serie": 3,
+              "ripetizioni": "10-12",
+              "recupero": "60s",
+              "rir": 1,
+              "tecnica": null,
+              "note": "Bicipiti",
+              "progressione": false
+            },
+            {
+              "id": "trazioni",
+              "serie": 3,
+              "ripetizioni": "8-10",
+              "recupero": "90s",
+              "rir": 1,
+              "tecnica": null,
+              "note": "Presa supina per braccia e dorsali",
+              "progressione": false
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "forza",
+      "nome": "Forza",
+      "obiettivo": "Sviluppare la forza massimale nei movimenti fondamentali attraverso carichi elevati e basse ripetizioni, consolidando i guadagni ipertrofici in capacità di produzione di forza.",
+      "durata": "12 settimane",
+      "rangeRipetizioni": "4-6",
+      "intensita": "80-90% 1RM (RPE 8-9, RIR 1-2)",
+      "seriePerGruppo": "10-14 serie/settimana per gruppo muscolare maggiore",
+      "recuperi": "180-240 secondi tra le serie",
+      "volumeComplessivo": "Basso-moderato: 10-14 serie per gruppo muscolare maggiore a settimana",
+      "tecnicheIntensita": [
+        "Cluster set",
+        "Wave loading",
+        "Ramping sets"
+      ],
+      "faticaSistemica": "Alta sul SNC, moderata sui tessuti. Richiede gestione attenta del recupero sistemico.",
+      "quandoInserire": "Dopo cicli ipertrofici, come blocco di trasformazione della massa in forza. Tipicamente 1-2 volte all'anno.",
+      "cicloPrecedente": "ipertrofia-tensione-meccanica",
+      "cicloSuccessivo": "intensificazione",
+      "benefici": [
+        "Aumenta il 1RM sui movimenti principali",
+        "Migliora il reclutamento neurale",
+        "Crea la base per futuri cicli ipertrofici più pesanti",
+        "Mantiene la massa muscolare con volume ridotto"
+      ],
+      "limiti": [
+        "Stimolo ipertrofico diretto limitato",
+        "Alto stress articolare se la tecnica non è solida",
+        "Sessioni più lunghe per i recuperi"
+      ],
+      "erroriComuni": [
+        "Tentare 1RM senza preparazione adeguata",
+        "Volume accessorio eccessivo che compromette i lift principali",
+        "Non programmare un deload dopo questo ciclo",
+        "Ignorare il riscaldamento progressivo"
+      ],
+      "allenamenti": {
+        "A1": {
+          "nome": "Petto · Schiena · Spalle",
+          "esercizi": [
+            {
+              "id": "panca-piana",
+              "serie": 5,
+              "ripetizioni": "4-6",
+              "recupero": "180-240s",
+              "rir": 2,
+              "tecnica": null,
+              "note": "Esercizio principale petto — progressione a carico fisso",
+              "progressione": true
+            },
+            {
+              "id": "lat-machine",
+              "serie": 5,
+              "ripetizioni": "6-8",
+              "recupero": "180-240s",
+              "rir": 2,
+              "tecnica": null,
+              "note": "Focus retrazione scapolare",
+              "progressione": false
+            },
+            {
+              "id": "rematore",
+              "serie": 4,
+              "ripetizioni": "6-8",
+              "recupero": "180-240s",
+              "rir": 3,
+              "tecnica": null,
+              "note": "Trazione orizzontale complementare",
+              "progressione": false
+            },
+            {
+              "id": "panca-inclinata",
+              "serie": 5,
+              "ripetizioni": "6-8",
+              "recupero": "180-240s",
+              "rir": 2,
+              "tecnica": null,
+              "note": "Petto superiore",
+              "progressione": false
+            },
+            {
+              "id": "alzate-laterali",
+              "serie": 3,
+              "ripetizioni": "8-10",
+              "recupero": "180-240s",
+              "rir": 2,
+              "tecnica": null,
+              "note": "Deltoide medio",
+              "progressione": false
+            },
+            {
+              "id": "lento-avanti",
+              "serie": 3,
+              "ripetizioni": "6-8",
+              "recupero": "180-240s",
+              "rir": 2,
+              "tecnica": null,
+              "note": "Deltoide anteriore",
+              "progressione": false
+            }
+          ]
+        },
+        "B1": {
+          "nome": "Gambe focus accosciata · Braccia",
+          "esercizi": [
+            {
+              "id": "squat",
+              "serie": 5,
+              "ripetizioni": "4-6",
+              "recupero": "180-240s",
+              "rir": 2,
+              "tecnica": null,
+              "note": "Esercizio principale quadricipiti — progressione a carico fisso",
+              "progressione": true
+            },
+            {
+              "id": "leg-extension",
+              "serie": 5,
+              "ripetizioni": "8-10",
+              "recupero": "180-240s",
+              "rir": 2,
+              "tecnica": null,
+              "note": "Isolamento quadricipiti",
+              "progressione": false
+            },
+            {
+              "id": "leg-curl",
+              "serie": 5,
+              "ripetizioni": "6-8",
+              "recupero": "180-240s",
+              "rir": 2,
+              "tecnica": null,
+              "note": "Bilanciamento femorali",
+              "progressione": false
+            },
+            {
+              "id": "pressa",
+              "serie": 4,
+              "ripetizioni": "6-8",
+              "recupero": "180-240s",
+              "rir": 3,
+              "tecnica": null,
+              "note": "Volume complementare quadricipiti",
+              "progressione": false
+            },
+            {
+              "id": "curl-bicipiti",
+              "serie": 3,
+              "ripetizioni": "8-10",
+              "recupero": "60s",
+              "rir": 2,
+              "tecnica": null,
+              "note": "Bicipiti",
+              "progressione": false
+            },
+            {
+              "id": "curl-martello",
+              "serie": 3,
+              "ripetizioni": "8-10",
+              "recupero": "60s",
+              "rir": 2,
+              "tecnica": null,
+              "note": "Brachioradiale e brachiale",
+              "progressione": false
+            }
+          ]
+        },
+        "A2": {
+          "nome": "Schiena · Petto · Spalle",
+          "esercizi": [
+            {
+              "id": "trazioni",
+              "serie": 5,
+              "ripetizioni": "4-6",
+              "recupero": "180-240s",
+              "rir": 2,
+              "tecnica": null,
+              "note": "Esercizio principale schiena — progressione a carico fisso",
+              "progressione": true
+            },
+            {
+              "id": "rematore",
+              "serie": 5,
+              "ripetizioni": "6-8",
+              "recupero": "180-240s",
+              "rir": 2,
+              "tecnica": null,
+              "note": "Spessore dorsale",
+              "progressione": false
+            },
+            {
+              "id": "chest-press",
+              "serie": 5,
+              "ripetizioni": "6-8",
+              "recupero": "180-240s",
+              "rir": 2,
+              "tecnica": null,
+              "note": "Volume petto complementare",
+              "progressione": false
+            },
+            {
+              "id": "croci-cavi",
+              "serie": 3,
+              "ripetizioni": "8-10",
+              "recupero": "180-240s",
+              "rir": 2,
+              "tecnica": null,
+              "note": "Isolamento petto",
+              "progressione": false
+            },
+            {
+              "id": "alzate-laterali",
+              "serie": 5,
+              "ripetizioni": "8-10",
+              "recupero": "180-240s",
+              "rir": 2,
+              "tecnica": null,
+              "note": "Deltoide medio — progressione",
+              "progressione": true
+            },
+            {
+              "id": "lat-machine",
+              "serie": 4,
+              "ripetizioni": "6-8",
+              "recupero": "180-240s",
+              "rir": 3,
+              "tecnica": null,
+              "note": "Volume dorsale aggiuntivo",
+              "progressione": false
+            }
+          ]
+        },
+        "B2": {
+          "nome": "Gambe focus anca · Braccia",
+          "esercizi": [
+            {
+              "id": "stacco-rdl",
+              "serie": 5,
+              "ripetizioni": "4-6",
+              "recupero": "180-240s",
+              "rir": 2,
+              "tecnica": null,
+              "note": "Esercizio principale catena posteriore — progressione a carico fisso",
+              "progressione": true
+            },
+            {
+              "id": "hip-thrust",
+              "serie": 5,
+              "ripetizioni": "6-8",
+              "recupero": "180-240s",
+              "rir": 2,
+              "tecnica": null,
+              "note": "Isolamento glutei",
+              "progressione": false
+            },
+            {
+              "id": "pressa",
+              "serie": 5,
+              "ripetizioni": "6-8",
+              "recupero": "180-240s",
+              "rir": 2,
+              "tecnica": null,
+              "note": "Piedi alti per enfatizzare glutei e femorali",
+              "progressione": false
+            },
+            {
+              "id": "leg-curl",
+              "serie": 3,
+              "ripetizioni": "8-10",
+              "recupero": "180-240s",
+              "rir": 2,
+              "tecnica": null,
+              "note": "Femorali isolati",
+              "progressione": false
+            },
+            {
+              "id": "curl-bicipiti",
+              "serie": 3,
+              "ripetizioni": "8-10",
+              "recupero": "60s",
+              "rir": 2,
+              "tecnica": null,
+              "note": "Bicipiti",
+              "progressione": false
+            },
+            {
+              "id": "trazioni",
+              "serie": 3,
+              "ripetizioni": "6-8",
+              "recupero": "90s",
+              "rir": 2,
+              "tecnica": null,
+              "note": "Presa supina per braccia e dorsali",
+              "progressione": false
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "intensificazione",
+      "nome": "Intensificazione",
+      "obiettivo": "Picco di performance e stimolo massimale attraverso carichi molto elevati e tecniche di intensità avanzate. Blocco di realizzazione prima del deload.",
+      "durata": "4 settimane",
+      "rangeRipetizioni": "4-8",
+      "intensita": "85-95% 1RM (RPE 9-10, RIR 0)",
+      "seriePerGruppo": "8-12 serie/settimana per gruppo muscolare maggiore",
+      "recuperi": "180-300 secondi tra le serie principali",
+      "volumeComplessivo": "Basso: 8-12 serie per gruppo muscolare maggiore a settimana",
+      "tecnicheIntensita": [
+        "Rest-pause",
+        "Cluster set",
+        "Negative accentuate",
+        "Top set + back-off"
+      ],
+      "faticaSistemica": "Molto alta. Massimo stress sul SNC — ciclo breve per design.",
+      "quandoInserire": "Alla fine di un mesociclo di forza o ipertrofia pesante, prima di un deload obbligatorio. Massimo 2-3 volte all'anno.",
+      "cicloPrecedente": "forza",
+      "cicloSuccessivo": "deload",
+      "benefici": [
+        "Picco di forza e densità muscolare",
+        "Supercompensazione post-deload",
+        "Testa i limiti in sicurezza con volume ridotto",
+        "Mantiene/migliora la massa con stimolo neurologico"
+      ],
+      "limiti": [
+        "Insostenibile oltre 3 settimane",
+        "Alto rischio infortuni senza tecnica consolidata",
+        "Non adatto a principianti"
+      ],
+      "erroriComuni": [
+        "Prolungare oltre 3 settimane",
+        "Applicare tecniche avanzate su troppi esercizi",
+        "Saltare il deload successivo",
+        "Non monitorare i segnali di overreaching"
+      ],
+      "allenamenti": {
+        "A1": {
+          "nome": "Petto · Schiena · Spalle",
+          "esercizi": [
+            {
+              "id": "panca-piana",
+              "serie": 4,
+              "ripetizioni": "4-6",
+              "recupero": "180-240s",
+              "rir": 0,
+              "tecnica": "rest-pause",
+              "note": "Esercizio principale petto — progressione a carico fisso",
+              "progressione": true
+            },
+            {
+              "id": "lat-machine",
+              "serie": 4,
+              "ripetizioni": "6-8",
+              "recupero": "180-240s",
+              "rir": 0,
+              "tecnica": null,
+              "note": "Focus retrazione scapolare",
+              "progressione": false
+            },
+            {
+              "id": "rematore",
+              "serie": 3,
+              "ripetizioni": "6-8",
+              "recupero": "180-240s",
+              "rir": 1,
+              "tecnica": null,
+              "note": "Trazione orizzontale complementare",
+              "progressione": false
+            },
+            {
+              "id": "panca-inclinata",
+              "serie": 4,
+              "ripetizioni": "6-8",
+              "recupero": "180-240s",
+              "rir": 0,
+              "tecnica": null,
+              "note": "Petto superiore",
+              "progressione": false
+            },
+            {
+              "id": "alzate-laterali",
+              "serie": 3,
+              "ripetizioni": "8-10",
+              "recupero": "180-240s",
+              "rir": 0,
+              "tecnica": null,
+              "note": "Deltoide medio",
+              "progressione": false
+            },
+            {
+              "id": "lento-avanti",
+              "serie": 3,
+              "ripetizioni": "6-8",
+              "recupero": "180-240s",
+              "rir": 0,
+              "tecnica": null,
+              "note": "Deltoide anteriore",
+              "progressione": false
+            }
+          ]
+        },
+        "B1": {
+          "nome": "Gambe focus accosciata · Braccia",
+          "esercizi": [
+            {
+              "id": "squat",
+              "serie": 4,
+              "ripetizioni": "4-6",
+              "recupero": "180-240s",
+              "rir": 0,
+              "tecnica": "rest-pause",
+              "note": "Esercizio principale quadricipiti — progressione a carico fisso",
+              "progressione": true
+            },
+            {
+              "id": "leg-extension",
+              "serie": 4,
+              "ripetizioni": "8-10",
+              "recupero": "180-240s",
+              "rir": 0,
+              "tecnica": null,
+              "note": "Isolamento quadricipiti",
+              "progressione": false
+            },
+            {
+              "id": "leg-curl",
+              "serie": 4,
+              "ripetizioni": "6-8",
+              "recupero": "180-240s",
+              "rir": 0,
+              "tecnica": null,
+              "note": "Bilanciamento femorali",
+              "progressione": false
+            },
+            {
+              "id": "pressa",
+              "serie": 3,
+              "ripetizioni": "6-8",
+              "recupero": "180-240s",
+              "rir": 1,
+              "tecnica": null,
+              "note": "Volume complementare quadricipiti",
+              "progressione": false
+            },
+            {
+              "id": "curl-bicipiti",
+              "serie": 3,
+              "ripetizioni": "8-10",
+              "recupero": "60s",
+              "rir": 0,
+              "tecnica": null,
+              "note": "Bicipiti",
+              "progressione": false
+            },
+            {
+              "id": "curl-martello",
+              "serie": 3,
+              "ripetizioni": "8-10",
+              "recupero": "60s",
+              "rir": 0,
+              "tecnica": null,
+              "note": "Brachioradiale e brachiale",
+              "progressione": false
+            }
+          ]
+        },
+        "A2": {
+          "nome": "Schiena · Petto · Spalle",
+          "esercizi": [
+            {
+              "id": "trazioni",
+              "serie": 4,
+              "ripetizioni": "4-6",
+              "recupero": "180-240s",
+              "rir": 0,
+              "tecnica": "rest-pause",
+              "note": "Esercizio principale schiena — progressione a carico fisso",
+              "progressione": true
+            },
+            {
+              "id": "rematore",
+              "serie": 4,
+              "ripetizioni": "6-8",
+              "recupero": "180-240s",
+              "rir": 0,
+              "tecnica": null,
+              "note": "Spessore dorsale",
+              "progressione": false
+            },
+            {
+              "id": "chest-press",
+              "serie": 4,
+              "ripetizioni": "6-8",
+              "recupero": "180-240s",
+              "rir": 0,
+              "tecnica": null,
+              "note": "Volume petto complementare",
+              "progressione": false
+            },
+            {
+              "id": "croci-cavi",
+              "serie": 3,
+              "ripetizioni": "8-10",
+              "recupero": "180-240s",
+              "rir": 0,
+              "tecnica": null,
+              "note": "Isolamento petto",
+              "progressione": false
+            },
+            {
+              "id": "alzate-laterali",
+              "serie": 4,
+              "ripetizioni": "8-10",
+              "recupero": "180-240s",
+              "rir": 0,
+              "tecnica": null,
+              "note": "Deltoide medio — progressione",
+              "progressione": true
+            },
+            {
+              "id": "lat-machine",
+              "serie": 3,
+              "ripetizioni": "6-8",
+              "recupero": "180-240s",
+              "rir": 1,
+              "tecnica": null,
+              "note": "Volume dorsale aggiuntivo",
+              "progressione": false
+            }
+          ]
+        },
+        "B2": {
+          "nome": "Gambe focus anca · Braccia",
+          "esercizi": [
+            {
+              "id": "stacco-rdl",
+              "serie": 4,
+              "ripetizioni": "4-6",
+              "recupero": "180-240s",
+              "rir": 0,
+              "tecnica": "rest-pause",
+              "note": "Esercizio principale catena posteriore — progressione a carico fisso",
+              "progressione": true
+            },
+            {
+              "id": "hip-thrust",
+              "serie": 4,
+              "ripetizioni": "6-8",
+              "recupero": "180-240s",
+              "rir": 0,
+              "tecnica": null,
+              "note": "Isolamento glutei",
+              "progressione": false
+            },
+            {
+              "id": "pressa",
+              "serie": 4,
+              "ripetizioni": "6-8",
+              "recupero": "180-240s",
+              "rir": 0,
+              "tecnica": null,
+              "note": "Piedi alti per enfatizzare glutei e femorali",
+              "progressione": false
+            },
+            {
+              "id": "leg-curl",
+              "serie": 3,
+              "ripetizioni": "8-10",
+              "recupero": "180-240s",
+              "rir": 0,
+              "tecnica": null,
+              "note": "Femorali isolati",
+              "progressione": false
+            },
+            {
+              "id": "curl-bicipiti",
+              "serie": 3,
+              "ripetizioni": "8-10",
+              "recupero": "60s",
+              "rir": 0,
+              "tecnica": null,
+              "note": "Bicipiti",
+              "progressione": false
+            },
+            {
+              "id": "trazioni",
+              "serie": 3,
+              "ripetizioni": "6-8",
+              "recupero": "90s",
+              "rir": 0,
+              "tecnica": null,
+              "note": "Presa supina per braccia e dorsali",
+              "progressione": false
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "deload",
+      "nome": "Deload",
+      "obiettivo": "Dissipare la fatica accumulata, permettere la supercompensazione e preparare il corpo al ciclo successivo. Volume e intensità ridotti del 40-60%.",
+      "durata": "1 settimana",
+      "rangeRipetizioni": "8-12",
+      "intensita": "50-60% 1RM (RPE 5-6, RIR 3-4)",
+      "seriePerGruppo": "6-10 serie/settimana per gruppo muscolare maggiore",
+      "recuperi": "90-120 secondi tra le serie",
+      "volumeComplessivo": "Basso: 6-10 serie per gruppo muscolare maggiore a settimana (-40/60%)",
+      "tecnicheIntensita": [
+        "Nessuna — solo lavoro sub-massimale controllato"
+      ],
+      "faticaSistemica": "Minima. Obiettivo: uscire dalla settimana più freschi di quando si è entrati.",
+      "quandoInserire": "Dopo ogni 4-8 settimane di allenamento intenso, obbligatorio dopo intensificazione, opzionale quando performance/recupero calano.",
+      "cicloPrecedente": "intensificazione",
+      "cicloSuccessivo": "adattamento-anatomico",
+      "benefici": [
+        "Riduce fatica sistemica e articolare",
+        "Permette supercompensazione",
+        "Previene overtraining e infortuni",
+        "Migliora motivazione e adesione"
+      ],
+      "limiti": [
+        "Nessun progresso diretto in questa settimana",
+        "Può generare ansia da 'perdita di gains' negli atleti inesperti",
+        "Se troppo leggero, non dissipa abbastanza fatica"
+      ],
+      "erroriComuni": [
+        "Trasformare il deload in settimana di riposo totale",
+        "Non ridurre abbastanza volume/intensità",
+        "Aggiungere cardio intenso durante il deload",
+        "Saltare il deload per impazienza"
+      ],
+      "allenamenti": {
+        "A1": {
+          "nome": "Petto · Schiena · Spalle",
+          "esercizi": [
+            {
+              "id": "panca-piana",
+              "serie": 2,
+              "ripetizioni": "8-10",
+              "recupero": "90-120s",
+              "rir": 4,
+              "tecnica": null,
+              "note": "Esercizio principale petto — progressione a carico fisso",
+              "progressione": true
+            },
+            {
+              "id": "lat-machine",
+              "serie": 2,
+              "ripetizioni": "10-12",
+              "recupero": "90-120s",
+              "rir": 4,
+              "tecnica": null,
+              "note": "Focus retrazione scapolare",
+              "progressione": false
+            },
+            {
+              "id": "rematore",
+              "serie": 2,
+              "ripetizioni": "10-12",
+              "recupero": "90-120s",
+              "rir": 5,
+              "tecnica": null,
+              "note": "Trazione orizzontale complementare",
+              "progressione": false
+            },
+            {
+              "id": "panca-inclinata",
+              "serie": 2,
+              "ripetizioni": "10-12",
+              "recupero": "90-120s",
+              "rir": 4,
+              "tecnica": null,
+              "note": "Petto superiore",
+              "progressione": false
+            },
+            {
+              "id": "alzate-laterali",
+              "serie": 3,
+              "ripetizioni": "12-15",
+              "recupero": "90-120s",
+              "rir": 4,
+              "tecnica": null,
+              "note": "Deltoide medio",
+              "progressione": false
+            },
+            {
+              "id": "lento-avanti",
+              "serie": 3,
+              "ripetizioni": "10-12",
+              "recupero": "90-120s",
+              "rir": 4,
+              "tecnica": null,
+              "note": "Deltoide anteriore",
+              "progressione": false
+            }
+          ]
+        },
+        "B1": {
+          "nome": "Gambe focus accosciata · Braccia",
+          "esercizi": [
+            {
+              "id": "squat",
+              "serie": 2,
+              "ripetizioni": "8-10",
+              "recupero": "90-120s",
+              "rir": 4,
+              "tecnica": null,
+              "note": "Esercizio principale quadricipiti — progressione a carico fisso",
+              "progressione": true
+            },
+            {
+              "id": "leg-extension",
+              "serie": 2,
+              "ripetizioni": "12-15",
+              "recupero": "90-120s",
+              "rir": 4,
+              "tecnica": null,
+              "note": "Isolamento quadricipiti",
+              "progressione": false
+            },
+            {
+              "id": "leg-curl",
+              "serie": 2,
+              "ripetizioni": "10-12",
+              "recupero": "90-120s",
+              "rir": 4,
+              "tecnica": null,
+              "note": "Bilanciamento femorali",
+              "progressione": false
+            },
+            {
+              "id": "pressa",
+              "serie": 2,
+              "ripetizioni": "10-12",
+              "recupero": "90-120s",
+              "rir": 5,
+              "tecnica": null,
+              "note": "Volume complementare quadricipiti",
+              "progressione": false
+            },
+            {
+              "id": "curl-bicipiti",
+              "serie": 3,
+              "ripetizioni": "12-15",
+              "recupero": "60s",
+              "rir": 4,
+              "tecnica": null,
+              "note": "Bicipiti",
+              "progressione": false
+            },
+            {
+              "id": "curl-martello",
+              "serie": 3,
+              "ripetizioni": "12-15",
+              "recupero": "60s",
+              "rir": 4,
+              "tecnica": null,
+              "note": "Brachioradiale e brachiale",
+              "progressione": false
+            }
+          ]
+        },
+        "A2": {
+          "nome": "Schiena · Petto · Spalle",
+          "esercizi": [
+            {
+              "id": "trazioni",
+              "serie": 2,
+              "ripetizioni": "8-10",
+              "recupero": "90-120s",
+              "rir": 4,
+              "tecnica": null,
+              "note": "Esercizio principale schiena — progressione a carico fisso",
+              "progressione": true
+            },
+            {
+              "id": "rematore",
+              "serie": 2,
+              "ripetizioni": "10-12",
+              "recupero": "90-120s",
+              "rir": 4,
+              "tecnica": null,
+              "note": "Spessore dorsale",
+              "progressione": false
+            },
+            {
+              "id": "chest-press",
+              "serie": 2,
+              "ripetizioni": "10-12",
+              "recupero": "90-120s",
+              "rir": 4,
+              "tecnica": null,
+              "note": "Volume petto complementare",
+              "progressione": false
+            },
+            {
+              "id": "croci-cavi",
+              "serie": 3,
+              "ripetizioni": "12-15",
+              "recupero": "90-120s",
+              "rir": 4,
+              "tecnica": null,
+              "note": "Isolamento petto",
+              "progressione": false
+            },
+            {
+              "id": "alzate-laterali",
+              "serie": 2,
+              "ripetizioni": "12-15",
+              "recupero": "90-120s",
+              "rir": 4,
+              "tecnica": null,
+              "note": "Deltoide medio — progressione",
+              "progressione": true
+            },
+            {
+              "id": "lat-machine",
+              "serie": 2,
+              "ripetizioni": "10-12",
+              "recupero": "90-120s",
+              "rir": 5,
+              "tecnica": null,
+              "note": "Volume dorsale aggiuntivo",
+              "progressione": false
+            }
+          ]
+        },
+        "B2": {
+          "nome": "Gambe focus anca · Braccia",
+          "esercizi": [
+            {
+              "id": "stacco-rdl",
+              "serie": 2,
+              "ripetizioni": "8-10",
+              "recupero": "90-120s",
+              "rir": 4,
+              "tecnica": null,
+              "note": "Esercizio principale catena posteriore — progressione a carico fisso",
+              "progressione": true
+            },
+            {
+              "id": "hip-thrust",
+              "serie": 2,
+              "ripetizioni": "10-12",
+              "recupero": "90-120s",
+              "rir": 4,
+              "tecnica": null,
+              "note": "Isolamento glutei",
+              "progressione": false
+            },
+            {
+              "id": "pressa",
+              "serie": 2,
+              "ripetizioni": "10-12",
+              "recupero": "90-120s",
+              "rir": 4,
+              "tecnica": null,
+              "note": "Piedi alti per enfatizzare glutei e femorali",
+              "progressione": false
+            },
+            {
+              "id": "leg-curl",
+              "serie": 3,
+              "ripetizioni": "12-15",
+              "recupero": "90-120s",
+              "rir": 4,
+              "tecnica": null,
+              "note": "Femorali isolati",
+              "progressione": false
+            },
+            {
+              "id": "curl-bicipiti",
+              "serie": 3,
+              "ripetizioni": "12-15",
+              "recupero": "60s",
+              "rir": 4,
+              "tecnica": null,
+              "note": "Bicipiti",
+              "progressione": false
+            },
+            {
+              "id": "trazioni",
+              "serie": 3,
+              "ripetizioni": "10-12",
+              "recupero": "90s",
+              "rir": 4,
+              "tecnica": null,
+              "note": "Presa supina per braccia e dorsali",
+              "progressione": false
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "ipertrofia-metabolica",
+      "nome": "Ipertrofia Metabolica",
+      "obiettivo": "Stimolare l'ipertrofia sarcoplasmatica e la densità capillare attraverso alte ripetizioni, recuperi brevi e accumulo di metaboliti (pump).",
+      "durata": "4 settimane",
+      "rangeRipetizioni": "15-25",
+      "intensita": "50-65% 1RM (RPE 7-8, RIR 0-1)",
+      "seriePerGruppo": "16-22 serie/settimana per gruppo muscolare maggiore",
+      "recuperi": "30-60 secondi tra le serie",
+      "volumeComplessivo": "Alto con densità elevata: 16-22 serie per gruppo muscolare maggiore a settimana",
+      "tecnicheIntensita": [
+        "Drop set",
+        "Superset agonista-antagonista",
+        "Giant set",
+        "Rest-pause metabolico"
+      ],
+      "faticaSistemica": "Moderata-alta a livello metabolico, moderata sul SNC grazie ai carichi ridotti.",
+      "quandoInserire": "Come variante nel blocco ipertrofico, dopo 2-3 cicli classici, o come finisher prima di un deload. Ideale in fasi di cut per mantenere stimolo con carichi ridotti.",
+      "cicloPrecedente": "ipertrofia-classica",
+      "cicloSuccessivo": "deload",
+      "benefici": [
+        "Aumenta il volume del sarcoplasma e il pump",
+        "Migliora la tolleranza al lattato",
+        "Mantiene stimolo ipertrofico con carichi leggeri",
+        "Utile in deficit calorico"
+      ],
+      "limiti": [
+        "Limitato miglioramento della forza",
+        "Può essere scomodo (bruciore muscolare intenso)",
+        "Non sostituisce cicli a tensione meccanica"
+      ],
+      "erroriComuni": [
+        "Usare carichi troppo leggeri senza portare vicino al cedimento",
+        "Recuperi troppo lunghi che annullano l'effetto metabolico",
+        "Applicare su movimenti composti pesanti (rischio tecnico)",
+        "Prolungare oltre 3 settimane"
+      ],
+      "allenamenti": {
+        "A1": {
+          "nome": "Petto · Schiena · Spalle",
+          "esercizi": [
+            {
+              "id": "panca-piana",
+              "serie": 3,
+              "ripetizioni": "15-20",
+              "recupero": "30-45s",
+              "rir": 1,
+              "tecnica": null,
+              "note": "Esercizio principale petto — progressione a carico fisso",
+              "progressione": true
+            },
+            {
+              "id": "lat-machine",
+              "serie": 3,
+              "ripetizioni": "20-25",
+              "recupero": "30-45s",
+              "rir": 1,
+              "tecnica": null,
+              "note": "Focus retrazione scapolare",
+              "progressione": false
+            },
+            {
+              "id": "rematore",
+              "serie": 2,
+              "ripetizioni": "20-25",
+              "recupero": "30-45s",
+              "rir": 2,
+              "tecnica": null,
+              "note": "Trazione orizzontale complementare",
+              "progressione": false
+            },
+            {
+              "id": "panca-inclinata",
+              "serie": 3,
+              "ripetizioni": "20-25",
+              "recupero": "30-45s",
+              "rir": 1,
+              "tecnica": "drop-set",
+              "note": "Petto superiore",
+              "progressione": false
+            },
+            {
+              "id": "alzate-laterali",
+              "serie": 3,
+              "ripetizioni": "20-30",
+              "recupero": "60s",
+              "rir": 1,
+              "tecnica": null,
+              "note": "Deltoide medio",
+              "progressione": false
+            },
+            {
+              "id": "lento-avanti",
+              "serie": 3,
+              "ripetizioni": "20-25",
+              "recupero": "30-45s",
+              "rir": 1,
+              "tecnica": null,
+              "note": "Deltoide anteriore",
+              "progressione": false
+            }
+          ]
+        },
+        "B1": {
+          "nome": "Gambe focus accosciata · Braccia",
+          "esercizi": [
+            {
+              "id": "squat",
+              "serie": 3,
+              "ripetizioni": "15-20",
+              "recupero": "30-45s",
+              "rir": 1,
+              "tecnica": null,
+              "note": "Esercizio principale quadricipiti — progressione a carico fisso",
+              "progressione": true
+            },
+            {
+              "id": "leg-extension",
+              "serie": 3,
+              "ripetizioni": "20-30",
+              "recupero": "60s",
+              "rir": 1,
+              "tecnica": null,
+              "note": "Isolamento quadricipiti",
+              "progressione": false
+            },
+            {
+              "id": "leg-curl",
+              "serie": 3,
+              "ripetizioni": "20-25",
+              "recupero": "30-45s",
+              "rir": 1,
+              "tecnica": null,
+              "note": "Bilanciamento femorali",
+              "progressione": false
+            },
+            {
+              "id": "pressa",
+              "serie": 2,
+              "ripetizioni": "20-25",
+              "recupero": "30-45s",
+              "rir": 2,
+              "tecnica": null,
+              "note": "Volume complementare quadricipiti",
+              "progressione": false
+            },
+            {
+              "id": "curl-bicipiti",
+              "serie": 3,
+              "ripetizioni": "20-30",
+              "recupero": "60s",
+              "rir": 1,
+              "tecnica": "drop-set",
+              "note": "Bicipiti",
+              "progressione": false
+            },
+            {
+              "id": "curl-martello",
+              "serie": 3,
+              "ripetizioni": "20-30",
+              "recupero": "60s",
+              "rir": 1,
+              "tecnica": null,
+              "note": "Brachioradiale e brachiale",
+              "progressione": false
+            }
+          ]
+        },
+        "A2": {
+          "nome": "Schiena · Petto · Spalle",
+          "esercizi": [
+            {
+              "id": "trazioni",
+              "serie": 3,
+              "ripetizioni": "15-20",
+              "recupero": "30-45s",
+              "rir": 1,
+              "tecnica": null,
+              "note": "Esercizio principale schiena — progressione a carico fisso",
+              "progressione": true
+            },
+            {
+              "id": "rematore",
+              "serie": 3,
+              "ripetizioni": "20-25",
+              "recupero": "30-45s",
+              "rir": 1,
+              "tecnica": null,
+              "note": "Spessore dorsale",
+              "progressione": false
+            },
+            {
+              "id": "chest-press",
+              "serie": 3,
+              "ripetizioni": "20-25",
+              "recupero": "30-45s",
+              "rir": 1,
+              "tecnica": null,
+              "note": "Volume petto complementare",
+              "progressione": false
+            },
+            {
+              "id": "croci-cavi",
+              "serie": 3,
+              "ripetizioni": "20-30",
+              "recupero": "60s",
+              "rir": 1,
+              "tecnica": null,
+              "note": "Isolamento petto",
+              "progressione": false
+            },
+            {
+              "id": "alzate-laterali",
+              "serie": 3,
+              "ripetizioni": "20-30",
+              "recupero": "30-45s",
+              "rir": 1,
+              "tecnica": null,
+              "note": "Deltoide medio — progressione",
+              "progressione": true
+            },
+            {
+              "id": "lat-machine",
+              "serie": 2,
+              "ripetizioni": "20-25",
+              "recupero": "30-45s",
+              "rir": 2,
+              "tecnica": null,
+              "note": "Volume dorsale aggiuntivo",
+              "progressione": false
+            }
+          ]
+        },
+        "B2": {
+          "nome": "Gambe focus anca · Braccia",
+          "esercizi": [
+            {
+              "id": "stacco-rdl",
+              "serie": 3,
+              "ripetizioni": "15-20",
+              "recupero": "30-45s",
+              "rir": 1,
+              "tecnica": null,
+              "note": "Esercizio principale catena posteriore — progressione a carico fisso",
+              "progressione": true
+            },
+            {
+              "id": "hip-thrust",
+              "serie": 3,
+              "ripetizioni": "20-25",
+              "recupero": "30-45s",
+              "rir": 1,
+              "tecnica": null,
+              "note": "Isolamento glutei",
+              "progressione": false
+            },
+            {
+              "id": "pressa",
+              "serie": 3,
+              "ripetizioni": "20-25",
+              "recupero": "30-45s",
+              "rir": 1,
+              "tecnica": null,
+              "note": "Piedi alti per enfatizzare glutei e femorali",
+              "progressione": false
+            },
+            {
+              "id": "leg-curl",
+              "serie": 3,
+              "ripetizioni": "20-30",
+              "recupero": "60s",
+              "rir": 1,
+              "tecnica": "drop-set",
+              "note": "Femorali isolati",
+              "progressione": false
+            },
+            {
+              "id": "curl-bicipiti",
+              "serie": 3,
+              "ripetizioni": "20-30",
+              "recupero": "60s",
+              "rir": 1,
+              "tecnica": null,
+              "note": "Bicipiti",
+              "progressione": false
+            },
+            {
+              "id": "trazioni",
+              "serie": 3,
+              "ripetizioni": "20-25",
+              "recupero": "90s",
+              "rir": 1,
+              "tecnica": null,
+              "note": "Presa supina per braccia e dorsali",
+              "progressione": false
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "ricondizionamento",
+      "nome": "Ricondizionamento",
+      "obiettivo": "Ripristinare la tolleranza all'allenamento dopo infortuni, pause prolungate o transizioni tra macrocicli. Ritorno graduale al volume e all'intensità normali.",
+      "durata": "12 settimane",
+      "rangeRipetizioni": "10-15",
+      "intensita": "60-70% 1RM (RPE 6-7, RIR 2-3)",
+      "seriePerGruppo": "10-14 serie/settimana per gruppo muscolare maggiore",
+      "recuperi": "90-120 secondi tra le serie",
+      "volumeComplessivo": "Medio-basso: 10-14 serie per gruppo muscolare maggiore a settimana",
+      "tecnicheIntensita": [
+        "Nessuna — focus su movimento e gradualità"
+      ],
+      "faticaSistemica": "Bassa-moderata. Priorità al ripristino della forma fisica generale.",
+      "quandoInserire": "Dopo infortuni (con ok medico), pause >3 settimane, post-malattia, o come transizione tra due macrocicli molto diversi.",
+      "cicloPrecedente": null,
+      "cicloSuccessivo": "adattamento-anatomico",
+      "benefici": [
+        "Riduce il rischio di re-infortunio",
+        "Ripristina la condizione cardiovascolare di base",
+        "Riabilita la connessione mente-muscolo",
+        "Permette valutazione dello stato attuale"
+      ],
+      "limiti": [
+        "Progressione lenta — richiede pazienza",
+        "Non fornisce stimolo ipertrofico significativo",
+        "Può frustrare atleti avanzati"
+      ],
+      "erroriComuni": [
+        "Riprendere troppo velocemente i carichi pre-pausa",
+        "Saltare esercizi 'noiosi' di mobilità e attivazione",
+        "Non adattare il programma all'area infortunata",
+        "Durata insufficiente prima di cicli intensi"
+      ],
+      "allenamenti": {
+        "A1": {
+          "nome": "Petto · Schiena · Spalle",
+          "esercizi": [
+            {
+              "id": "panca-piana",
+              "serie": 3,
+              "ripetizioni": "10-12",
+              "recupero": "90s",
+              "rir": 3,
+              "tecnica": null,
+              "note": "Esercizio principale petto — progressione a carico fisso",
+              "progressione": true
+            },
+            {
+              "id": "lat-machine",
+              "serie": 3,
+              "ripetizioni": "12-15",
+              "recupero": "90s",
+              "rir": 3,
+              "tecnica": null,
+              "note": "Focus retrazione scapolare",
+              "progressione": false
+            },
+            {
+              "id": "rematore",
+              "serie": 2,
+              "ripetizioni": "12-15",
+              "recupero": "90s",
+              "rir": 4,
+              "tecnica": null,
+              "note": "Trazione orizzontale complementare",
+              "progressione": false
+            },
+            {
+              "id": "panca-inclinata",
+              "serie": 3,
+              "ripetizioni": "12-15",
+              "recupero": "90s",
+              "rir": 3,
+              "tecnica": null,
+              "note": "Petto superiore",
+              "progressione": false
+            },
+            {
+              "id": "alzate-laterali",
+              "serie": 3,
+              "ripetizioni": "15-20",
+              "recupero": "90s",
+              "rir": 3,
+              "tecnica": null,
+              "note": "Deltoide medio",
+              "progressione": false
+            },
+            {
+              "id": "lento-avanti",
+              "serie": 3,
+              "ripetizioni": "12-15",
+              "recupero": "90s",
+              "rir": 3,
+              "tecnica": null,
+              "note": "Deltoide anteriore",
+              "progressione": false
+            }
+          ]
+        },
+        "B1": {
+          "nome": "Gambe focus accosciata · Braccia",
+          "esercizi": [
+            {
+              "id": "squat",
+              "serie": 3,
+              "ripetizioni": "10-12",
+              "recupero": "90s",
+              "rir": 3,
+              "tecnica": null,
+              "note": "Esercizio principale quadricipiti — progressione a carico fisso",
+              "progressione": true
+            },
+            {
+              "id": "leg-extension",
+              "serie": 3,
+              "ripetizioni": "15-20",
+              "recupero": "90s",
+              "rir": 3,
+              "tecnica": null,
+              "note": "Isolamento quadricipiti",
+              "progressione": false
+            },
+            {
+              "id": "leg-curl",
+              "serie": 3,
+              "ripetizioni": "12-15",
+              "recupero": "90s",
+              "rir": 3,
+              "tecnica": null,
+              "note": "Bilanciamento femorali",
+              "progressione": false
+            },
+            {
+              "id": "pressa",
+              "serie": 2,
+              "ripetizioni": "12-15",
+              "recupero": "90s",
+              "rir": 4,
+              "tecnica": null,
+              "note": "Volume complementare quadricipiti",
+              "progressione": false
+            },
+            {
+              "id": "curl-bicipiti",
+              "serie": 3,
+              "ripetizioni": "15-20",
+              "recupero": "60s",
+              "rir": 3,
+              "tecnica": null,
+              "note": "Bicipiti",
+              "progressione": false
+            },
+            {
+              "id": "curl-martello",
+              "serie": 3,
+              "ripetizioni": "15-20",
+              "recupero": "60s",
+              "rir": 3,
+              "tecnica": null,
+              "note": "Brachioradiale e brachiale",
+              "progressione": false
+            }
+          ]
+        },
+        "A2": {
+          "nome": "Schiena · Petto · Spalle",
+          "esercizi": [
+            {
+              "id": "trazioni",
+              "serie": 3,
+              "ripetizioni": "10-12",
+              "recupero": "90s",
+              "rir": 3,
+              "tecnica": null,
+              "note": "Esercizio principale schiena — progressione a carico fisso",
+              "progressione": true
+            },
+            {
+              "id": "rematore",
+              "serie": 3,
+              "ripetizioni": "12-15",
+              "recupero": "90s",
+              "rir": 3,
+              "tecnica": null,
+              "note": "Spessore dorsale",
+              "progressione": false
+            },
+            {
+              "id": "chest-press",
+              "serie": 3,
+              "ripetizioni": "12-15",
+              "recupero": "90s",
+              "rir": 3,
+              "tecnica": null,
+              "note": "Volume petto complementare",
+              "progressione": false
+            },
+            {
+              "id": "croci-cavi",
+              "serie": 3,
+              "ripetizioni": "15-20",
+              "recupero": "90s",
+              "rir": 3,
+              "tecnica": null,
+              "note": "Isolamento petto",
+              "progressione": false
+            },
+            {
+              "id": "alzate-laterali",
+              "serie": 3,
+              "ripetizioni": "15-20",
+              "recupero": "90s",
+              "rir": 3,
+              "tecnica": null,
+              "note": "Deltoide medio — progressione",
+              "progressione": true
+            },
+            {
+              "id": "lat-machine",
+              "serie": 2,
+              "ripetizioni": "12-15",
+              "recupero": "90s",
+              "rir": 4,
+              "tecnica": null,
+              "note": "Volume dorsale aggiuntivo",
+              "progressione": false
+            }
+          ]
+        },
+        "B2": {
+          "nome": "Gambe focus anca · Braccia",
+          "esercizi": [
+            {
+              "id": "stacco-rdl",
+              "serie": 3,
+              "ripetizioni": "10-12",
+              "recupero": "90s",
+              "rir": 3,
+              "tecnica": null,
+              "note": "Esercizio principale catena posteriore — progressione a carico fisso",
+              "progressione": true
+            },
+            {
+              "id": "hip-thrust",
+              "serie": 3,
+              "ripetizioni": "12-15",
+              "recupero": "90s",
+              "rir": 3,
+              "tecnica": null,
+              "note": "Isolamento glutei",
+              "progressione": false
+            },
+            {
+              "id": "pressa",
+              "serie": 3,
+              "ripetizioni": "12-15",
+              "recupero": "90s",
+              "rir": 3,
+              "tecnica": null,
+              "note": "Piedi alti per enfatizzare glutei e femorali",
+              "progressione": false
+            },
+            {
+              "id": "leg-curl",
+              "serie": 3,
+              "ripetizioni": "15-20",
+              "recupero": "90s",
+              "rir": 3,
+              "tecnica": null,
+              "note": "Femorali isolati",
+              "progressione": false
+            },
+            {
+              "id": "curl-bicipiti",
+              "serie": 3,
+              "ripetizioni": "15-20",
+              "recupero": "60s",
+              "rir": 3,
+              "tecnica": null,
+              "note": "Bicipiti",
+              "progressione": false
+            },
+            {
+              "id": "trazioni",
+              "serie": 3,
+              "ripetizioni": "12-15",
+              "recupero": "90s",
+              "rir": 3,
+              "tecnica": null,
+              "note": "Presa supina per braccia e dorsali",
+              "progressione": false
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

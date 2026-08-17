@@ -1,0 +1,13 @@
+{
+  "name": "michele-allenamenti",
+  "private": true,
+  "description": "Macrociclo Michele Baldan — 3 sedute AB AC CB, parte alta ~55%",
+  "type": "module",
+  "scripts": {
+    "macro:allinea": "node tools/allinea-amico.mjs",
+    "macro:sync": "node tools/sync-blocco1-macrociclo.mjs",
+    "macro:verifica": "node tools/verifica-macrociclo.mjs",
+    "macro:rebalance": "node tools/rebalance-macrociclo-55.mjs",
+    "macro:converti": "node tools/converti-ab-ac-cb.mjs"
+  }
+}

@@ -1,0 +1,59 @@
+name: Deploy GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Prepare site artifact
+        run: |
+          mkdir -p _site
+          tar -C . --exclude='.git' --exclude='.github' --exclude='_site' \
+            --exclude='node_modules' --exclude='tools' --exclude='.cursor' \
+            --exclude='package.json' --exclude='SKILL.md' --exclude='docs' \
+            --exclude='README.md' -cf - . | tar -C _site -xf -
+          # GitHub project pages: /allenamenti/…
+          find _site -name '*.html' -print0 | xargs -0 sed -i \
+            -e 's|href="/css/|href="/allenamenti/css/|g' \
+            -e 's|href="/admin/|href="/allenamenti/admin/|g' \
+            -e 's|href="/js/|href="/allenamenti/js/|g' \
+            -e 's|src="/js/|src="/allenamenti/js/|g' \
+            -e 's|src="/admin/|src="/allenamenti/admin/|g' \
+            -e 's|href="/trasparenza-ai/|href="/allenamenti/trasparenza-ai/|g' \
+            -e 's|href="/favicon|href="/allenamenti/favicon|g' \
+            -e 's|href="/"|href="/allenamenti/"|g'
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload site
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

@@ -1,0 +1,493 @@
+<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" style="position:absolute;width:0;height:0;overflow:hidden">
+<defs>
+<style>
+.fx-floor{fill:none;stroke:var(--fx-frame,#6f6a64);stroke-width:3;stroke-linecap:round}
+.fx-frame{fill:none;stroke:var(--fx-frame,#6f6a64);stroke-width:3.5;stroke-linecap:round;stroke-linejoin:round}
+.fx-pad{fill:var(--fx-pad,#3a3632);stroke:var(--fx-frame,#6f6a64);stroke-width:2.5;stroke-linejoin:round}
+.fx-equip{fill:none;stroke:var(--fx-equip,#a89f95);stroke-width:4;stroke-linecap:round;stroke-linejoin:round}
+.fx-plate{fill:var(--fx-equip,#a89f95)}
+.fx-body{fill:none;stroke:var(--fx-body,#f4efe6);stroke-width:5;stroke-linecap:round;stroke-linejoin:round}
+.fx-head{fill:var(--fx-body,#f4efe6)}
+.fx-target{fill:none;stroke:var(--fx-target,#c9783a);stroke-width:10;stroke-linecap:round;opacity:.95}
+.fx-arrow{fill:none;stroke:var(--fx-target,#c9783a);stroke-width:2.8;stroke-linecap:round;stroke-linejoin:round}
+.fx-ghost{fill:none;stroke:var(--fx-body,#f4efe6);stroke-width:4;stroke-linecap:round;stroke-linejoin:round;opacity:.24;stroke-dasharray:5 4}
+</style>
+</defs>
+
+<!-- ═══ PETTO ═══ -->
+
+<symbol id="fig-press-incl" viewBox="0 0 120 120"><title>Panca inclinata con manubri</title>
+  <path class="fx-floor" d="M10 112h100"/>
+  <path class="fx-frame" d="M42 92v20M88 94v18"/>
+  <path class="fx-pad" d="M24 62 70 92l-6 9L18 71z"/>
+  <path class="fx-pad" d="M68 90h24v10H70z"/>
+  <path class="fx-target" d="M38 62 52 71"/>
+  <circle class="fx-head" cx="22" cy="52" r="8"/>
+  <path class="fx-body" d="M30 58 66 84"/>
+  <path class="fx-body" d="M66 84h18l6 16"/>
+  <path class="fx-body" d="M38 64 48 34"/>
+  <path class="fx-equip" d="M30 30h36"/>
+  <rect class="fx-plate" x="25" y="21" width="8" height="18" rx="2.5"/>
+  <rect class="fx-plate" x="63" y="21" width="8" height="18" rx="2.5"/>
+  <path class="fx-arrow" d="M96 38v34M91 44l5-6 5 6M91 66l5 6 5-6"/>
+</symbol>
+
+<symbol id="fig-press-piano" viewBox="0 0 120 120"><title>Panca piana con bilanciere</title>
+  <path class="fx-floor" d="M10 112h100"/>
+  <path class="fx-frame" d="M34 86v26M86 86v26M22 40v46M22 40h10"/>
+  <path class="fx-pad" d="M26 78h68v10H26z"/>
+  <path class="fx-target" d="M40 70 60 70"/>
+  <circle class="fx-head" cx="30" cy="70" r="8"/>
+  <path class="fx-body" d="M38 74h34"/>
+  <path class="fx-body" d="M72 74 88 82 92 100"/>
+  <path class="fx-body" d="M46 72 52 46"/>
+  <path class="fx-equip" d="M28 42h64"/>
+  <rect class="fx-plate" x="24" y="32" width="8" height="20" rx="2.5"/>
+  <rect class="fx-plate" x="88" y="32" width="8" height="20" rx="2.5"/>
+  <path class="fx-arrow" d="M104 48v26M99 54l5-6 5 6M99 68l5 6 5-6"/>
+</symbol>
+
+<symbol id="fig-croci" viewBox="0 0 120 120"><title>Croci ai cavi</title>
+  <path class="fx-frame" d="M12 12v96M108 12v96"/>
+  <path class="fx-equip" d="M12 26 40 52M108 26 80 52"/>
+  <path class="fx-target" d="M50 48 70 48"/>
+  <circle class="fx-head" cx="60" cy="24" r="8"/>
+  <path class="fx-body" d="M60 32v34"/>
+  <path class="fx-body" d="M60 42 40 52M60 42 80 52"/>
+  <path class="fx-body" d="M60 66 52 90 50 110M60 66 68 90 70 110"/>
+  <path class="fx-arrow" d="M40 66c8 8 32 8 40 0M44 60l-4 7 7 2M76 60l4 7-7 2"/>
+</symbol>
+
+<symbol id="fig-chest" viewBox="0 0 120 120"><title>Chest press alla macchina</title>
+  <path class="fx-floor" d="M10 112h100"/>
+  <path class="fx-frame" d="M96 18v94M96 18H74"/>
+  <path class="fx-pad" d="M62 40h12v50H62z"/>
+  <path class="fx-pad" d="M56 88h26v10H56z"/>
+  <path class="fx-equip" d="M28 46v20M28 46h24M28 66h24"/>
+  <path class="fx-target" d="M46 54 60 54"/>
+  <circle class="fx-head" cx="66" cy="34" r="8"/>
+  <path class="fx-body" d="M66 42v44"/>
+  <path class="fx-body" d="M64 54 30 56"/>
+  <path class="fx-body" d="M66 86 44 92 40 108"/>
+  <path class="fx-arrow" d="M20 40 8 56l12 16"/>
+</symbol>
+
+<symbol id="fig-chest-converg" viewBox="0 0 120 120"><title>Chest press convergente</title>
+  <path class="fx-floor" d="M10 112h100"/>
+  <path class="fx-frame" d="M96 18v94M96 18H76"/>
+  <path class="fx-pad" d="M64 40h12v50H64z"/>
+  <path class="fx-pad" d="M58 88h26v10H58z"/>
+  <path class="fx-equip" d="M24 40 44 56 24 72"/>
+  <path class="fx-target" d="M48 56 62 56"/>
+  <circle class="fx-head" cx="68" cy="34" r="8"/>
+  <path class="fx-body" d="M68 42v44"/>
+  <path class="fx-body" d="M66 50 26 42M66 62 26 70"/>
+  <path class="fx-body" d="M68 86 46 92 42 108"/>
+  <path class="fx-arrow" d="M18 48 6 56l12 8"/>
+</symbol>
+
+<!-- ═══ SPALLE ═══ -->
+
+<symbol id="fig-lento" viewBox="0 0 120 120"><title>Lento avanti con bilanciere</title>
+  <path class="fx-floor" d="M10 112h100"/>
+  <path class="fx-equip" d="M24 30h72"/>
+  <rect class="fx-plate" x="18" y="18" width="9" height="24" rx="3"/>
+  <rect class="fx-plate" x="93" y="18" width="9" height="24" rx="3"/>
+  <path class="fx-target" d="M46 46 46 46M74 46 74 46"/>
+  <circle class="fx-target" cx="46" cy="47" r="6" style="stroke:none;fill:var(--fx-target,#c9783a)"/>
+  <circle class="fx-target" cx="74" cy="47" r="6" style="stroke:none;fill:var(--fx-target,#c9783a)"/>
+  <circle class="fx-head" cx="60" cy="34" r="8"/>
+  <path class="fx-body" d="M60 42v30"/>
+  <path class="fx-body" d="M46 48 44 32M74 48 76 32"/>
+  <path class="fx-body" d="M46 48h28"/>
+  <path class="fx-body" d="M60 72 52 92 50 110M60 72 68 92 70 110"/>
+  <path class="fx-arrow" d="M104 22v34M99 28l5-6 5 6M99 50l5 6 5-6"/>
+</symbol>
+
+<symbol id="fig-alzate" viewBox="0 0 120 120"><title>Alzate laterali con manubri</title>
+  <path class="fx-floor" d="M10 112h100"/>
+  <circle class="fx-head" cx="60" cy="26" r="8"/>
+  <path class="fx-body" d="M60 34v34"/>
+  <path class="fx-target" d="M48 42 44 42M72 42 76 42"/>
+  <path class="fx-body" d="M50 42 26 44M70 42 94 44"/>
+  <path class="fx-equip" d="M18 44h16M86 44h16"/>
+  <rect class="fx-plate" x="14" y="36" width="7" height="16" rx="2.5"/>
+  <rect class="fx-plate" x="31" y="36" width="7" height="16" rx="2.5"/>
+  <rect class="fx-plate" x="82" y="36" width="7" height="16" rx="2.5"/>
+  <rect class="fx-plate" x="99" y="36" width="7" height="16" rx="2.5"/>
+  <path class="fx-body" d="M60 68 52 90 50 110M60 68 68 90 70 110"/>
+  <path class="fx-ghost" d="M52 44 44 68M68 44 76 68"/>
+  <path class="fx-arrow" d="M30 68C30 56 34 50 40 46M32 54l-2 12 11-3"/>
+</symbol>
+
+<symbol id="fig-alzate-cavi" viewBox="0 0 120 120"><title>Alzate laterali ai cavi</title>
+  <path class="fx-frame" d="M12 14v98M108 14v98"/>
+  <path class="fx-equip" d="M12 88 44 46M108 88 76 46"/>
+  <circle class="fx-head" cx="60" cy="26" r="8"/>
+  <path class="fx-body" d="M60 34v34"/>
+  <path class="fx-target" d="M48 42 44 42M72 42 76 42"/>
+  <path class="fx-body" d="M50 42 44 46M70 42 76 46"/>
+  <path class="fx-body" d="M60 68 52 90 50 110M60 68 68 90 70 110"/>
+  <path class="fx-arrow" d="M34 70C34 58 38 50 44 46M36 56l-2 12 11-3"/>
+</symbol>
+
+<symbol id="fig-reverse-pec" viewBox="0 0 120 120"><title>Reverse pec deck — deltoide posteriore</title>
+  <path class="fx-floor" d="M10 112h100"/>
+  <path class="fx-frame" d="M60 96v16"/>
+  <path class="fx-pad" d="M50 34h20v46H50z"/>
+  <path class="fx-pad" d="M44 78h32v10H44z"/>
+  <circle class="fx-head" cx="60" cy="24" r="8"/>
+  <path class="fx-target" d="M44 44 34 46M76 44 86 46"/>
+  <path class="fx-equip" d="M22 34v22M98 34v22"/>
+  <path class="fx-body" d="M50 44 24 46M70 44 96 46"/>
+  <path class="fx-arrow" d="M30 66c4 6 10 8 14 6M30 58l-2 9 9 1M90 66c-4 6-10 8-14 6M90 58l2 9-9 1"/>
+</symbol>
+
+<symbol id="fig-halo" viewBox="0 0 120 120"><title>Clean Halo con kettlebell</title>
+  <path class="fx-floor" d="M10 112h100"/>
+  <circle class="fx-head" cx="60" cy="34" r="9"/>
+  <ellipse class="fx-arrow" cx="60" cy="34" rx="30" ry="17" style="stroke-dasharray:6 5"/>
+  <path class="fx-arrow" d="M84 26l6 6-8 4"/>
+  <path class="fx-equip" d="M78 44c0-6 8-6 8 0"/>
+  <circle class="fx-plate" cx="82" cy="52" r="9"/>
+  <path class="fx-body" d="M60 43v30"/>
+  <path class="fx-target" d="M52 50 68 50"/>
+  <path class="fx-body" d="M52 50 74 48"/>
+  <path class="fx-body" d="M60 73 52 92 50 110M60 73 68 92 70 110"/>
+</symbol>
+
+<!-- ═══ SCHIENA ═══ -->
+
+<symbol id="fig-lat" viewBox="0 0 120 120"><title>Lat machine presa larga</title>
+  <path class="fx-frame" d="M96 10v102M96 10H30"/>
+  <path class="fx-equip" d="M30 12v18"/>
+  <path class="fx-equip" d="M14 32h50"/>
+  <rect class="fx-plate" x="10" y="26" width="6" height="14" rx="2"/>
+  <rect class="fx-plate" x="62" y="26" width="6" height="14" rx="2"/>
+  <path class="fx-pad" d="M26 84h34v10H26z"/>
+  <path class="fx-target" d="M38 58 38 74"/>
+  <circle class="fx-head" cx="40" cy="42" r="8"/>
+  <path class="fx-body" d="M40 50v32"/>
+  <path class="fx-body" d="M40 54 18 34M40 54 62 34"/>
+  <path class="fx-body" d="M40 82 66 86 70 104"/>
+  <path class="fx-arrow" d="M78 40v32M73 62l5 10 5-10"/>
+</symbol>
+
+<symbol id="fig-lat-neutro" viewBox="0 0 120 120"><title>Lat machine presa neutra</title>
+  <path class="fx-frame" d="M96 10v102M96 10H40"/>
+  <path class="fx-equip" d="M40 12v16M32 28h16M32 28v8M48 28v8"/>
+  <path class="fx-pad" d="M26 84h34v10H26z"/>
+  <path class="fx-target" d="M38 58 38 74"/>
+  <circle class="fx-head" cx="40" cy="42" r="8"/>
+  <path class="fx-body" d="M40 50v32"/>
+  <path class="fx-body" d="M40 54 32 36M40 54 48 36"/>
+  <path class="fx-body" d="M40 82 66 86 70 104"/>
+  <path class="fx-arrow" d="M78 40v32M73 62l5 10 5-10"/>
+</symbol>
+
+<symbol id="fig-rematore" viewBox="0 0 120 120"><title>Rematore con bilanciere</title>
+  <path class="fx-floor" d="M10 112h100"/>
+  <circle class="fx-head" cx="26" cy="40" r="8"/>
+  <path class="fx-target" d="M40 46 62 52"/>
+  <path class="fx-body" d="M34 44 76 56"/>
+  <path class="fx-body" d="M76 56 72 82 74 108"/>
+  <path class="fx-body" d="M52 50 50 74"/>
+  <path class="fx-equip" d="M28 76h44"/>
+  <rect class="fx-plate" x="22" y="66" width="8" height="20" rx="2.5"/>
+  <rect class="fx-plate" x="70" y="66" width="8" height="20" rx="2.5"/>
+  <path class="fx-arrow" d="M96 74 96 48M91 54l5-6 5 6"/>
+</symbol>
+
+<symbol id="fig-trazioni" viewBox="0 0 120 120"><title>Trazioni alla sbarra</title>
+  <path class="fx-frame" d="M16 14v20M104 14v20M16 16h88"/>
+  <path class="fx-equip" d="M28 20h64"/>
+  <path class="fx-target" d="M50 52 50 68M70 52 70 68"/>
+  <path class="fx-body" d="M44 22 52 48M76 22 68 48"/>
+  <circle class="fx-head" cx="60" cy="40" r="8"/>
+  <path class="fx-body" d="M60 48v28"/>
+  <path class="fx-body" d="M52 48h16"/>
+  <path class="fx-body" d="M60 76 54 96 58 108M60 76 68 94 66 108"/>
+  <path class="fx-arrow" d="M92 78V50M87 56l5-6 5 6"/>
+</symbol>
+
+<symbol id="fig-pulley-basso" viewBox="0 0 120 120"><title>Pulley basso</title>
+  <path class="fx-floor" d="M10 108h100"/>
+  <path class="fx-frame" d="M14 62v46M14 96h20"/>
+  <path class="fx-equip" d="M20 96 48 66"/>
+  <path class="fx-pad" d="M62 84h32v8H62z"/>
+  <path class="fx-target" d="M66 52 66 68"/>
+  <circle class="fx-head" cx="68" cy="38" r="8"/>
+  <path class="fx-body" d="M68 46v34"/>
+  <path class="fx-body" d="M64 58 46 64"/>
+  <path class="fx-body" d="M68 80 40 88 34 104"/>
+  <path class="fx-arrow" d="M86 56 104 56M96 51l8 5-8 5"/>
+</symbol>
+
+<!-- ═══ QUADRICIPITI ═══ -->
+
+<symbol id="fig-pressa" viewBox="0 0 120 120"><title>Pressa a 45 gradi</title>
+  <path class="fx-floor" d="M8 112h104"/>
+  <path class="fx-frame" d="M22 90 96 30M100 26 84 10"/>
+  <path class="fx-pad" d="M14 74h30v14H14z" transform="rotate(-8 29 81)"/>
+  <path class="fx-pad" d="M78 22 100 40l-10 12-22-18z"/>
+  <path class="fx-target" d="M46 74 66 60"/>
+  <circle class="fx-head" cx="18" cy="62" r="8"/>
+  <path class="fx-body" d="M26 68 44 78"/>
+  <path class="fx-body" d="M44 78 72 56 82 42"/>
+  <path class="fx-body" d="M28 74 46 90"/>
+  <path class="fx-arrow" d="M56 96 76 80M66 78l11 2-2 11"/>
+</symbol>
+
+<symbol id="fig-legext" viewBox="0 0 120 120"><title>Leg extension</title>
+  <path class="fx-floor" d="M10 112h100"/>
+  <path class="fx-frame" d="M34 88v24M34 58v14"/>
+  <path class="fx-pad" d="M20 70h32v12H20z"/>
+  <path class="fx-pad" d="M18 34h14v40H18z"/>
+  <circle class="fx-head" cx="30" cy="40" r="8"/>
+  <path class="fx-body" d="M30 48v26"/>
+  <path class="fx-target" d="M44 78 66 76"/>
+  <path class="fx-body" d="M32 76h40"/>
+  <path class="fx-body" d="M72 76 88 74"/>
+  <path class="fx-equip" d="M84 66v18"/>
+  <circle class="fx-plate" cx="90" cy="76" r="7"/>
+  <path class="fx-ghost" d="M72 78 78 100"/>
+  <path class="fx-arrow" d="M74 100C84 98 90 92 92 86M84 100l-11 1 3-11"/>
+</symbol>
+
+<symbol id="fig-squat" viewBox="0 0 120 120"><title>Squat al multipower</title>
+  <path class="fx-floor" d="M10 112h100"/>
+  <path class="fx-frame" d="M20 8v104M100 8v104"/>
+  <path class="fx-equip" d="M26 44h68"/>
+  <rect class="fx-plate" x="20" y="34" width="8" height="20" rx="2.5"/>
+  <rect class="fx-plate" x="92" y="34" width="8" height="20" rx="2.5"/>
+  <circle class="fx-head" cx="52" cy="34" r="8"/>
+  <path class="fx-body" d="M52 42 58 68"/>
+  <path class="fx-target" d="M62 76 74 88"/>
+  <path class="fx-body" d="M58 68 78 74 74 92 68 110"/>
+  <path class="fx-body" d="M56 46 60 62"/>
+  <path class="fx-arrow" d="M108 52v34M103 58l5-6 5 6M103 80l5 6 5-6"/>
+</symbol>
+
+<symbol id="fig-doktor" viewBox="0 0 120 120"><title>Adduttori · macchina Doktor PRIMO</title>
+  <path class="fx-floor" d="M10 112h100"/>
+  <path class="fx-frame" d="M104 12v100"/>
+  <path class="fx-pad" d="M78 62h24v10H78z"/>
+  <path class="fx-pad" d="M40 40h16v10H40z"/>
+  <circle class="fx-head" cx="46" cy="26" r="8"/>
+  <path class="fx-body" d="M46 34v34"/>
+  <path class="fx-target" d="M40 78 36 96"/>
+  <path class="fx-body" d="M46 68 36 90 38 110"/>
+  <path class="fx-body" d="M46 68 66 76 84 66"/>
+  <path class="fx-body" d="M42 46 40 66M50 46 52 66"/>
+  <path class="fx-arrow" d="M18 62v30M13 68l5-6 5 6M13 86l5 6 5-6"/>
+</symbol>
+
+<symbol id="fig-bulgarian" viewBox="0 0 120 120"><title>Bulgarian split squat</title>
+  <path class="fx-floor" d="M10 112h100"/>
+  <path class="fx-pad" d="M80 68h28v10H80z"/>
+  <path class="fx-frame" d="M86 78v34M102 78v34"/>
+  <circle class="fx-head" cx="42" cy="26" r="8"/>
+  <path class="fx-body" d="M42 34v34"/>
+  <path class="fx-target" d="M36 78 32 96"/>
+  <path class="fx-body" d="M42 68 32 90 34 110"/>
+  <path class="fx-body" d="M42 68 62 80 82 70"/>
+  <path class="fx-equip" d="M22 54v16M62 54v16"/>
+  <path class="fx-body" d="M38 46 24 60M46 46 60 60"/>
+  <path class="fx-arrow" d="M14 62v28M9 68l5-6 5 6M9 84l5 6 5-6"/>
+</symbol>
+
+<symbol id="fig-affondi" viewBox="0 0 120 120"><title>Affondi con manubri</title>
+  <path class="fx-floor" d="M10 112h100"/>
+  <circle class="fx-head" cx="52" cy="24" r="8"/>
+  <path class="fx-body" d="M52 32v34"/>
+  <path class="fx-target" d="M40 78 34 98"/>
+  <path class="fx-body" d="M52 66 34 92 32 110"/>
+  <path class="fx-body" d="M52 66 76 82 88 110"/>
+  <path class="fx-equip" d="M30 52v16M74 52v16"/>
+  <path class="fx-body" d="M48 44 32 58M56 44 72 58"/>
+  <path class="fx-arrow" d="M14 60v30M9 66l5-6 5 6M9 84l5 6 5-6"/>
+</symbol>
+
+<!-- ═══ FEMORALI · GLUTEI ═══ -->
+
+<symbol id="fig-rdl" viewBox="0 0 120 120"><title>Stacco rumeno con manubri</title>
+  <path class="fx-floor" d="M10 112h100"/>
+  <circle class="fx-head" cx="26" cy="38" r="8"/>
+  <path class="fx-body" d="M34 42 72 54"/>
+  <path class="fx-target" d="M72 62 70 88"/>
+  <path class="fx-body" d="M72 54 70 84 72 110"/>
+  <path class="fx-body" d="M50 48 46 78"/>
+  <path class="fx-equip" d="M36 80h20M62 80h20"/>
+  <rect class="fx-plate" x="32" y="72" width="7" height="16" rx="2.5"/>
+  <rect class="fx-plate" x="53" y="72" width="7" height="16" rx="2.5"/>
+  <path class="fx-ghost" d="M72 54 68 20"/>
+  <path class="fx-arrow" d="M98 84C98 60 96 44 92 32M86 42l6-11 7 10"/>
+</symbol>
+
+<symbol id="fig-trapbar" viewBox="0 0 120 120"><title>Stacco con trap bar</title>
+  <path class="fx-floor" d="M10 112h100"/>
+  <circle class="fx-head" cx="40" cy="30" r="8"/>
+  <path class="fx-body" d="M46 36 70 52"/>
+  <path class="fx-target" d="M70 60 66 84"/>
+  <path class="fx-body" d="M70 52 66 82 70 110"/>
+  <path class="fx-body" d="M56 44 50 76"/>
+  <path class="fx-equip" d="M28 78h44M28 78v14M72 78v14"/>
+  <circle class="fx-plate" cx="24" cy="94" r="12"/>
+  <circle class="fx-plate" cx="88" cy="94" r="12"/>
+  <path class="fx-equip" d="M36 94h40"/>
+  <path class="fx-arrow" d="M100 80C100 58 98 44 94 32M88 42l6-11 7 10"/>
+</symbol>
+
+<symbol id="fig-legcurl" viewBox="0 0 120 120"><title>Leg curl</title>
+  <path class="fx-floor" d="M10 112h100"/>
+  <path class="fx-frame" d="M40 92v20M88 92v20"/>
+  <path class="fx-pad" d="M22 76h72v12H22z"/>
+  <circle class="fx-head" cx="22" cy="66" r="8"/>
+  <path class="fx-body" d="M30 70h44"/>
+  <path class="fx-target" d="M82 62 88 50"/>
+  <path class="fx-body" d="M74 70 90 66 92 46"/>
+  <path class="fx-equip" d="M84 42h16"/>
+  <circle class="fx-plate" cx="92" cy="42" r="7"/>
+  <path class="fx-ghost" d="M74 70 98 74"/>
+  <path class="fx-arrow" d="M104 70C104 58 100 50 94 44M104 58l1 12-12-2"/>
+</symbol>
+
+<symbol id="fig-hip" viewBox="0 0 120 120"><title>Hip thrust</title>
+  <path class="fx-floor" d="M8 112h104"/>
+  <path class="fx-pad" d="M14 54h26v10H14z"/>
+  <path class="fx-frame" d="M18 64v48M36 64v48"/>
+  <circle class="fx-head" cx="22" cy="44" r="8"/>
+  <path class="fx-body" d="M30 50 60 58"/>
+  <path class="fx-target" d="M56 56 68 60"/>
+  <path class="fx-body" d="M60 58 84 66 86 110"/>
+  <path class="fx-equip" d="M48 54h30"/>
+  <circle class="fx-plate" cx="46" cy="56" r="12"/>
+  <circle class="fx-plate" cx="80" cy="56" r="12"/>
+  <path class="fx-ghost" d="M30 62 62 80"/>
+  <path class="fx-arrow" d="M100 76V44M95 50l5-6 5 6"/>
+</symbol>
+
+<!-- ═══ POLPACCI ═══ -->
+
+<symbol id="fig-polpacci" viewBox="0 0 120 120"><title>Polpacci in piedi</title>
+  <path class="fx-floor" d="M10 108h100"/>
+  <path class="fx-frame" d="M28 96h64v12H28z" style="fill:var(--fx-pad,#3a3632)"/>
+  <circle class="fx-head" cx="60" cy="22" r="8"/>
+  <path class="fx-body" d="M60 30v34"/>
+  <path class="fx-body" d="M60 30 44 42M60 30 76 42"/>
+  <path class="fx-target" d="M52 74 52 86M68 74 68 86"/>
+  <path class="fx-body" d="M60 64 52 86 52 96M60 64 68 86 68 96"/>
+  <path class="fx-body" d="M48 96h10M62 96h10"/>
+  <path class="fx-arrow" d="M100 84V52M95 58l5-6 5 6"/>
+</symbol>
+
+<symbol id="fig-calf-seated" viewBox="0 0 120 120"><title>Polpacci da seduto — soleo</title>
+  <path class="fx-floor" d="M10 108h100"/>
+  <path class="fx-frame" d="M26 84v24"/>
+  <path class="fx-pad" d="M14 70h30v12H14z"/>
+  <path class="fx-pad" d="M46 46h30v12H46z"/>
+  <circle class="fx-head" cx="24" cy="52" r="8"/>
+  <path class="fx-body" d="M24 60v10"/>
+  <path class="fx-body" d="M28 66 58 62"/>
+  <path class="fx-target" d="M62 74 62 88"/>
+  <path class="fx-body" d="M58 62 62 92"/>
+  <path class="fx-frame" d="M52 94h24v10H52z" style="fill:var(--fx-pad,#3a3632)"/>
+  <path class="fx-body" d="M62 92h10"/>
+  <path class="fx-arrow" d="M94 84V56M89 62l5-6 5 6"/>
+</symbol>
+
+<!-- ═══ BICIPITI ═══ -->
+
+<symbol id="fig-curl" viewBox="0 0 120 120"><title>Curl con bilanciere</title>
+  <path class="fx-floor" d="M10 112h100"/>
+  <circle class="fx-head" cx="60" cy="24" r="8"/>
+  <path class="fx-body" d="M60 32v36"/>
+  <path class="fx-target" d="M48 44 46 60"/>
+  <path class="fx-body" d="M52 40 46 62 60 52M68 40 74 62 60 52"/>
+  <path class="fx-equip" d="M36 52h48"/>
+  <rect class="fx-plate" x="30" y="42" width="8" height="20" rx="2.5"/>
+  <rect class="fx-plate" x="82" y="42" width="8" height="20" rx="2.5"/>
+  <path class="fx-body" d="M60 68 52 90 50 110M60 68 68 90 70 110"/>
+  <path class="fx-ghost" d="M46 62 44 80M74 62 76 80"/>
+  <path class="fx-arrow" d="M26 78C26 66 28 58 32 52M24 62l2 12 11-4"/>
+</symbol>
+
+<symbol id="fig-curl-ez" viewBox="0 0 120 120"><title>Curl con bilanciere EZ</title>
+  <path class="fx-floor" d="M10 112h100"/>
+  <circle class="fx-head" cx="60" cy="24" r="8"/>
+  <path class="fx-body" d="M60 32v36"/>
+  <path class="fx-target" d="M48 44 46 60"/>
+  <path class="fx-body" d="M52 40 46 62 60 52M68 40 74 62 60 52"/>
+  <path class="fx-equip" d="M36 56c4-8 10-8 14 0s10 8 14 0 10-8 14 0"/>
+  <rect class="fx-plate" x="28" y="46" width="8" height="20" rx="2.5"/>
+  <rect class="fx-plate" x="84" y="46" width="8" height="20" rx="2.5"/>
+  <path class="fx-body" d="M60 68 52 90 50 110M60 68 68 90 70 110"/>
+  <path class="fx-arrow" d="M24 78C24 66 26 58 30 52M22 62l2 12 11-4"/>
+</symbol>
+
+<symbol id="fig-curl-scott" viewBox="0 0 120 120"><title>Curl su panca Scott</title>
+  <path class="fx-floor" d="M10 112h100"/>
+  <path class="fx-frame" d="M52 88v24"/>
+  <path class="fx-pad" d="M30 46 66 66l-8 12-36-20z"/>
+  <path class="fx-pad" d="M62 82h30v10H62z"/>
+  <circle class="fx-head" cx="68" cy="44" r="8"/>
+  <path class="fx-body" d="M68 52v28"/>
+  <path class="fx-target" d="M52 56 40 52"/>
+  <path class="fx-body" d="M62 52 34 44 46 62"/>
+  <path class="fx-equip" d="M32 62h34"/>
+  <rect class="fx-plate" x="26" y="54" width="7" height="16" rx="2.5"/>
+  <rect class="fx-plate" x="64" y="54" width="7" height="16" rx="2.5"/>
+  <path class="fx-arrow" d="M22 84C20 74 22 66 26 60M18 68l4 12 10-6"/>
+</symbol>
+
+<symbol id="fig-curl-mart" viewBox="0 0 120 120"><title>Curl a martello con manubri</title>
+  <path class="fx-floor" d="M10 112h100"/>
+  <circle class="fx-head" cx="60" cy="24" r="8"/>
+  <path class="fx-body" d="M60 32v36"/>
+  <path class="fx-target" d="M48 44 46 58"/>
+  <path class="fx-body" d="M52 40 46 60 52 46M68 40 74 60 68 46"/>
+  <path class="fx-equip" d="M52 40v14M68 40v14"/>
+  <rect class="fx-plate" x="46" y="34" width="13" height="7" rx="2.5"/>
+  <rect class="fx-plate" x="46" y="53" width="13" height="7" rx="2.5"/>
+  <rect class="fx-plate" x="62" y="34" width="13" height="7" rx="2.5"/>
+  <rect class="fx-plate" x="62" y="53" width="13" height="7" rx="2.5"/>
+  <path class="fx-body" d="M60 68 52 90 50 110M60 68 68 90 70 110"/>
+  <path class="fx-arrow" d="M28 80C28 68 30 58 34 52M26 64l2 12 11-4"/>
+</symbol>
+
+<!-- ═══ CORE · FUNZIONALE ═══ -->
+
+<symbol id="fig-plank" viewBox="0 0 120 120"><title>Plank</title>
+  <path class="fx-floor" d="M8 100h104"/>
+  <circle class="fx-head" cx="24" cy="52" r="8"/>
+  <path class="fx-target" d="M46 60 66 64"/>
+  <path class="fx-body" d="M32 54 84 66"/>
+  <path class="fx-body" d="M30 56 26 78 18 96M34 58 30 96"/>
+  <path class="fx-body" d="M84 66 94 96"/>
+  <path class="fx-arrow" d="M40 40h34M44 34l-8 6 8 6M70 34l8 6-8 6"/>
+</symbol>
+
+<symbol id="fig-crunch" viewBox="0 0 120 120"><title>Crunch addominali</title>
+  <path class="fx-floor" d="M8 100h104"/>
+  <circle class="fx-head" cx="36" cy="48" r="8"/>
+  <path class="fx-target" d="M54 66 68 76"/>
+  <path class="fx-body" d="M42 54 74 80"/>
+  <path class="fx-body" d="M74 80 92 68 94 96"/>
+  <path class="fx-ghost" d="M32 76 76 82"/>
+  <path class="fx-body" d="M40 50 30 40"/>
+  <path class="fx-arrow" d="M22 82C22 66 26 54 34 46M20 62l2 14 12-6"/>
+</symbol>
+
+<symbol id="fig-catchball" viewBox="0 0 120 120"><title>Catch ball con kettlebell</title>
+  <path class="fx-floor" d="M10 112h100"/>
+  <circle class="fx-head" cx="60" cy="30" r="8"/>
+  <path class="fx-body" d="M60 38v30"/>
+  <path class="fx-target" d="M50 46 46 34M70 46 74 34"/>
+  <path class="fx-body" d="M54 44 48 28M66 44 72 28"/>
+  <path class="fx-equip" d="M50 24c0-8 20-8 20 0"/>
+  <circle class="fx-plate" cx="60" cy="18" r="10"/>
+  <path class="fx-body" d="M60 68 52 90 50 110M60 68 68 90 70 110"/>
+  <path class="fx-arrow" d="M92 74C92 52 88 38 82 28M76 38l6-11 7 10"/>
+</symbol>
+
+</svg>
