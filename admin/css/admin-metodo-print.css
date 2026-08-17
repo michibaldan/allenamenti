@@ -63,11 +63,17 @@ body.admin-metodo-pdf #metodo-root {
   letter-spacing: 0.08em;
   color: #666;
 }
+.admin-metodo-pdf .metodo-a4__head-main {
+  font-size: 1.44rem;
+}
 .metodo-a4__head h1 {
   margin: 0.25rem 0 0.35rem;
   font-size: 1.35rem;
   line-height: 1.2;
   color: #111;
+}
+.admin-metodo-pdf .metodo-a4__head h1 {
+  font-size: 2.7rem;
 }
 .metodo-a4__head-meta {
   display: flex;
@@ -75,6 +81,9 @@ body.admin-metodo-pdf #metodo-root {
   gap: 0.5rem 1.25rem;
   font-size: 0.82rem;
   color: #333;
+}
+.admin-metodo-pdf .metodo-a4__head-meta {
+  font-size: 1.64rem;
 }
 .metodo-a4__foot {
   margin-top: 1.25rem;
@@ -84,22 +93,25 @@ body.admin-metodo-pdf #metodo-root {
   color: #666;
   text-align: center;
 }
+.admin-metodo-pdf .metodo-a4__foot {
+  font-size: 1.44rem;
+}
 
 .admin-metodo-pdf .admin-metodo-section h2 {
-  font-size: 0.95rem;
+  font-size: 1.9rem;
   margin: 1rem 0 0.4rem;
   color: #111;
   border-bottom: 1px solid #ddd;
   padding-bottom: 0.2rem;
 }
 .admin-metodo-pdf .admin-metodo-section h3 {
-  font-size: 0.85rem;
+  font-size: 1.7rem;
   color: #333;
 }
 .admin-metodo-pdf .admin-metodo-lead,
 .admin-metodo-pdf .admin-metodo-intro p {
   color: #333;
-  font-size: 0.85rem;
+  font-size: 1.7rem;
 }
 .admin-metodo-pdf .admin-callout {
   background: #f8f6f2;
@@ -109,7 +121,7 @@ body.admin-metodo-pdf #metodo-root {
   margin-bottom: 1rem;
 }
 .admin-metodo-pdf .admin-metodo-table {
-  font-size: 0.78rem;
+  font-size: 1.56rem;
   width: 100%;
 }
 .admin-metodo-pdf .admin-metodo-table th,
@@ -124,7 +136,7 @@ body.admin-metodo-pdf #metodo-root {
   font-weight: 700;
 }
 .admin-metodo-pdf .admin-metodo-list {
-  font-size: 0.82rem;
+  font-size: 1.64rem;
   color: #222;
 }
 
@@ -137,8 +149,8 @@ body.admin-metodo-pdf #metodo-root {
   html, body.admin-page, body.admin-metodo-pdf, body {
     background: #ffffff !important;
     color: #111111 !important;
-    font-size: 9pt !important;
-    line-height: 1.32 !important;
+    font-size: 10.5pt !important;
+    line-height: 1.25 !important;
     -webkit-print-color-adjust: exact !important;
     print-color-adjust: exact !important;
   }
@@ -178,12 +190,20 @@ body.admin-metodo-pdf #metodo-root {
   }
 
   .admin-metodo-section h2 {
-    font-size: 10pt !important;
-    margin-top: 0.6rem !important;
+    font-size: 13pt !important;
+    margin-top: 0.45rem !important;
+  }
+
+  .admin-metodo-section h3 {
+    font-size: 11pt !important;
+  }
+
+  .metodo-a4__head h1 {
+    font-size: 16pt !important;
   }
 
   .admin-metodo-table {
-    font-size: 7.5pt !important;
+    font-size: 9pt !important;
     page-break-inside: auto;
   }
 
@@ -199,8 +219,8 @@ body.admin-metodo-pdf #metodo-root {
   }
 
   .admin-metodo-list {
-    font-size: 8pt !important;
-    margin: 0.2rem 0 0.4rem !important;
+    font-size: 10pt !important;
+    margin: 0.15rem 0 0.3rem !important;
   }
 
   .admin-callout {

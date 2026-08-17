@@ -68,7 +68,9 @@
         " · " + (ir.durataSeduta || "75 min / tetto 90") + "</p>";
     }
     intro.innerHTML = introHtml;
-    article.appendChild(intro);
+
+    var topBlock = el("div", { className: "scheda-a4__top" });
+    topBlock.appendChild(intro);
 
     if (blocco && blocco.guidaOperativa) {
       var g = blocco.guidaOperativa;
@@ -94,8 +96,9 @@
         mh += "<p class=\"scheda-a4__intro-text\"><em>" + g.regoleRirECedimento.principio + "</em></p>";
       }
       metodo.innerHTML = mh;
-      article.appendChild(metodo);
+      topBlock.appendChild(metodo);
     }
+    article.appendChild(topBlock);
 
     var grid = el("div", { className: "scheda-a4__grid" });
     ["ab", "ac", "cb"].forEach(function (key) {

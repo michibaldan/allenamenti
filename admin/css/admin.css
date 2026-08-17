@@ -661,7 +661,9 @@
 
 @media print {
   .admin-metodo-section { break-inside: avoid; page-break-inside: avoid; }
-  .admin-metodo-table { font-size: 0.8rem; }
+  .admin-metodo-table { font-size: 0.95rem; }
+  .admin-ex-fig svg { width: 124px !important; height: 124px !important; }
+  .admin-mappa-card__fig svg { width: 140px !important; height: 140px !important; }
 }
 
 /* Michele Baldan — hero + ciclo semplice */

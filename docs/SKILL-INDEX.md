@@ -11,7 +11,7 @@ Usa con `.cursor/rules/skill-router.mdc`. `SKILL.md` è il file unico di questo 
 | §3 Split | AB – AC / C–B, parte alta 52–62%, glutei in enfasi, 3 giorni |
 | §4 Durata | 75 min / tetto 90 |
 | §5 Fasi | Perché + intensità + recupero · pagina `/ciclo/` |
-| §6 PDF | Path, kg vuoti, chiavi `ab` `ac` `cb` |
+| §6 PDF | Path, kg vuoti, max 2 facciate, chiavi `ab` `ac` `cb` |
 | §7 Pagine | github.io, niente log pubblico, verifica, cartella canonica |
 | §8 Checklist | Nuova fase / scheda |
 

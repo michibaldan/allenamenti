@@ -560,8 +560,11 @@ code {
   body {
     background: #fff;
     color: #161310;
-    font-size: 11pt;
+    font-size: 12pt;
   }
+  h1 { font-size: 18pt !important; }
+  h2 { font-size: 14pt !important; }
+  .ex h3 { font-size: 12.5pt !important; }
 
   .skip,
   .site-header,

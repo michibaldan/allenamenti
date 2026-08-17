@@ -165,6 +165,7 @@ PDF:
 - Log S1–Sn + note
 - In testa: perché della fase + intensità + recupero + durata 75/90
 - Figure SVG dal catalogo
+- **Stampa palestra:** testo più grande dell’originale compatto; **max 2 facciate A4** per scheda sessione e PDF fase. Figure SVG visibili, log a due colonne, intro compatta.
 
 Dati: `admin/data/macrociclo-2026-2027.json`, `blocco-1-fase1.json` (dettaglio fase 1), `esercizi-catalogo.json`, `hub-periodizzazione.json`.
 

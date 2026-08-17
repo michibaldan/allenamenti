@@ -1,10 +1,10 @@
-/* Admin PDF overrides */
-.scheda-a4--admin .scheda-a4__head-period { font-size: 6.5pt; }
+/* Admin PDF overrides — compatto, max 2 facciate */
+.scheda-a4--admin .scheda-a4__head-period { font-size: 14pt; }
 .scheda-a4--admin table th,
-.scheda-a4--admin table td { font-size: 6pt; padding: 0.45mm 0.8mm; }
-.scheda-a4--admin .scheda-a4__quad h2 { font-size: 6.5pt; }
+.scheda-a4--admin table td { font-size: 8pt; padding: 0.7mm 1mm; }
+.scheda-a4--admin .scheda-a4__quad h2 { font-size: 11pt; }
 .scheda-a4--admin .scheda-a4__osservazioni {
-  margin-bottom: 1.5mm;
+  margin-bottom: 0;
 }
 
 .pdf-cycle-select {
@@ -35,11 +35,11 @@
 }
 
 .scheda-a4__intro-fase {
-  margin-bottom: 2mm !important;
+  margin-bottom: 0 !important;
 }
 .scheda-a4__intro-text {
-  margin: 0.8mm 0 0;
-  font-size: 6pt;
-  line-height: 1.25;
+  margin: 0.7mm 0 0;
+  font-size: 8pt;
+  line-height: 1.22;
   color: #333;
 }

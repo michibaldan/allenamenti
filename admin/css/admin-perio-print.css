@@ -155,7 +155,7 @@
   html, body.admin-page, body {
     background: #ffffff !important;
     color: #111111 !important;
-    font-size: 10pt !important;
+    font-size: 20pt !important;
     line-height: 1.35 !important;
     -webkit-print-color-adjust: exact !important;
     print-color-adjust: exact !important;
@@ -223,7 +223,7 @@
   }
   .admin-hero .tagline {
     color: #a85a28 !important;
-    font-size: 8pt !important;
+    font-size: 16pt !important;
   }
   .admin-hero h1,
   .perio-hub__h2,
@@ -232,7 +232,7 @@
     color: #111111 !important;
   }
   .admin-hero h1 {
-    font-size: 16pt !important;
+    font-size: 32pt !important;
     margin: 0 0 2mm !important;
   }
   .admin-hero .lead,
@@ -242,14 +242,14 @@
     color: #222222 !important;
   }
   .perio-guide h2 {
-    font-size: 12pt !important;
+    font-size: 24pt !important;
     margin: 5mm 0 2.5mm !important;
     border-top: 0.4pt solid #bbb !important;
     padding-top: 2mm;
     break-after: avoid;
   }
   .perio-guide h2:first-of-type { border-top: none !important; }
-  .perio-guide h3 { font-size: 10.5pt !important; }
+  .perio-guide h3 { font-size: 21pt !important; }
 
   .perio-callout,
   .perio-note,
@@ -297,9 +297,9 @@
   .perio-year__num {
     background: #f0e6dc !important;
     color: #8a4a20 !important;
-    width: 7mm;
-    height: 7mm;
-    font-size: 10pt;
+    width: 14mm;
+    height: 14mm;
+    font-size: 20pt;
   }
   .perio-year__fase h3 { color: #111111 !important; margin: 0 0 1mm !important; }
   .perio-week {
@@ -318,7 +318,7 @@
     margin-top: 6mm;
     padding-top: 2mm;
     border-top: 0.4pt solid #ccc;
-    font-size: 8pt;
+    font-size: 16pt;
     color: #555555 !important;
   }
 }

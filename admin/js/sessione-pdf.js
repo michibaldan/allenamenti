@@ -130,8 +130,8 @@
     if (fase.intensitaRecupero) {
       var ir = fase.intensitaRecupero;
       head.innerHTML +=
-        "<p class=\"scheda-sessione-pdf__obiettivo\"><strong>Intensità.</strong> " + (ir.intensita || "") + "</p>" +
-        "<p class=\"scheda-sessione-pdf__obiettivo\"><strong>Recupero.</strong> " + (ir.recupero || "") +
+        "<p class=\"scheda-sessione-pdf__obiettivo scheda-sessione-pdf__obiettivo--ir\"><strong>Intensità.</strong> " + (ir.intensita || "") +
+        " · <strong>Recupero.</strong> " + (ir.recupero || "") +
         " · " + (ir.durataSeduta || "75 min / tetto 90") + "</p>";
     }
     if (s.notaSeduta) {
@@ -142,7 +142,6 @@
     var oss = el("div", { className: "scheda-sessione-pdf__osservazioni" });
     oss.innerHTML =
       "<div class=\"scheda-sessione-pdf__osservazioni-label\">Osservazioni / note sessione</div>" +
-      "<div class=\"scheda-sessione-pdf__osservazioni-line\"></div>" +
       "<div class=\"scheda-sessione-pdf__osservazioni-line\"></div>";
     article.appendChild(oss);
 
