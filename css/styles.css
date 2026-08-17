@@ -3453,8 +3453,46 @@ button.linkish {
 }
 @media print {
   .cookie-banner,
-  .cookie-modal {
+  .cookie-modal,
+  .nav-toggle,
+  .skip-link,
+  .no-print,
+  .ciclo-toolbar,
+  .ciclo-downloads,
+  .ciclo-toc,
+  .legal-links,
+  .ai-site-notice {
     display: none !important;
+  }
+  body.ciclo-page {
+    background: #fff;
+    color: #111;
+  }
+  body.ciclo-page .site-header,
+  body.ciclo-page .site-footer {
+    display: none !important;
+  }
+  body.ciclo-page .panel-raised,
+  body.ciclo-page .ciclo-fase {
+    background: #fff;
+    box-shadow: none;
+    border: 1px solid #ccc;
+    break-inside: avoid;
+    page-break-inside: avoid;
+    color: #111;
+  }
+  body.ciclo-page a {
+    color: #111;
+    text-decoration: none;
+  }
+  body.ciclo-page .legal-table th,
+  body.ciclo-page .legal-table td {
+    border-color: #ccc;
+    color: #111;
+  }
+  @page {
+    size: A4 portrait;
+    margin: 12mm;
   }
 }
 .legal-table {
@@ -3513,6 +3551,18 @@ button.linkish {
   flex-wrap: wrap;
   gap: 0.45rem;
   margin: 1rem 0 0;
+}
+.ciclo-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem 1.25rem;
+  margin: 0 0 1.5rem;
+}
+.ciclo-toolbar__tip {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--muted);
 }
 
 /* Organigramma trimestre → schede → sessioni */

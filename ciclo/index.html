@@ -7,11 +7,11 @@
 <meta name="robots" content="noindex, nofollow">
 <meta name="description" content="Cosa significa il ciclo annuale: 4 mesocicli da 13 settimane, intensità, recupero, RIR, e i PDF da scaricare.">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="/css/styles.css?v=51">
+<link rel="stylesheet" href="/css/styles.css?v=52">
 <link rel="stylesheet" href="/admin/css/admin.css?v=14">
 <script src="/js/site-base.js"></script>
 </head>
-<body>
+<body class="ciclo-page">
 <a class="skip-link" href="#contenuto">Vai al contenuto</a>
 <header class="site-header">
   <div class="wrap">
@@ -33,12 +33,18 @@
 
 <main id="contenuto" class="section page-veiled">
   <div class="wrap prose prose--wide legal-doc">
-    <h1>Cosa vuol dire «Ciclo»</h1>
-    <p class="legal-doc__meta">Questa pagina è il foglietto illustrativo. In <a href="/">Schede</a> apri e scarichi AB · AC · CB. Qui leggi <strong>perché</strong> l’anno è fatto così, e cosa fare settimana per settimana.</p>
+    <h1>Sintesi del macrociclo 2026–2027</h1>
+    <p class="legal-doc__meta">Foglietto illustrativo dell’anno: 4 fasi × 13 settimane, 3 sedute AB · AC · CB. In <a href="/">Schede</a> apri e scarichi le sedute. Qui leggi <strong>perché</strong> l’anno è fatto così — e puoi stamparlo tutto insieme.</p>
 
-    <nav class="ciclo-toc panel-raised" aria-label="Indice fasi">
+    <div class="ciclo-toolbar no-print">
+      <button type="button" class="btn btn-primary" id="ciclo-print-btn">Stampa sintesi dell’anno</button>
+      <p class="ciclo-toolbar__tip">A4 verticale · Chrome → Stampa → «Salva come PDF». Escono tutte e 4 le fasi, non solo quella aperta.</p>
+    </div>
+
+    <nav class="ciclo-toc panel-raised no-print" aria-label="Indice fasi">
       <p><strong>Vai a</strong></p>
       <ol>
+        <li><a href="#sintesi">Sintesi dell’anno</a></li>
         <li><a href="#gerarchia">Macro, meso, micro</a></li>
         <li><a href="#glossario">Parole che tornano (RIR, *, deload)</a></li>
         <li><a href="#ipertrofia-accumulo">Fase 1 · Ipertrofia accumulo</a> (set–nov)</li>
@@ -47,6 +53,47 @@
         <li><a href="#ricondizionamento">Fase 4 · Ricondizionamento</a> (giu–ago)</li>
       </ol>
     </nav>
+
+    <h2 id="sintesi">Sintesi complessiva dell’anno</h2>
+    <p>1 settembre 2026 → 31 agosto 2027. Stessi esercizi per tutta una fase. Kg a penna. Deload obbligatorio ogni settimana 13 (−40% volume). Settimana tipo: lunedì AB, mercoledì AC, venerdì CB. Obiettivo 75 min, tetto 90.</p>
+    <div class="table-wrap">
+      <table class="legal-table">
+        <thead>
+          <tr>
+            <th>Fase</th>
+            <th>Periodo</th>
+            <th>A cosa serve</th>
+            <th>Intensità in breve</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1 · Ipertrofia accumulo</td>
+            <td>1 set – 30 nov 2026</td>
+            <td>Costruire tessuto, tendini e tecnica. Non è la fase dei record.</td>
+            <td>RIR 3→1 · sett. 9 −25% · 10–12 picco sui * · 13 deload</td>
+          </tr>
+          <tr>
+            <td>2 · Tensione + forza</td>
+            <td>1 dic 2026 – 28 feb 2027</td>
+            <td>Stessi esercizi, meno rep, più kg.</td>
+            <td>1–6: 6–8 rep · 7–12: 4–6 · * 2,5–3 min · 13 deload</td>
+          </tr>
+          <tr>
+            <td>3 · Ipertrofia II</td>
+            <td>2 mar – 31 mag 2027</td>
+            <td>La forza nuova torna volume.</td>
+            <td>8–12 rep, RIR 1–2 · eventuale +1 serie sui * · 13 deload</td>
+          </tr>
+          <tr>
+            <td>4 · Ricondizionamento</td>
+            <td>1 giu – 31 ago 2027</td>
+            <td>Chiudere l’anno integri, non bruciati.</td>
+            <td>10–12 rep, RIR 2–3, niente cedimento · 13 deload</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
 
     <h2 id="gerarchia">Non sono 3 mesocicli: sono 4</h2>
     <p>La vecchia scheda Green Soul era 3 giorni × 12 settimane, poi finiva. Qui l’anno intero (1 settembre 2026 → 31 agosto 2027) è un <strong>macrociclo</strong> tagliato in <strong>4 mesocicli</strong> da 13 settimane. Ogni mesociclo è una «fase». Ogni settimana è un <strong>microciclo</strong>: tre sedute AB · AC · CB.</p>
@@ -136,11 +183,14 @@
       </p>
     </article>
 
-    <p><a href="/">Torna alle schede dell’anno</a></p>
+    <p class="no-print"><a href="/">Torna alle schede dell’anno</a></p>
   </div>
 </main>
 <footer class="site-footer"><div class="wrap"><p><small>4 fasi · AB · AC · CB · tetto 90 min</small></p></div></footer>
 <script src="/js/main.js?v=21" defer></script>
 <script src="/js/cookie-consent.js?v=4" defer></script>
+<script>
+document.getElementById("ciclo-print-btn").addEventListener("click", function () { window.print(); });
+</script>
 </body>
 </html>
