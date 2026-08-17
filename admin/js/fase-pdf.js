@@ -65,7 +65,7 @@
       var ir = fase.intensitaRecupero;
       introHtml += "<p class=\"scheda-a4__intro-text\"><strong>Intensità.</strong> " + (ir.intensita || "") + "</p>";
       introHtml += "<p class=\"scheda-a4__intro-text\"><strong>Recupero.</strong> " + (ir.recupero || "") +
-        " · " + (ir.durataSeduta || "60 min / tetto 75") + "</p>";
+        " · " + (ir.durataSeduta || "75 min / tetto 90") + "</p>";
     }
     intro.innerHTML = introHtml;
     article.appendChild(intro);

@@ -478,6 +478,18 @@
   <path class="fx-arrow" d="M22 82C22 66 26 54 34 46M20 62l2 14 12-6"/>
 </symbol>
 
+<symbol id="fig-pushdown" viewBox="0 0 120 120"><title>Estensioni tricipiti al cavo</title>
+  <path class="fx-floor" d="M10 112h100"/>
+  <rect class="fx-pad" x="86" y="8" width="16" height="18" rx="2"/>
+  <path class="fx-equip" d="M94 26v22"/>
+  <path class="fx-equip" d="M86 50h16"/>
+  <circle class="fx-head" cx="52" cy="28" r="8"/>
+  <path class="fx-body" d="M52 36v28"/>
+  <path class="fx-target" d="M52 44h34"/>
+  <path class="fx-body" d="M52 48 46 70 40 92M52 64 58 88 62 110"/>
+  <path class="fx-arrow" d="M94 58v18M88 70l6 8 6-8"/>
+</symbol>
+
 <symbol id="fig-catchball" viewBox="0 0 120 120"><title>Catch ball con kettlebell</title>
   <path class="fx-floor" d="M10 112h100"/>
   <circle class="fx-head" cx="60" cy="30" r="8"/>

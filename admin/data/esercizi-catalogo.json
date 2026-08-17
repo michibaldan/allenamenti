@@ -502,5 +502,21 @@
     "setup": "Linea corpo neutra, addome contratto.",
     "movimento": "45-60 sec per posizione, aumenta progressivamente.",
     "errori": "Bacino che cede."
+  },
+  "Estensioni tricipiti al cavo": {
+    "figura": "fig-pushdown",
+    "primario": "Tricipiti",
+    "secondario": "—",
+    "setup": "In piedi, gomiti fermi ai fianchi, fune o barra.",
+    "movimento": "Estensione completa, squeeze 1 sec, eccentrica 2 sec. Carichi da definire.",
+    "errori": "Gomiti che si aprono; slancio con le spalle."
+  },
+  "Abduzione glutei alla macchina": {
+    "figura": "fig-doktor",
+    "primario": "Abduttori, gluteo medio",
+    "secondario": "Gluteo massimo",
+    "setup": "Seduto, schiena appoggiata, ROM controllato.",
+    "movimento": "Apri contro resistenza, squeeze 1 sec, niente slancio. Carichi da definire.",
+    "errori": "Carico eccessivo e ROM corto."
   }
 }

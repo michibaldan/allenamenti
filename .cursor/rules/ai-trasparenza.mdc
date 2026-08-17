@@ -14,7 +14,7 @@ Riferimento: **Regolamento (UE) 2024/1689 (AI Act)** — obblighi di trasparenza
    - `data-ai="generated"` | `edited` | `illustrative` sull’`<img>`
    - **Marchio visivo** in basso a destra: testo **«Foto AI»** (classe `.ai-photo-mark` dentro `.ai-photo-wrap`)
    - testo sotto figura: `.ai-media-note` o `.fig-credit` con `.ai-badge` + link `/trasparenza-ai/`
-3. Ogni pagina pubblica deve includere `cookie-consent.js` (notice footer + link Trasparenza AI) e `main.js` (applica marchio alle img `data-ai` esistenti).
+3. Ogni pagina pubblica deve includere `cookie-consent.js` (banner Garante + footer Privacy / Cookie / Trasparenza AI) e `main.js` (applica marchio alle img `data-ai` esistenti).
 4. Aggiornare `/trasparenza-ai/` se cambia la prassi d’uso dell’IA.
 5. Non etichettare come IA foto/video documentali reali (palestra, vita, Amazfit) salvo ritocco sostanziale.
 

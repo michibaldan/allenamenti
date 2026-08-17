@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /**
  * Converte A1–B2 (4 giorni, ~55% lower) → AB / AC / CB
- * (3 giorni, ~55% parte alta, 60 min / tetto 75).
+ * (3 giorni, parte alta 52–62%, 75 min / tetto 90).
  */
 import { readFileSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
@@ -74,7 +74,7 @@ const INTENSITA = {
     intensita:
       "Sett. 1–2 RIR 3–2 · 3–5 RIR 2 · 6–8 RIR 1 · 9 scarico −25% · 10–12 picco controllato (cedimento solo sull’ultima serie dei *) · 13 deload −40%.",
     recupero:
-      "Fondamentali * 2–2,5 min. Isolamento ~60 s. Accoppia l’isolamento durante il riposo dei * per chiudere in ~60 min (tetto 75).",
+      "Fondamentali * 2–2,5 min. Isolamento ~60 s. Accoppia l’isolamento durante il riposo dei * per chiudere in ~75 min (tetto 90).",
     rir: "sett. 6–8: RIR 1",
   },
   "tensione-forza": {
@@ -107,7 +107,7 @@ const INTENSITA = {
 };
 
 const SCHEDA_INTRO =
-  "3 allenamenti/settimana: Lun AB · Mer AC · Ven CB (o Mar/Gio/Sab). AB e AC condividono A (spinta). CB chiude C e B, lontano da AB così le gambe recuperano. Priorità parte alta ~55% delle serie. Obiettivo 60 min, tetto 75. Halo sempre ultimo se presente. Pesi a penna. PDF anonimo.";
+  "3 allenamenti/settimana: Lun AB · Mer AC · Ven CB (o Mar/Gio/Sab). AB e AC condividono A (spinta). CB chiude C e B, lontano da AB così le gambe recuperano. Priorità parte alta ~55% delle serie. Obiettivo 75 min, tetto 90. Halo sempre ultimo se presente. Pesi a penna. PDF anonimo.";
 
 function buildSessioni(src) {
   const panca = findEx(src, /panca inclinata/i, { preferProgressione: true });
@@ -297,7 +297,7 @@ const profilo = {
   preferenzaMeseCambioFase: "fine novembre / fine febbraio / fine maggio / fine agosto (13 sett.)",
   prioritaMuscolari: "Parte alta del corpo (~55% delle serie settimanali)",
   kettlebellFinisher: "sì in AC (Halo), sempre ultimo esercizio",
-  durataSeduta: "obiettivo 60 min, tetto 75 min",
+  durataSeduta: "obiettivo 75 min, tetto 90 min",
   toneImmagini:
     "Ritratto: usare la foto originale se disponibile (niente data-ai). Figure schede: SVG tecnico.",
 };
@@ -307,7 +307,7 @@ macro.macrociclo.descrizione =
   "Ciclo annuale di Michele Baldan: 4 fasi × 13 settimane, 3 sedute/settimana (AB · AC · CB). Priorità parte alta ~55%. Deload = settimana 13 di ogni fase. Pesi a penna. PDF anonimo.";
 macro.macrociclo.frequenza = "3 sessioni/settimana";
 macro.macrociclo.lineeGuida =
-  "4 fasi × ~13 sett. · 3 sedute (AB–AC / C–B) · ~55% serie parte alta · 60 min / tetto 75 · Deload sett. 13 · Stessi esercizi per tutta la fase · Pesi blank · PDF anonimo";
+  "4 fasi × ~13 sett. · 3 sedute (AB–AC / C–B) · ~55% serie parte alta · 75 min / tetto 90 · Deload sett. 13 · Stessi esercizi per tutta la fase · Pesi blank · PDF anonimo";
 macro.macrociclo.profilo = profilo;
 
 for (const fase of macro.fasi) {
@@ -324,7 +324,7 @@ for (const fase of macro.fasi) {
   fase.intensitaRecupero = {
     intensita: ir.intensita,
     recupero: ir.recupero,
-    durataSeduta: "obiettivo 60 min, tetto 75 min",
+    durataSeduta: "obiettivo 75 min, tetto 90 min",
     deload: "settimana 13 · −40% volume",
     split: "AB – AC / C–B",
   };
@@ -363,7 +363,7 @@ for (const key of SESSIONI) {
 }
 
 blocco.frequenza = "3 allenamenti/settimana";
-blocco.durataSeduta = "obiettivo 60 minuti · tetto 75 minuti";
+blocco.durataSeduta = "obiettivo 75 minuti · tetto 90 minuti";
 blocco.schedaIntro = SCHEDA_INTRO;
 blocco.valutazioneProgramma = {
   note:
@@ -394,7 +394,7 @@ blocco.guidaOperativa = {
       "AC sta in mezzo: condivide A con AB e C con CB, e dà 48 ore alle gambe",
       "Se salti una seduta: riprendi da quella saltata, non comprimere AB e CB nello stesso giorno",
       "Ordine fisso: AB → AC → CB",
-      "Obiettivo 60 min, tetto 75: accoppia isolamento durante il recupero dei *",
+      "Obiettivo 75 min, tetto 90: accoppia isolamento durante il recupero dei *",
     ],
   },
   regoleRirECedimento: {
@@ -419,7 +419,7 @@ if (blocco.guidaOperativa?.checklistSeduta) {
   blocco.guidaOperativa.checklistSeduta = [
     "1. Riscaldamento 8–10 min",
     "2. Esercizi nell’ordine della scheda; accoppia isolamento nel recupero dei *",
-    "3. Chiudi in 60 min se puoi, mai oltre 75",
+    "3. Chiudi in 75 min se puoi, mai oltre 90",
     "4. Annota kg, rep e RIR reale (PDF: campo Atleta vuoto)",
     "5. Finisher Halo in AC sempre ultimo",
   ];
@@ -437,7 +437,7 @@ writeFileSync(HUB, JSON.stringify(hub, null, 2) + "\n");
 meso.split = {
   nome: "AB – AC / C–B · 3 giorni · priorità parte alta",
   descrizione:
-    "Tre sedute. A = spinta parte alta, B = gambe, C = tirata parte alta. AB e AC condividono A (petto/spalle due volte a settimana). CB mette C e B lontano da AB così le gambe recuperano. Circa 55% delle serie sulla parte alta. Obiettivo 60 min, tetto 75.",
+    "Tre sedute. A = spinta parte alta, B = gambe, C = tirata parte alta. AB e AC condividono A (petto/spalle due volte a settimana). CB mette C e B lontano da AB così le gambe recuperano. Circa 55% delle serie sulla parte alta. Obiettivo 75 min, tetto 90.",
   giorni: {
     AB: "A + B — spinta parte alta + gambe brevi",
     AC: "A + C — spinta e tirata parte alta (Halo ultimo)",
@@ -447,7 +447,7 @@ meso.split = {
   progressione:
     "Su ogni giornata, l’esercizio principale (*) segue progressione a carico fisso: tetto rep col RIR target per 2 sedute di fila → +kg.",
   prioritaVolume: "parte alta ~55%",
-  durataSeduta: "obiettivo 60 min, tetto 75 min",
+  durataSeduta: "obiettivo 75 min, tetto 90 min",
 };
 if (meso.periodizzazioneAnnuale) {
   meso.periodizzazioneAnnuale.forEach((p) => {

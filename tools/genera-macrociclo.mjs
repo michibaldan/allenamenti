@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /**
  * Rigenera admin/data/macrociclo-2026-2027.json
- * 4 fasi macro da ~13 settimane — Michele Baldan, 50 anni.
+ * 4 fasi macro da ~13 settimane — Michele Baldan, 53 anni.
  */
 import { readFileSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
@@ -164,7 +164,7 @@ const macrociclo = {
     descrizione: `Periodizzazione annuale ${totalWeeks} settimane, 3 sedute/settimana (AB–AC / C–B). **4 fasi da ~13 settimane**. Focus ~55% serie parte alta. Deload = ultima settimana di ogni fase. **Pesi da definire** dopo test massimali.`,
     frequenza: "3 sessioni/settimana",
     lineeGuida:
-      "4 fasi × ~13 sett. · 3 sedute AB–AC–CB · ~55% serie parte alta · 60 min / tetto 75 · Deload sett. 13 · Pesi blank",
+      "4 fasi × ~13 sett. · 3 sedute AB–AC–CB · parte alta 52–62% · glutei in enfasi · 75 min / tetto 90 · Deload sett. 13 · Pesi blank",
   },
   fasi: FASI,
 };

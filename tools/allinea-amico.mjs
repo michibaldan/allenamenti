@@ -85,11 +85,11 @@ macro.macrociclo.nome = "Macrociclo 2026–2027 · Michele Baldan";
 macro.macrociclo.descrizione =
   "Ciclo annuale di Michele Baldan: 4 fasi × 13 settimane, 3 sedute/settimana (AB · AC · CB). Priorità parte alta ~55%. Deload = settimana 13. Pesi a penna. PDF anonimo.";
 macro.macrociclo.lineeGuida =
-  "4 fasi × ~13 sett. · 3 sedute (AB–AC / C–B) · ~55% serie parte alta · 60 min / tetto 75 · Deload sett. 13 · Pesi blank · PDF anonimo";
+  "4 fasi × ~13 sett. · 3 sedute (AB–AC / C–B) · ~55% serie parte alta · 75 min / tetto 90 · Deload sett. 13 · Pesi blank · PDF anonimo";
 if (macro.macrociclo.profilo) {
   macro.macrociclo.profilo.giorniSettimana = 3;
   macro.macrociclo.profilo.prioritaVolume = "parte alta ~55%";
-  macro.macrociclo.profilo.durataSeduta = "obiettivo 60 min, tetto 75 min";
+  macro.macrociclo.profilo.durataSeduta = "obiettivo 75 min, tetto 90 min";
   macro.macrociclo.profilo.kettlebellFinisher = "sì in AC (Halo), sempre ultimo esercizio";
 }
 
@@ -113,7 +113,7 @@ for (const key of ["ab", "ac", "cb"]) {
 }
 
 blocco.schedaIntro =
-  "3 allenamenti/settimana: Lun AB · Mer AC · Ven CB. Priorità parte alta ~55%. Obiettivo 60 min, tetto 75. Halo in AC sempre ultimo. Pesi a penna. PDF anonimo.";
+  "3 allenamenti/settimana: Lun AB · Mer AC · Ven CB. Priorità parte alta ~55%. Obiettivo 75 min, tetto 90. Halo in AC sempre ultimo. Pesi a penna. PDF anonimo.";
 
 hub.anni = [
   {

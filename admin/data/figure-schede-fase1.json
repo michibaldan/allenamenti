@@ -2,175 +2,24 @@
   "generatedFrom": "blocco-1-fase1.json",
   "stile": "SVG tecnico",
   "rows": [
-    {
-      "sessione": "AB",
-      "idEsercizio": "fig-press-incl",
-      "nome": "Panca inclinata manubri",
-      "pathSvgSymbol": "/admin/img/esercizi-sprite.svg#fig-press-incl",
-      "pathImgWebp": null,
-      "briefVisuale": "Panca a 30°, scapole addotte, piedi a terra.",
-      "stile": "SVG tecnico",
-      "dataAi": null
-    },
-    {
-      "sessione": "AB",
-      "idEsercizio": "fig-croci",
-      "nome": "Croci ai cavi",
-      "pathSvgSymbol": "/admin/img/esercizi-sprite.svg#fig-croci",
-      "pathImgWebp": null,
-      "briefVisuale": "Un passo avanti, gomiti leggermente flessi, petto alto.",
-      "stile": "SVG tecnico",
-      "dataAi": null
-    },
-    {
-      "sessione": "AB",
-      "idEsercizio": "fig-alzate",
-      "nome": "Alzate laterali",
-      "pathSvgSymbol": "/admin/img/esercizi-sprite.svg#fig-alzate",
-      "pathImgWebp": null,
-      "briefVisuale": "Gomiti leggermente flessi.",
-      "stile": "SVG tecnico",
-      "dataAi": null
-    },
-    {
-      "sessione": "AB",
-      "idEsercizio": "fig-pressa",
-      "nome": "Pressa",
-      "pathSvgSymbol": "/admin/img/esercizi-sprite.svg#fig-pressa",
-      "pathImgWebp": null,
-      "briefVisuale": "Pressa 45°, schiena appoggiata.",
-      "stile": "SVG tecnico",
-      "dataAi": null
-    },
-    {
-      "sessione": "AB",
-      "idEsercizio": "fig-legcurl",
-      "nome": "Leg Curl",
-      "pathSvgSymbol": "/admin/img/esercizi-sprite.svg#fig-legcurl",
-      "pathImgWebp": null,
-      "briefVisuale": "Sdraiato o seduto.",
-      "stile": "SVG tecnico",
-      "dataAi": null
-    },
-    {
-      "sessione": "AB",
-      "idEsercizio": "fig-polpacci",
-      "nome": "Polpacci in piedi",
-      "pathSvgSymbol": "/admin/img/esercizi-sprite.svg#fig-polpacci",
-      "pathImgWebp": null,
-      "briefVisuale": "In piedi, ginocchia quasi estese.",
-      "stile": "SVG tecnico",
-      "dataAi": null
-    },
-    {
-      "sessione": "AC",
-      "idEsercizio": "fig-lat",
-      "nome": "Lat machine",
-      "pathSvgSymbol": "/admin/img/esercizi-sprite.svg#fig-lat",
-      "pathImgWebp": null,
-      "briefVisuale": "Presa larga, cosce bloccate, petto alto.",
-      "stile": "SVG tecnico",
-      "dataAi": null
-    },
-    {
-      "sessione": "AC",
-      "idEsercizio": "fig-rematore",
-      "nome": "Rematore bilanciere",
-      "pathSvgSymbol": "/admin/img/esercizi-sprite.svg#fig-rematore",
-      "pathImgWebp": null,
-      "briefVisuale": "Busto ~45°, schiena neutra.",
-      "stile": "SVG tecnico",
-      "dataAi": null
-    },
-    {
-      "sessione": "AC",
-      "idEsercizio": "fig-lento",
-      "nome": "Lento avanti bilanciere",
-      "pathSvgSymbol": "/admin/img/esercizi-sprite.svg#fig-lento",
-      "pathImgWebp": null,
-      "briefVisuale": "Seduto, core attivo.",
-      "stile": "SVG tecnico",
-      "dataAi": null
-    },
-    {
-      "sessione": "AC",
-      "idEsercizio": "fig-reverse-pec",
-      "nome": "Reverse Pec Deck",
-      "pathSvgSymbol": "/admin/img/esercizi-sprite.svg#fig-reverse-pec",
-      "pathImgWebp": null,
-      "briefVisuale": "Petto sul supporto, scapole stabili.",
-      "stile": "SVG tecnico",
-      "dataAi": null
-    },
-    {
-      "sessione": "AC",
-      "idEsercizio": "fig-curl-scott",
-      "nome": "Curl Scott",
-      "pathSvgSymbol": "/admin/img/esercizi-sprite.svg#fig-curl-scott",
-      "pathImgWebp": null,
-      "briefVisuale": "Panca Scott curva, gomiti sul supporto.",
-      "stile": "SVG tecnico",
-      "dataAi": null
-    },
-    {
-      "sessione": "AC",
-      "idEsercizio": "fig-halo",
-      "nome": "Halo",
-      "pathSvgSymbol": "/admin/img/esercizi-sprite.svg#fig-halo",
-      "pathImgWebp": null,
-      "briefVisuale": "Kettlebell, finisher AC — sempre ultimo esercizio.",
-      "stile": "SVG tecnico",
-      "dataAi": null
-    },
-    {
-      "sessione": "CB",
-      "idEsercizio": "fig-trapbar",
-      "nome": "Trap Bar",
-      "pathSvgSymbol": "/admin/img/esercizi-sprite.svg#fig-trapbar",
-      "pathImgWebp": null,
-      "briefVisuale": "Trap bar (stacco omega), schiena neutra, hip hinge.",
-      "stile": "SVG tecnico",
-      "dataAi": null
-    },
-    {
-      "sessione": "CB",
-      "idEsercizio": "fig-hip",
-      "nome": "Hip Thrust",
-      "pathSvgSymbol": "/admin/img/esercizi-sprite.svg#fig-hip",
-      "pathImgWebp": null,
-      "briefVisuale": "Schiena su panca, sguardo in avanti.",
-      "stile": "SVG tecnico",
-      "dataAi": null
-    },
-    {
-      "sessione": "CB",
-      "idEsercizio": "fig-legext",
-      "nome": "Leg Extension",
-      "pathSvgSymbol": "/admin/img/esercizi-sprite.svg#fig-legext",
-      "pathImgWebp": null,
-      "briefVisuale": "Seduto, perno al ginocchio.",
-      "stile": "SVG tecnico",
-      "dataAi": null
-    },
-    {
-      "sessione": "CB",
-      "idEsercizio": "fig-curl-mart",
-      "nome": "Curl Martello",
-      "pathSvgSymbol": "/admin/img/esercizi-sprite.svg#fig-curl-mart",
-      "pathImgWebp": null,
-      "briefVisuale": "Presa neutra, gomiti fermi.",
-      "stile": "SVG tecnico",
-      "dataAi": null
-    },
-    {
-      "sessione": "CB",
-      "idEsercizio": "fig-calf-seated",
-      "nome": "Polpacci seduto",
-      "pathSvgSymbol": "/admin/img/esercizi-sprite.svg#fig-calf-seated",
-      "pathImgWebp": null,
-      "briefVisuale": "Macchina polpacci seduto, cosce bloccate.",
-      "stile": "SVG tecnico",
-      "dataAi": null
-    }
+    {"sessione": "AB", "idEsercizio": "fig-press-incl", "nome": "Panca inclinata manubri", "pathSvgSymbol": "/admin/img/esercizi-sprite.svg#fig-press-incl", "pathImgWebp": null, "briefVisuale": "Panca a 30°, scapole addotte.", "stile": "SVG tecnico", "dataAi": null},
+    {"sessione": "AB", "idEsercizio": "fig-croci", "nome": "Croci ai cavi", "pathSvgSymbol": "/admin/img/esercizi-sprite.svg#fig-croci", "pathImgWebp": null, "briefVisuale": "Gomiti leggermente flessi.", "stile": "SVG tecnico", "dataAi": null},
+    {"sessione": "AB", "idEsercizio": "fig-alzate", "nome": "Alzate laterali", "pathSvgSymbol": "/admin/img/esercizi-sprite.svg#fig-alzate", "pathImgWebp": null, "briefVisuale": "Niente slancio.", "stile": "SVG tecnico", "dataAi": null},
+    {"sessione": "AB", "idEsercizio": "fig-hip", "nome": "Hip Thrust", "pathSvgSymbol": "/admin/img/esercizi-sprite.svg#fig-hip", "pathImgWebp": null, "briefVisuale": "Pausa in alto, mento al petto.", "stile": "SVG tecnico", "dataAi": null},
+    {"sessione": "AB", "idEsercizio": "fig-pressa", "nome": "Pressa", "pathSvgSymbol": "/admin/img/esercizi-sprite.svg#fig-pressa", "pathImgWebp": null, "briefVisuale": "Pressa 45°, schiena appoggiata.", "stile": "SVG tecnico", "dataAi": null},
+    {"sessione": "AB", "idEsercizio": "fig-pushdown", "nome": "Estensioni tricipiti al cavo", "pathSvgSymbol": "/admin/img/esercizi-sprite.svg#fig-pushdown", "pathImgWebp": null, "briefVisuale": "Gomiti fermi ai fianchi.", "stile": "SVG tecnico", "dataAi": null},
+    {"sessione": "AC", "idEsercizio": "fig-lat", "nome": "Lat machine", "pathSvgSymbol": "/admin/img/esercizi-sprite.svg#fig-lat", "pathImgWebp": null, "briefVisuale": "Presa larga, petto alto.", "stile": "SVG tecnico", "dataAi": null},
+    {"sessione": "AC", "idEsercizio": "fig-rematore", "nome": "Rematore bilanciere", "pathSvgSymbol": "/admin/img/esercizi-sprite.svg#fig-rematore", "pathImgWebp": null, "briefVisuale": "Busto ~45°.", "stile": "SVG tecnico", "dataAi": null},
+    {"sessione": "AC", "idEsercizio": "fig-lento", "nome": "Lento avanti bilanciere", "pathSvgSymbol": "/admin/img/esercizi-sprite.svg#fig-lento", "pathImgWebp": null, "briefVisuale": "Glutei contratti, coste basse.", "stile": "SVG tecnico", "dataAi": null},
+    {"sessione": "AC", "idEsercizio": "fig-chest", "nome": "Chest press alla macchina", "pathSvgSymbol": "/admin/img/esercizi-sprite.svg#fig-chest", "pathImgWebp": null, "briefVisuale": "Secondo stimolo petto.", "stile": "SVG tecnico", "dataAi": null},
+    {"sessione": "AC", "idEsercizio": "fig-curl-scott", "nome": "Curl Scott", "pathSvgSymbol": "/admin/img/esercizi-sprite.svg#fig-curl-scott", "pathImgWebp": null, "briefVisuale": "Gomiti sul supporto.", "stile": "SVG tecnico", "dataAi": null},
+    {"sessione": "AC", "idEsercizio": "fig-pushdown", "nome": "Estensioni tricipiti al cavo", "pathSvgSymbol": "/admin/img/esercizi-sprite.svg#fig-pushdown", "pathImgWebp": null, "briefVisuale": "Gomiti fermi.", "stile": "SVG tecnico", "dataAi": null},
+    {"sessione": "AC", "idEsercizio": "fig-halo", "nome": "Halo", "pathSvgSymbol": "/admin/img/esercizi-sprite.svg#fig-halo", "pathImgWebp": null, "briefVisuale": "Sempre ultimo in AC.", "stile": "SVG tecnico", "dataAi": null},
+    {"sessione": "CB", "idEsercizio": "fig-trapbar", "nome": "Trap Bar", "pathSvgSymbol": "/admin/img/esercizi-sprite.svg#fig-trapbar", "pathImgWebp": null, "briefVisuale": "Schiena neutra.", "stile": "SVG tecnico", "dataAi": null},
+    {"sessione": "CB", "idEsercizio": "fig-hip", "nome": "Hip Thrust", "pathSvgSymbol": "/admin/img/esercizi-sprite.svg#fig-hip", "pathImgWebp": null, "briefVisuale": "Volume gluteo principale.", "stile": "SVG tecnico", "dataAi": null},
+    {"sessione": "CB", "idEsercizio": "fig-affondi", "nome": "Affondi camminati manubri", "pathSvgSymbol": "/admin/img/esercizi-sprite.svg#fig-affondi", "pathImgWebp": null, "briefVisuale": "Ginocchio stabile.", "stile": "SVG tecnico", "dataAi": null},
+    {"sessione": "CB", "idEsercizio": "fig-legcurl", "nome": "Leg Curl", "pathSvgSymbol": "/admin/img/esercizi-sprite.svg#fig-legcurl", "pathImgWebp": null, "briefVisuale": "Bacino fermo.", "stile": "SVG tecnico", "dataAi": null},
+    {"sessione": "CB", "idEsercizio": "fig-doktor", "nome": "Abduzione glutei alla macchina", "pathSvgSymbol": "/admin/img/esercizi-sprite.svg#fig-doktor", "pathImgWebp": null, "briefVisuale": "Gluteo medio, ROM controllato.", "stile": "SVG tecnico", "dataAi": null},
+    {"sessione": "CB", "idEsercizio": "fig-curl-mart", "nome": "Curl Martello", "pathSvgSymbol": "/admin/img/esercizi-sprite.svg#fig-curl-mart", "pathImgWebp": null, "briefVisuale": "Presa neutra.", "stile": "SVG tecnico", "dataAi": null}
   ]
 }

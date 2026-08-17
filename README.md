@@ -1,6 +1,6 @@
 ﻿# Michele Baldan — macrociclo 2026–2027
 
-Ciclo annuale: 4 fasi × 13 settimane, **3 schede a settimana (AB · AC · CB)**, priorità parte alta ~55%. PDF anonimo (Atleta a penna). Obiettivo 60 min, tetto 75.
+Ciclo annuale: 4 fasi × 13 settimane, **3 schede a settimana (AB · AC · CB)**, petto/braccia 2×, glutei in enfasi. PDF anonimo (Atleta a penna). Obiettivo 75 min, tetto 90. Privacy/cookie: `/privacy/` `/cookie/` (GDPR, Garante 2021, niente analytics né Google Fonts).
 
 ## Online
 

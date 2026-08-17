@@ -8,7 +8,7 @@
         {
           "id": "set26-ago27",
           "label": "Settembre 2026 → Agosto 2027",
-          "descrizione": "Ciclo annuale di Michele Baldan: 4 fasi × 13 settimane, 3 sedute AB·AC·CB, parte alta ~55%, deload in settimana 13."
+          "descrizione": "4 fasi × 13 settimane, AB·AC·CB, petto/braccia 2×, glutei in enfasi, tetto 90 min, deload sett. 13."
         }
       ]
     }
@@ -17,20 +17,21 @@
   "profilo": {
     "nomeStampa": "Michele Baldan",
     "notaNome": "Nome in pagina ciclo. PDF stampa: campo Atleta vuoto.",
-    "eta": 50,
-    "anniPalestra": null,
-    "livello": null,
-    "obiettivoAnno": "Parte alta ~55% del volume serie · 3 sedute/settimana · 60–75 min",
+    "eta": 53,
+    "pesoKg": 65,
+    "anniPalestra": 10,
+    "livello": "intermedio-avanzato natural (da confermare con foto in costume)",
+    "obiettivoAnno": "Petto, dorsali, spalle, bicipiti, tricipiti e gambe; enfasi glutei. 3x/sett. Tetto 90 min. Foto in costume: verifica successiva.",
     "giorniSettimana": 3,
     "split": "AB – AC / C–B",
-    "prioritaVolume": "parte alta ~55%",
-    "attrezzaturaBase": "Multipower, manubri, cavi, leg machines, kettlebell (finisher Halo in AC, sempre ultimo). Da confermare con Michele.",
+    "prioritaVolume": "parte alta ~55% (52–62%) con glutei in enfasi sul lower",
+    "attrezzaturaBase": "Multipower, manubri, cavi, leg machines, hip thrust, kettlebell (Halo ultimo in AC).",
     "limitiInfortuni": null,
     "dataInizio": "2026-09-01",
     "preferenzaMeseCambioFase": "fine novembre / fine febbraio / fine maggio / fine agosto (13 sett.)",
-    "prioritaMuscolari": "Parte alta del corpo (~55% delle serie settimanali)",
+    "prioritaMuscolari": "Braccia, spalle, dorsali, pettorali, gambe; enfasi glutei",
     "kettlebellFinisher": "sì in AC (Halo), sempre ultimo esercizio",
-    "durataSeduta": "obiettivo 60 min, tetto 75 min",
-    "toneImmagini": "Ritratto: usare la foto originale se disponibile (niente data-ai). Figure schede: SVG tecnico."
+    "durataSeduta": "obiettivo 75 min, tetto 90 min",
+    "toneImmagini": "Ritratto originale. Figure SVG. Foto in costume: da caricare dopo verifica, niente data-ai se documentali."
   }
 }

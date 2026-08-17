@@ -1,16 +1,16 @@
 {
   "split": {
-    "nome": "AB – AC / C–B · 3 giorni · priorità parte alta",
-    "descrizione": "Tre sedute. A = spinta parte alta, B = gambe, C = tirata parte alta. AB e AC condividono A (petto/spalle due volte a settimana). CB mette C e B lontano da AB così le gambe recuperano. Circa 55% delle serie sulla parte alta. Obiettivo 60 min, tetto 75.",
+    "nome": "AB – AC / C–B · 3 giorni · glutei in enfasi",
+    "descrizione": "Tre sedute. Petto e tricipiti in AB e AC. Glutei in AB e CB. Bicipiti in AC e CB. Parte alta 52–62% con glutei in enfasi. Obiettivo 75 min, tetto 90.",
     "giorni": {
-      "AB": "A + B — spinta parte alta + gambe brevi",
-      "AC": "A + C — spinta e tirata parte alta (Halo ultimo)",
-      "CB": "C + B — chiusura tirata/braccia + gambe principali"
+      "AB": "A + B — petto, laterali, tricipiti + hip thrust e pressa",
+      "AC": "A + C — dorso, lento, petto 2°, braccia (Halo ultimo)",
+      "CB": "C + B — glutei principali, trap, chiusura bicipiti"
     },
     "frequenza": "3 allenamenti a settimana con almeno 48 ore tra AB e CB",
     "progressione": "Su ogni giornata, l’esercizio principale (*) segue progressione a carico fisso: tetto rep col RIR target per 2 sedute di fila → +kg.",
-    "prioritaVolume": "parte alta ~55%",
-    "durataSeduta": "obiettivo 60 min, tetto 75 min"
+    "prioritaVolume": "parte alta ~55% (52–62%) con glutei in enfasi sul lower",
+    "durataSeduta": "obiettivo 75 min, tetto 90 min"
   },
   "periodizzazioneAnnuale": [
     {

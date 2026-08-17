@@ -132,7 +132,7 @@
       head.innerHTML +=
         "<p class=\"scheda-sessione-pdf__obiettivo\"><strong>Intensità.</strong> " + (ir.intensita || "") + "</p>" +
         "<p class=\"scheda-sessione-pdf__obiettivo\"><strong>Recupero.</strong> " + (ir.recupero || "") +
-        " · " + (ir.durataSeduta || "60 min / tetto 75") + "</p>";
+        " · " + (ir.durataSeduta || "75 min / tetto 90") + "</p>";
     }
     if (s.notaSeduta) {
       head.innerHTML += "<p class=\"scheda-sessione-pdf__obiettivo\">" + s.notaSeduta + "</p>";

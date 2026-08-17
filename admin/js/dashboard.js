@@ -45,8 +45,8 @@
     [
       "3 allenamenti: AB · AC · CB (non 4). Tipo Lun AB · Mer AC · Ven CB.",
       "AB – AC / C–B: AB e AC condividono la spinta (A). CB mette tirata (C) e gambe (B) lontano da AB, così le gambe recuperano.",
-      "Priorità parte alta ~55% delle serie (petto, schiena, spalle, braccia). Il resto è gambe e polpacci.",
-      "Obiettivo 60 minuti, tetto 75. Si sta nel tempo accoppiando l’isolamento nel recupero dei fondamentali (*), non tagliando il riposo.",
+      "Priorità: petto, dorso, spalle, braccia e gambe, con glutei in enfasi. Parte alta 52–62% delle serie.",
+      "Obiettivo 75 minuti, tetto 90. Si sta nel tempo accoppiando l’isolamento nel recupero dei fondamentali (*), non tagliando il riposo.",
       "Ogni fase dura 13 settimane. La 13 è deload (−40% volume). Stessi esercizi per tutta la fase.",
       "Le liste esercizi si chiudono con Michele. Questi principi no."
     ].forEach(function (t) {
@@ -83,7 +83,7 @@
     }
     wrap.appendChild(el("p", {
       className: "admin-fase__durata",
-      text: (ir.durataSeduta || "obiettivo 60 min, tetto 75 min") +
+      text: (ir.durataSeduta || "obiettivo 75 min, tetto 90 min") +
         " · " + (ir.deload || "settimana 13 · −40% volume")
     }));
     return wrap;
@@ -95,7 +95,7 @@
     root.appendChild(el("p", {
       className: "ciclo-lead",
       text: formatDate(data.macrociclo.inizio) + " → " + formatDate(data.macrociclo.fine) +
-        " · 4 fasi × 13 settimane · 3 schede a settimana (AB · AC · CB) · parte alta ~55%"
+        " · 4 fasi × 13 settimane · 3 schede a settimana (AB · AC · CB) · glutei in enfasi"
     }));
 
     renderPrincipi(data, root);

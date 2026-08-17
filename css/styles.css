@@ -3407,8 +3407,32 @@ body.theme-allenamenti .session-card__badge {
 
 .legal-doc__meta {
   color: var(--muted);
+}
+
+.legal-links {
+  margin: 0.4rem 0 0;
+  font-size: 0.85rem;
+}
+.legal-links a,
+button.linkish {
+  color: var(--accent-soft, #f0c4a0);
+  background: none;
+  border: 0;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+.legal-doc__meta {
   font-size: 0.88rem;
   margin-bottom: 1.5rem;
+}
+@media print {
+  .cookie-banner,
+  .cookie-modal {
+    display: none !important;
+  }
 }
 .legal-table {
   width: 100%;

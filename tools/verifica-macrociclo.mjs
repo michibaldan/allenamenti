@@ -37,7 +37,7 @@ function lookupCat(nome) {
 function isLower(ex) {
   return /gambe|polpacci|glutei|femorali|quadricipiti|catena posteriore|adduttori|abduttori/i.test(
     ex.gruppo || ""
-  ) || /pressa|extension|squat|leg curl|doktor|stacco|affondo|polpacci|rumeno|hip thrust|trap bar|omega/i.test(
+  ) || /pressa|extension|squat|leg curl|doktor|stacco|affondo|polpacci|rumeno|hip thrust|trap bar|omega|abduzione/i.test(
     ex.nome || ""
   );
 }
@@ -71,7 +71,7 @@ macro.fasi.forEach((f) => {
   let total = 0;
   let lower = 0;
   for (const s of Object.values(f.sessioni)) {
-    if ((s.esercizi || []).length > 7) fail(f.id + " " + s.nome + " ha " + s.esercizi.length + " esercizi (>7, rischio >75 min)");
+    if ((s.esercizi || []).length > 7) fail(f.id + " " + s.nome + " ha " + s.esercizi.length + " esercizi (>7, rischio >90 min)");
     for (const ex of s.esercizi) {
       const sets = Number(ex.serie) || 0;
       total += sets;
@@ -110,9 +110,9 @@ KEYS.forEach((k) => {
   const kb = blocco.sessioni[k].esercizi.filter((e) => isKb(e.nome));
   if (kb.length && !isKb(last.nome)) fail("blocco " + k + ": kettlebell non ultimo");
 });
-if (!/60/.test(blocco.durataSeduta || "") || !/75/.test(blocco.durataSeduta || "")) {
-  fail("blocco durataSeduta deve citare 60 e 75 min");
-} else pass("Blocco 1 durata 60/75");
+if (!/75/.test(blocco.durataSeduta || "") || !/90/.test(blocco.durataSeduta || "")) {
+  fail("blocco durataSeduta deve citare 75 e 90 min");
+} else pass("Blocco 1 durata 75/90");
 pass("Blocco 1 AB–CB con figure");
 
 if (!hub.anni?.length) fail("hub-periodizzazione.json senza anni");
