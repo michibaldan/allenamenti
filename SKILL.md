@@ -68,7 +68,7 @@ MACROCICLO  ≈ 52 settimane (1 set 2026 – 31 ago 2027)
 ```
 
 - **4 fasi × 13 settimane.** Deload = **settimana 13 di ogni fase (−40% volume)**. Obbligatorio.
-- Stessi esercizi per tutta la fase. **Dalla fase 2:** 4 periodi di progressione serie/rep (PI) → **16 schede** (4 periodi × 3 sedute AB/AC/CB + 4 PDF riassunto). Fase 1 resta 3 schede + 1 riassunto.
+- Stessi esercizi AB · AC · CB per tutta la fase. **Solo fase 2:** 4 periodi di rep sui * → **12 schede** (4 × AB · AC · CB). Fasi 1, 3 e 4: 3 schede.
 - Non usare mesocicli da 3–6 settimane (modello “avanzato giovane”).
 - Kettlebell **ultimo** se c’è (Halo in **AC**). Mai in apertura.
 
@@ -124,24 +124,24 @@ Ogni fase in pagina ciclo **e** in testa alle schede/PDF deve mostrare: perché,
 
 ### Fase 2 · Tensione + forza (dic–feb)
 
-**Perché:** unico picco kg dell’anno sui * (Project Invictus). ~30% esercizi ruotati vs fase 1.
+**Perché:** unico picco kg dell’anno sui * (Project Invictus). Stessi esercizi della fase 1.
 
-- Periodi (16 schede): `sett-1-6` 6–8 · `sett-7-8` 5–6 · `sett-9-10` 5 · `sett-11-12` **4 rep** · 13 deload
+- Periodi (**12 schede** = 4 × AB · AC · CB): `sett-1-6` 6–8 · `sett-7-8` 5–6 · `sett-9-10` 5 · `sett-11-12` **4 rep** · 13 deload
 - Recupero: * **2,5–3 min** · isolamento 60–75 s
 
 ### Fase 3 · Ipertrofia II (mar–mag)
 
-**Perché:** rientro **8 rep** sui * (convertire forza in massa). Terzo schema.
+**Perché:** la forza nuova torna volume. Stessa lista AB · AC · CB.
 
-- Periodi (16 schede): `sett-1-5` 8–10 · `sett-6-8` 8 · `sett-9` −25% · `sett-10-12` **+1 serie** sui * · 13 deload
-- Recupero: come fase 1
+- Intensità: 8–12, RIR 1–2, volume pieno (eventuale +1 serie sui * in 9–12) · **13 deload**
+- Recupero: come fase 1 · 3 schede
 
 ### Fase 4 · Ricondizionamento (giu–ago)
 
-**Perché:** chiudere l’anno integri. Quarto schema più guidato.
+**Perché:** chiudere l’anno integri. Stessa lista AB · AC · CB.
 
-- Periodi (16 schede): `sett-1-4` · `sett-5-8` · `sett-9-10` · `sett-11-12` (10–12, RIR 2–3) · 13 deload
-- Recupero: può essere più corto; tetto 90 resta
+- Intensità: 10–12, RIR 2–3, niente cedimento · **13 deload**
+- Recupero: può essere più corto; tetto 90 resta · 3 schede
 
 JSON: `fase.perche` + `fase.intensitaRecupero` in `admin/data/macrociclo-2026-2027.json`.
 
@@ -166,7 +166,7 @@ PDF:
 - Log S1–Sn + note
 - In testa: perché della fase + intensità + recupero + durata 75/90
 - Figure SVG dal catalogo
-- **Fasi 2–4:** 4 periodi × AB/AC/CB + 4 PDF riassunto = **16 schede**. Rotazione ~25–35% esercizi a ogni cambio fase. Priorità Michele (parte alta 52–62%, glutei 2×) restano.
+- **Fase 2:** 4 periodi × AB · AC · CB = **12 schede**. Fasi 3–4: 3 schede. Priorità Michele (parte alta 52–62%, glutei 2×) restano. Non usare lettere A1/B1.
 - **Stampa palestra:** testo più grande dell’originale compatto; **max 2 facciate A4** per scheda sessione e PDF fase. Figure SVG visibili, log a due colonne, intro compatta.
 
 Dati: `macrociclo-2026-2027.json`, `blocco-1-fase1.json`, `fasi-2-3-4.json`, `blocco-2-fase2.json` … `blocco-4-fase4.json`, `esercizi-catalogo.json`, `hub-periodizzazione.json`.
@@ -197,7 +197,7 @@ Chiavi sessione: **`ab` `ac` `cb`**. Default `ab`.
 - [ ] `perche` + `intensitaRecupero` in JSON **e** in UI/PDF
 - [ ] Pesi `—` / kg blank, PDF anonimo
 - [ ] Halo ultimo in AC se presente
-- [ ] Fasi 2–4: 4 periodi e 16 schede; Halo ultimo in AC
+- [ ] Fase 2: 12 schede (4 × AB · AC · CB); fasi 3–4: 3 schede; Halo ultimo in AC
 - [ ] Figure da catalogo
 - [ ] Nessun dato clinico inventato; foto costume solo se fornite
 - [ ] Privacy/cookie: niente font/analytics di terza parte; banner e pagine legal allineate

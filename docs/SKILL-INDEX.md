@@ -7,11 +7,11 @@ Usa con `.cursor/rules/skill-router.mdc`. `SKILL.md` è il file unico di questo 
 | Trasparenza AI | AI Act, markup foto IA vs foto originale |
 | Privacy / cookie | GDPR art. 13, Garante 2021, no Google Fonts/analytics, `/privacy/` `/cookie/` |
 | §1 Profilo | Michele 53, 65 kg, ~10 anni palestra, PDF anonimo, foto costume dopo, non inventare clinico |
-| §2 Gerarchia | Macro 52 · meso 13 · micro 3 sedute · deload 13 · fasi 2–4: 4 periodi / 16 schede |
+| §2 Gerarchia | Macro 52 · meso 13 · micro 3 sedute · deload 13 · fase 2: 12 schede |
 | §3 Split | AB – AC / C–B, parte alta 52–62%, glutei in enfasi, 3 giorni |
 | §4 Durata | 75 min / tetto 90 |
 | §5 Fasi | PI: F2 picco 4 rep · F3 rientro 8 +1 serie · F4 10–12 · `/ciclo/` |
-| §6 PDF | Path, kg vuoti, max 2 facciate, 16 schede fasi 2–4, chiavi `ab` `ac` `cb` |
+| §6 PDF | Path, kg vuoti, max 2 facciate, fase 2: 12 schede, chiavi `ab` `ac` `cb` |
 | §7 Pagine | github.io, niente log pubblico, verifica, cartella canonica |
 | §8 Checklist | Nuova fase / scheda |
 

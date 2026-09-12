@@ -123,25 +123,33 @@ const index = JSON.parse(readFileSync(join(REPO, "admin/data/blocchi-index.json"
     return;
   }
   const b = JSON.parse(readFileSync(join(REPO, "admin/data", file), "utf8"));
-  if (!b.periodi || b.periodi.length !== 4) fail(id + " deve avere 4 periodi");
-  else {
-    const nSchede = b.periodi.length * KEYS.length + b.periodi.length;
-    if (nSchede !== 16) fail(id + " schede " + nSchede + " (atteso 16)");
-    else pass(id + " 16 schede (4 periodi × 3 sedute + 4 PDF)");
-  }
-  b.periodi.forEach((p) => {
-    KEYS.forEach((k) => {
-      if (!p.sessioni[k]) fail(id + " " + p.id + " manca " + k);
-      const last = p.sessioni[k].esercizi.at(-1);
-      const kb = p.sessioni[k].esercizi.filter((e) => isKb(e.nome));
-      if (kb.length && !isKb(last.nome)) fail(id + " " + p.id + " " + k + ": kettlebell non ultimo");
-      (p.sessioni[k].esercizi || []).forEach((ex) => {
-        if (!ex.figura && !lookupCat(ex.nome)?.figura) {
-          fail(id + " " + p.id + " " + k + " " + ex.nome + " senza figura");
-        }
+  if (id === "tensione-forza") {
+    if (!b.periodi || b.periodi.length !== 4) fail(id + " deve avere 4 periodi");
+    else {
+      const nSchede = b.periodi.length * KEYS.length;
+      if (nSchede !== 12) fail(id + " schede " + nSchede + " (atteso 12 = 4× AB/AC/CB)");
+      else pass(id + " 12 schede (4 periodi × AB · AC · CB)");
+    }
+    b.periodi.forEach((p) => {
+      KEYS.forEach((k) => {
+        if (!p.sessioni[k]) fail(id + " " + p.id + " manca " + k);
+        const last = p.sessioni[k].esercizi.at(-1);
+        const kb = p.sessioni[k].esercizi.filter((e) => isKb(e.nome));
+        if (kb.length && !isKb(last.nome)) fail(id + " " + p.id + " " + k + ": kettlebell non ultimo");
+        (p.sessioni[k].esercizi || []).forEach((ex) => {
+          if (!ex.figura && !lookupCat(ex.nome)?.figura) {
+            fail(id + " " + p.id + " " + k + " " + ex.nome + " senza figura");
+          }
+        });
       });
     });
-  });
+  } else {
+    if (b.periodi && b.periodi.length) fail(id + " non deve avere periodi (solo fase 2)");
+    else pass(id + " 3 schede AB · AC · CB");
+    KEYS.forEach((k) => {
+      if (!b.sessioni?.[k]) fail(id + " manca " + k);
+    });
+  }
 });
 
 if (!hub.anni?.length) fail("hub-periodizzazione.json senza anni");

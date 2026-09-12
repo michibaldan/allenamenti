@@ -47,7 +47,7 @@
       "AB – AC / C–B: AB e AC condividono la spinta (A). CB mette tirata (C) e gambe (B) lontano da AB, così le gambe recuperano.",
       "Priorità: petto, dorso, spalle, braccia e gambe, con glutei in enfasi. Parte alta 52–62% delle serie.",
       "Obiettivo 75 minuti, tetto 90. Si sta nel tempo accoppiando l’isolamento nel recupero dei fondamentali (*), non tagliando il riposo.",
-      "Ogni fase dura 13 settimane. La 13 è deload (−40% volume). Stessi esercizi per tutta la fase; dalla 2 cambiano serie e rep per periodo (PI).",
+      "Ogni fase dura 13 settimane. La 13 è deload (−40% volume). Stessi esercizi AB · AC · CB. Solo in fase 2 cambiano le rep sui * per periodo (12 schede).",
       "Le liste esercizi si chiudono con Michele. Questi principi no."
     ].forEach(function (t) {
       ul.appendChild(el("li", { text: t }));
@@ -131,7 +131,7 @@
     root.appendChild(el("p", {
       className: "ciclo-lead",
       html: formatDate(data.macrociclo.inizio) + " → " + formatDate(data.macrociclo.fine) +
-        " · 4 fasi × 13 settimane · AB · AC · CB. Dalla fase 2: <strong>16 schede</strong> (4 periodi × 3 sedute + 4 PDF riassunto). " +
+        " · 4 fasi × 13 settimane · AB · AC · CB. Fase 2: <strong>12 schede</strong> (4 periodi × AB · AC · CB). Fasi 3 e 4: 3 schede. " +
         "<a href=\"" + u("/ciclo/") + "\">Cosa vuol dire il ciclo e come leggere intensità e recupero</a>."
     }));
 

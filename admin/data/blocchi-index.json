@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "nota": "Mappa fase → JSON dettaglio. Fase 1 non si rigenera da tools/genera-blocchi-2-3-4.mjs. Fasi 2–4: 4 periodi × 3 sedute + 4 PDF riassunto = 16 schede.",
+  "nota": "Mappa fase → JSON dettaglio. Fase 1 non si rigenera da tools/genera-blocchi-2-3-4.mjs. Solo fase 2: 4 periodi × AB · AC · CB = 12 schede. Fasi 3–4: 3 schede.",
   "blocchi": {
     "ipertrofia-accumulo": "blocco-1-fase1.json",
     "tensione-forza": "blocco-2-fase2.json",

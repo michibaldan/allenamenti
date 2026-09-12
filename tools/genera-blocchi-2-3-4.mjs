@@ -206,7 +206,7 @@ const META = {
     guidaOperativa: {
       titolo: "Metodo Blocco 2 — tensione e forza",
       sintesi:
-        "Unico mesociclo con carichi alti sui * (PI). Rep *: 6–8 → 5–6 → 5 → 4. Accessori 6–8. Glutei 2×. Halo ultimo in AC. 4 periodi × 3 sedute + 4 PDF = 16 schede.",
+        "Stessi esercizi della fase 1 (AB · AC · CB). Rep *: 6–8 → 5–6 → 5 → 4. Glutei 2×. Halo ultimo in AC. 4 periodi × 3 sedute = 12 schede.",
       periodizzazioneIntensita: [
         { settimane: "1-6", intensita: "RIR 3-2 → 2", volume: "100%", nota: "Tensione 6–8" },
         { settimane: "7-8", intensita: "RIR 2", volume: "100%", nota: "5–6 rep *" },
@@ -244,7 +244,7 @@ const META = {
     guidaOperativa: {
       titolo: "Metodo Blocco 3 — ipertrofia II",
       sintesi:
-        "Rientro 8 rep sui * (PI ipertrofia). +1 serie sett. 10–12. Scarico sett. 9. Glutei 2×. 4 periodi × 3 sedute + 4 PDF = 16 schede.",
+        "Stessa lista AB · AC · CB. Rientro volume 8–12. Eventuale +1 serie sui * in 9–12. 3 schede.",
       periodizzazioneIntensita: [
         { settimane: "1-5", intensita: "RIR 2", volume: "100%", nota: "8–10" },
         { settimane: "6-8", intensita: "RIR 1", volume: "100%", nota: "8 rep" },
@@ -282,7 +282,7 @@ const META = {
     guidaOperativa: {
       titolo: "Metodo Blocco 4 — ricondizionamento",
       sintesi:
-        "Schema estivo guidato, 10–12 rep, RIR 2–3. Glutei restano. 4 periodi × 3 sedute + 4 PDF = 16 schede.",
+        "Stessa lista AB · AC · CB. 10–12 rep, RIR 2–3. Glutei restano. 3 schede.",
       periodizzazioneIntensita: [
         { settimane: "1-4", intensita: "RIR 2-3", volume: "~85%", nota: "Avvio" },
         { settimane: "5-8", intensita: "RIR 2-3", volume: "~85%", nota: "Mantenimento" },
@@ -330,8 +330,15 @@ for (const faseSrc of fasiSrc.fasi) {
     sessioni: sessionsFromFase(faseSrc),
   };
 
-  b.periodi = buildPeriodi(meta.periodi, b, meta.regoleBlocco);
+  if (faseSrc.id === "tensione-forza") {
+    b.periodi = buildPeriodi(meta.periodi, b, meta.regoleBlocco);
+  }
 
   writeFileSync(join(ADMIN, meta.file), JSON.stringify(b, null, 2) + "\n");
-  console.log("OK", meta.file, "·", b.periodi.length, "periodi ×", KEYS.length, "sedute +", b.periodi.length, "PDF =", b.periodi.length * KEYS.length + b.periodi.length, "schede");
+  const nPeriodi = (b.periodi || []).length;
+  if (nPeriodi) {
+    console.log("OK", meta.file, "·", nPeriodi, "periodi ×", KEYS.length, "sedute =", nPeriodi * KEYS.length, "schede");
+  } else {
+    console.log("OK", meta.file, "· 3 schede AB AC CB (niente periodi)");
+  }
 }

@@ -1,5 +1,5 @@
 /**
- * Periodi rep fasi 2–4 (4 periodi × AB/AC/CB + PDF riassunto = 16 schede)
+ * Periodi rep solo fase 2 (4 periodi × AB · AC · CB = 12 schede)
  */
 (function () {
   "use strict";

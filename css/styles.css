@@ -3597,11 +3597,17 @@ button.linkish {
   font-size: 0.85rem;
   color: var(--muted);
 }
+.ciclo-downloads-label {
+  margin: 1rem 0 0.25rem;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--muted);
+}
 .ciclo-downloads {
   display: flex;
   flex-wrap: wrap;
   gap: 0.45rem;
-  margin: 1rem 0 0;
+  margin: 0.25rem 0 0;
 }
 .ciclo-toolbar {
   display: flex;
