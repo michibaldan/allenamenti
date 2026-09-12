@@ -30,13 +30,16 @@
   var back = document.getElementById("pdf-back-link");
   if (back && p.get("ciclo")) {
     var href = "/admin/sessione/?ciclo=" + encodeURIComponent(p.get("ciclo")) + "&sessione=" + (p.get("sessione") || "ab");
+    if (p.get("periodo")) href += "&periodo=" + encodeURIComponent(p.get("periodo"));
     back.href = window.fqUrl ? window.fqUrl(href) : href;
     back.textContent = "Scheda online";
   }
 })();
 </script>
+<script src="/admin/js/blocchi-map.js?v=1" defer></script>
+<script src="/admin/js/blocco-periodi.js?v=1" defer></script>
 <script src="/admin/js/sprite-esercizi.js?v=2" defer></script>
-<script src="/admin/js/sessione-pdf.js?v=8" defer></script>
+<script src="/admin/js/sessione-pdf.js?v=10" defer></script>
 <script src="/js/cookie-consent.js?v=4" defer></script>
 </body>
 </html>

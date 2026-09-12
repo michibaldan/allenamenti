@@ -47,7 +47,7 @@
       "AB – AC / C–B: AB e AC condividono la spinta (A). CB mette tirata (C) e gambe (B) lontano da AB, così le gambe recuperano.",
       "Priorità: petto, dorso, spalle, braccia e gambe, con glutei in enfasi. Parte alta 52–62% delle serie.",
       "Obiettivo 75 minuti, tetto 90. Si sta nel tempo accoppiando l’isolamento nel recupero dei fondamentali (*), non tagliando il riposo.",
-      "Ogni fase dura 13 settimane. La 13 è deload (−40% volume). Stessi esercizi per tutta la fase.",
+      "Ogni fase dura 13 settimane. La 13 è deload (−40% volume). Stessi esercizi per tutta la fase; dalla 2 cambiano serie e rep per periodo (PI).",
       "Le liste esercizi si chiudono con Michele. Questi principi no."
     ].forEach(function (t) {
       ul.appendChild(el("li", { text: t }));
@@ -89,13 +89,49 @@
     return wrap;
   }
 
-  function renderDashboard(data, root) {
+  function renderSessionGrid(fase, periodo) {
+    var grid = el("div", { className: "admin-sessioni-grid admin-sessioni-grid--3" });
+    var sessioni = periodo && periodo.sessioni ? periodo.sessioni : fase.sessioni;
+    var periodoId = periodo ? periodo.id : null;
+    SESSIONI.forEach(function (key) {
+      var s = sessioni[key] || fase.sessioni[key];
+      if (!s) return;
+      var href = window.fqPeriodi
+        ? window.fqPeriodi.sessionUrl(fase.id, key, periodoId)
+        : u("/admin/sessione/?ciclo=" + encodeURIComponent(fase.id) + "&sessione=" + key);
+      var pdfHref = window.fqPeriodi
+        ? window.fqPeriodi.sessionPdfUrl(fase.id, key, periodoId)
+        : u("/admin/sessione/pdf/?ciclo=" + encodeURIComponent(fase.id) + "&sessione=" + key);
+      var wrap = el("article", { className: "scheda-mini" });
+      wrap.appendChild(el("span", { className: "scheda-mini__key", text: key.toUpperCase() }));
+      wrap.appendChild(el("strong", { text: shortName(s) }));
+      var meta = (s.esercizi || []).length + " esercizi";
+      if (periodo) meta += " · * " + periodo.repFondamentali + " rep";
+      else if (s.accoppiamento) meta += " · " + s.accoppiamento;
+      wrap.appendChild(el("p", { text: meta }));
+      if (s.notaSeduta && !periodo) wrap.appendChild(el("p", { className: "scheda-mini__nota", text: s.notaSeduta }));
+      var actions = el("div", { className: "scheda-mini__actions" });
+      actions.appendChild(el("a", { className: "btn btn-ghost", href: href, text: "Apri" }));
+      actions.appendChild(el("a", {
+        className: "btn btn-primary",
+        href: pdfHref,
+        target: "_blank",
+        rel: "noopener",
+        text: "Scarica PDF"
+      }));
+      wrap.appendChild(actions);
+      grid.appendChild(wrap);
+    });
+    return grid;
+  }
+
+  function renderDashboard(data, blocchiById, root) {
     root.innerHTML = "";
     root.appendChild(el("h2", { id: "ciclo-title", text: "Ciclo dell’anno" }));
     root.appendChild(el("p", {
       className: "ciclo-lead",
       html: formatDate(data.macrociclo.inizio) + " → " + formatDate(data.macrociclo.fine) +
-        " · 4 fasi × 13 settimane · 3 schede a settimana (AB · AC · CB). " +
+        " · 4 fasi × 13 settimane · AB · AC · CB. Dalla fase 2: <strong>16 schede</strong> (4 periodi × 3 sedute + 4 PDF riassunto). " +
         "<a href=\"" + u("/ciclo/") + "\">Cosa vuol dire il ciclo e come leggere intensità e recupero</a>."
     }));
 
@@ -103,6 +139,7 @@
 
     var timeline = el("div", { className: "admin-timeline" });
     data.fasi.forEach(function (fase, i) {
+      var blocco = blocchiById[fase.id];
       var block = el("section", { className: "admin-fase panel-raised", id: fase.id });
       var head = el("div", { className: "admin-fase__head" });
       head.innerHTML =
@@ -114,23 +151,25 @@
       block.appendChild(renderIr(fase));
 
       var downloads = el("div", { className: "admin-fase__downloads no-print" });
-      SESSIONI.forEach(function (key) {
-        if (!fase.sessioni[key]) return;
+      if (!window.fqPeriodi || !blocco || !window.fqPeriodi.hasPeriodi(blocco)) {
+        SESSIONI.forEach(function (key) {
+          if (!fase.sessioni[key]) return;
+          downloads.appendChild(el("a", {
+            className: "btn btn-primary",
+            href: u("/admin/sessione/pdf/?ciclo=" + encodeURIComponent(fase.id) + "&sessione=" + key),
+            target: "_blank",
+            rel: "noopener",
+            text: "PDF " + key.toUpperCase()
+          }));
+        });
         downloads.appendChild(el("a", {
-          className: "btn btn-primary",
-          href: u("/admin/sessione/pdf/?ciclo=" + encodeURIComponent(fase.id) + "&sessione=" + key),
+          className: "btn btn-ghost",
+          href: u("/admin/prototipi/periodizzazione/fase/?fase=" + encodeURIComponent(fase.id)),
           target: "_blank",
           rel: "noopener",
-          text: "PDF " + key.toUpperCase()
+          text: "PDF fase completa AB–CB"
         }));
-      });
-      downloads.appendChild(el("a", {
-        className: "btn btn-ghost",
-        href: u("/admin/prototipi/periodizzazione/fase/?fase=" + encodeURIComponent(fase.id)),
-        target: "_blank",
-        rel: "noopener",
-        text: "PDF fase completa AB–CB"
-      }));
+      }
       if (fase.id === "ipertrofia-accumulo") {
         downloads.appendChild(el("a", {
           className: "btn btn-ghost",
@@ -145,34 +184,27 @@
       }));
       block.appendChild(downloads);
 
-      var grid = el("div", { className: "admin-sessioni-grid admin-sessioni-grid--3" });
-      SESSIONI.forEach(function (key) {
-        var s = fase.sessioni[key];
-        if (!s) return;
-        var wrap = el("article", { className: "scheda-mini" });
-        wrap.appendChild(el("span", { className: "scheda-mini__key", text: key.toUpperCase() }));
-        wrap.appendChild(el("strong", { text: shortName(s) }));
-        var meta = s.esercizi.length + " esercizi";
-        if (s.accoppiamento) meta += " · " + s.accoppiamento;
-        wrap.appendChild(el("p", { text: meta }));
-        if (s.notaSeduta) wrap.appendChild(el("p", { className: "scheda-mini__nota", text: s.notaSeduta }));
-        var actions = el("div", { className: "scheda-mini__actions" });
-        actions.appendChild(el("a", {
-          className: "btn btn-ghost",
-          href: u("/admin/sessione/?ciclo=" + encodeURIComponent(fase.id) + "&sessione=" + key),
-          text: "Apri"
-        }));
-        actions.appendChild(el("a", {
-          className: "btn btn-primary",
-          href: u("/admin/sessione/pdf/?ciclo=" + encodeURIComponent(fase.id) + "&sessione=" + key),
-          target: "_blank",
-          rel: "noopener",
-          text: "Scarica PDF"
-        }));
-        wrap.appendChild(actions);
-        grid.appendChild(wrap);
-      });
-      block.appendChild(grid);
+      if (window.fqPeriodi && blocco && window.fqPeriodi.hasPeriodi(blocco)) {
+        window.fqPeriodi.list(blocco).forEach(function (periodo) {
+          var sub = el("div", { className: "admin-fase-periodo" });
+          var subHead = el("div", { className: "admin-fase-periodo__head" });
+          subHead.innerHTML =
+            "<h4>" + periodo.label + "</h4>" +
+            "<p>Rep sui *: <strong>" + periodo.repFondamentali + "</strong> · RIR " + periodo.rir + "</p>";
+          subHead.appendChild(el("a", {
+            className: "btn btn-ghost admin-fase__pdf--periodo",
+            href: window.fqPeriodi.fasePdfUrl(fase.id, periodo.id),
+            target: "_blank",
+            rel: "noopener",
+            text: "PDF riassunto AB–CB · sett. " + periodo.settimane
+          }));
+          sub.appendChild(subHead);
+          sub.appendChild(renderSessionGrid(fase, periodo));
+          block.appendChild(sub);
+        });
+      } else {
+        block.appendChild(renderSessionGrid(fase, null));
+      }
       timeline.appendChild(block);
     });
     root.appendChild(timeline);
@@ -181,12 +213,26 @@
   function init() {
     var root = document.getElementById("admin-dashboard");
     if (!root) return;
-    fetch(DATA_URL)
-      .then(function (r) {
+    Promise.all([
+      fetch(DATA_URL).then(function (r) {
         if (!r.ok) throw new Error("JSON " + r.status);
         return r.json();
+      }),
+      fetch(u("/admin/data/blocchi-index.json")).then(function (r) { return r.json(); }).catch(function () { return { blocchi: {} }; })
+    ])
+      .then(function (res) {
+        var data = res[0];
+        var index = res[1];
+        var ids = Object.keys(index.blocchi || {});
+        return Promise.all(ids.map(function (id) {
+          var url = window.fqBlocchi ? window.fqBlocchi.urlFor(id) : u("/admin/data/" + index.blocchi[id]);
+          return fetch(url).then(function (r) { return r.json(); }).then(function (b) { return [id, b]; });
+        })).then(function (pairs) {
+          var blocchiById = {};
+          pairs.forEach(function (p) { blocchiById[p[0]] = p[1]; });
+          renderDashboard(data, blocchiById, root);
+        });
       })
-      .then(function (data) { renderDashboard(data, root); })
       .catch(function (err) {
         root.innerHTML = "<p>Errore: " + err.message + "</p>";
       });

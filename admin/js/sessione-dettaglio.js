@@ -73,20 +73,24 @@
     var wrap = el("div", { className: "admin-regole-grid" });
     var labels = {
       sett1_2: "Settimane 1-2",
+      sett1_4: "Settimane 1-4",
+      sett1_5: "Settimane 1-5",
       sett3_5: "Settimane 3-5",
       sett3_6: "Settimane 3-6",
+      sett5_8: "Settimane 5-8",
       sett6_8: "Settimane 6-8",
+      sett7_8: "Settimane 7-8",
       sett7_10: "Settimane 7-10",
       sett9: "Settimana 9",
+      sett9_10: "Settimane 9-10",
       sett10_12: "Settimane 10-12",
       sett11_12: "Settimane 11-12",
       sett13: "Settimana 13"
     };
-    var order = ["sett1_2", "sett3_5", "sett3_6", "sett6_8", "sett7_10", "sett9", "sett10_12", "sett11_12", "sett13"];
-    order.forEach(function (key) {
-      if (!regole[key] || !labels[key]) return;
+    Object.keys(regole).forEach(function (key) {
+      if (!regole[key]) return;
       var card = el("div", { className: "admin-regole-card card" });
-      card.appendChild(el("h3", { text: labels[key] }));
+      card.appendChild(el("h3", { text: labels[key] || key }));
       var ul = el("ul");
       regole[key].forEach(function (r) { ul.appendChild(el("li", { text: r })); });
       card.appendChild(ul);
@@ -160,36 +164,54 @@
     return grid;
   }
 
-  function querySuffix() {
-    var anno = new URLSearchParams(window.location.search).get("anno");
-    return anno ? "&anno=" + encodeURIComponent(anno) : "";
+  function queryContext() {
+    var params = new URLSearchParams(window.location.search);
+    return { anno: params.get("anno"), periodo: params.get("periodo") };
   }
 
   function u(path) {
     return window.fqUrl ? window.fqUrl(path) : path;
   }
 
-  function sessionHref(bloccoId, sessionKey) {
-    return u("/admin/sessione/?ciclo=" + encodeURIComponent(bloccoId) +
-      "&sessione=" + sessionKey) + querySuffix();
+  function sessionHref(bloccoId, sessionKey, periodoId, anno) {
+    if (window.fqPeriodi) return window.fqPeriodi.sessionUrl(bloccoId, sessionKey, periodoId, anno);
+    var q = "/admin/sessione/?ciclo=" + encodeURIComponent(bloccoId) + "&sessione=" + sessionKey;
+    if (periodoId) q += "&periodo=" + encodeURIComponent(periodoId);
+    if (anno) q += "&anno=" + encodeURIComponent(anno);
+    return u(q);
   }
 
   function renderBlocco1Session(blocco, sessionKey, catalogo, root) {
-    var s = blocco.sessioni[sessionKey];
+    var ctx = queryContext();
+    var periodo = window.fqPeriodi && window.fqPeriodi.get(blocco, ctx.periodo);
+    var sessioni = window.fqPeriodi
+      ? window.fqPeriodi.resolveSessioni(blocco, ctx.periodo)
+      : blocco.sessioni;
+    var s = sessioni[sessionKey];
     if (!s) {
       root.innerHTML = "<p>Sessione non trovata.</p>";
       return;
     }
 
     root.innerHTML = "";
-    document.title = s.codice + " – " + blocco.codice + " | Admin";
+    document.title = s.codice + " – " + blocco.codice +
+      (periodo ? " · " + periodo.label : "") + " | Admin";
 
     var nav = el("nav", { className: "admin-breadcrumb" });
     nav.innerHTML =
       "<a href=\"" + u("/admin/") + "\">Schede</a> · " +
-      "<a href=\"" + u("/ciclo/#ipertrofia-accumulo") + "\">Ciclo</a> · " +
+      "<a href=\"" + u("/ciclo/#" + blocco.id) + "\">Ciclo</a> · " +
+      (periodo ? "<strong>" + periodo.label + "</strong> · " : "") +
       "<strong>" + s.codice + " – " + blocco.codice + "</strong>";
     root.appendChild(nav);
+
+    if (periodo) {
+      var periodBanner = el("div", { className: "admin-periodo-banner card no-print" });
+      periodBanner.innerHTML =
+        "<p><strong>" + periodo.label + "</strong> · Rep sui *: <strong>" + periodo.repFondamentali + "</strong> · RIR " + periodo.rir + "</p>" +
+        "<p class=\"admin-periodo-banner__sintesi\">" + periodo.sintesi + "</p>";
+      root.appendChild(periodBanner);
+    }
 
     var head = el("header", { className: "admin-session-head admin-session-head--blocco" });
     head.innerHTML =
@@ -208,13 +230,22 @@
       root.appendChild(irBox);
     }
 
+    var fasePdf = window.fqPeriodi
+      ? window.fqPeriodi.fasePdfUrl(blocco.id, ctx.periodo, ctx.anno)
+      : u("/admin/prototipi/periodizzazione/fase/?fase=" + encodeURIComponent(blocco.id));
+    var sessionPdf = window.fqPeriodi
+      ? window.fqPeriodi.sessionPdfUrl(blocco.id, sessionKey, ctx.periodo, ctx.anno)
+      : u("/admin/sessione/pdf/?ciclo=" + encodeURIComponent(blocco.id) + "&sessione=" + sessionKey);
     var actions = el("div", { className: "admin-session-actions no-print" });
     actions.innerHTML =
-      "<a class=\"btn btn-primary\" href=\"" + u("/admin/metodo-blocco1/pdf/") + "\">PDF metodo blocco</a>" +
-      "<a class=\"btn btn-primary\" href=\"" + u("/admin/sessione/pdf/?ciclo=" + encodeURIComponent(blocco.id) + "&sessione=" + sessionKey) + querySuffix() + "\" target=\"_blank\" rel=\"noopener\">Stampa scheda con spiegazioni</a>" +
-      "<a class=\"btn btn-ghost\" href=\"" + u("/admin/prototipi/periodizzazione/fase/?fase=" + encodeURIComponent(blocco.id)) + "\" target=\"_blank\" rel=\"noopener\">PDF fase completa AB–CB</a>" +
+      (blocco.id === "ipertrofia-accumulo"
+        ? "<a class=\"btn btn-primary\" href=\"" + u("/admin/metodo-blocco1/pdf/") + "\">PDF metodo blocco</a>"
+        : "") +
+      "<a class=\"btn btn-primary\" href=\"" + sessionPdf + "\" target=\"_blank\" rel=\"noopener\">Stampa scheda con spiegazioni</a>" +
+      "<a class=\"btn btn-ghost\" href=\"" + fasePdf + "\" target=\"_blank\" rel=\"noopener\">PDF riassunto AB–CB" +
+      (periodo ? " · " + periodo.settimane : "") + "</a>" +
       "<a class=\"btn btn-ghost\" href=\"" + u("/admin/mappa-esercizi/") + "\">Mappa esercizi</a>" +
-      "<a class=\"btn btn-ghost\" href=\"" + u("/ciclo/#ipertrofia-accumulo") + "\">Spiegazione della fase</a>";
+      "<a class=\"btn btn-ghost\" href=\"" + u("/ciclo/#" + blocco.id) + "\">Spiegazione della fase</a>";
     root.appendChild(actions);
 
     if (s.priorita) {
@@ -274,8 +305,10 @@
       shared.appendChild(el("h2", { text: "Come usare il blocco" }));
       shared.appendChild(el("p", {
         html: blocco.guidaOperativa.sintesi +
-          " <a class=\"btn btn-ghost btn-sm\" href=\"" + u("/admin/metodo-blocco1/pdf/") + "\">PDF / Stampa metodo →</a> · " +
-          "<a class=\"btn btn-ghost btn-sm\" href=\"" + u("/admin/metodo-blocco1/") + "\">Guida online</a>"
+          (blocco.id === "ipertrofia-accumulo"
+            ? " <a class=\"btn btn-ghost btn-sm\" href=\"" + u("/admin/metodo-blocco1/pdf/") + "\">PDF / Stampa metodo →</a> · " +
+              "<a class=\"btn btn-ghost btn-sm\" href=\"" + u("/admin/metodo-blocco1/") + "\">Guida online</a>"
+            : "")
       }));
       if (blocco.guidaOperativa.periodizzazioneIntensita) {
         shared.appendChild(el("h3", { text: "Periodizzazione 13 settimane" }));
@@ -296,17 +329,33 @@
       ));
     }
     shared.appendChild(el("h3", { text: "Regole del blocco" }));
-    shared.appendChild(renderRegole(blocco.regoleBlocco));
+    shared.appendChild(renderRegole(
+      (periodo && periodo.regoleBlocco && Object.keys(periodo.regoleBlocco).length)
+        ? periodo.regoleBlocco
+        : blocco.regoleBlocco
+    ));
     if (blocco.guida) {
       shared.appendChild(el("h3", { text: "Perché questo blocco" }));
       shared.appendChild(el("p", { text: blocco.guida }));
     }
     root.appendChild(shared);
 
+    if (window.fqPeriodi && window.fqPeriodi.hasPeriodi(blocco)) {
+      var pnav = el("nav", { className: "admin-periodi-nav no-print" });
+      window.fqPeriodi.list(blocco).forEach(function (p) {
+        pnav.appendChild(el("a", {
+          href: sessionHref(blocco.id, sessionKey, p.id, ctx.anno),
+          className: (ctx.periodo === p.id ? "is-active" : ""),
+          text: p.label
+        }));
+      });
+      root.appendChild(pnav);
+    }
+
     var links = el("nav", { className: "admin-session-nav" });
     ["ab", "ac", "cb"].forEach(function (k) {
       links.appendChild(el("a", {
-        href: sessionHref(blocco.id, k),
+        href: sessionHref(blocco.id, k, ctx.periodo, ctx.anno),
         className: k === sessionKey ? "is-active" : "",
         text: k.toUpperCase()
       }));

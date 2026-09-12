@@ -29,9 +29,9 @@
     });
   }
 
-  function render(macro, fase, root, blocco) {
+  function render(macro, fase, root, blocco, periodo) {
     root.innerHTML = "";
-    document.title = "PDF · " + fase.nome + " | Scheda";
+    document.title = "PDF · " + fase.nome + (periodo ? " · " + periodo.label : "") + " | Scheda";
 
     var article = el("article", { className: "scheda-a4 scheda-a4--admin" });
     var tipo = blocco ? blocco.tipo : "Periodizzazione";
@@ -39,11 +39,14 @@
     var head = el("header", { className: "scheda-a4__head" });
     head.innerHTML =
       "<div class=\"scheda-a4__head-main\"><strong>Scheda allenamento</strong> · " + tipo + "</div>" +
-      "<div class=\"scheda-a4__head-period\"><span class=\"scheda-a4__badge\">" + fase.settimane + " sett.</span> <strong>" + fase.nome + "</strong></div>" +
+      "<div class=\"scheda-a4__head-period\"><span class=\"scheda-a4__badge\">" +
+      (periodo ? periodo.settimane + " sett." : fase.settimane + " sett.") +
+      "</span> <strong>" + fase.nome + (periodo ? " · " + periodo.label : "") + "</strong></div>" +
       "<div class=\"scheda-a4__head-meta\">" +
       "<span><strong>Atleta:</strong> _______________</span>" +
       "<span><strong>Periodo:</strong> " + formatDate(fase.inizio) + " – " + formatDate(fase.fine) + "</span>" +
-      "<span><strong>RIR:</strong> " + fase.rir + "</span>" +
+      "<span><strong>RIR:</strong> " + (periodo ? periodo.rir : (fase.rir || "")) + "</span>" +
+      (periodo ? "<span><strong>Rep *:</strong> " + periodo.repFondamentali + "</span>" : "") +
       "</div>";
     article.appendChild(head);
 
@@ -101,8 +104,9 @@
     article.appendChild(topBlock);
 
     var grid = el("div", { className: "scheda-a4__grid" });
+    var sessioni = periodo && periodo.sessioni ? periodo.sessioni : (blocco && blocco.sessioni ? blocco.sessioni : fase.sessioni);
     ["ab", "ac", "cb"].forEach(function (key) {
-      var day = fase.sessioni[key];
+      var day = sessioni[key];
       if (!day) return;
       var quad = el("section", { className: "scheda-a4__quad" });
       quad.appendChild(el("h2", { text: key.toUpperCase() + " · " + day.nome }));
@@ -111,7 +115,7 @@
       var tbody = el("tbody");
       day.esercizi.forEach(function (ex) {
         var tr = el("tr");
-        var nome = ex.nome + (ex.progressione ? " *" : "");
+        var nome = ex.nome + (ex.progressione || ex.progressionePrincipale ? " *" : "");
         tr.innerHTML =
           "<td>" + nome + "</td>" +
           "<td>" + ex.serie + "×" + ex.ripetizioni + "</td>" +
@@ -141,6 +145,7 @@
     var params = new URLSearchParams(window.location.search);
     var annoId = params.get("anno") || "2026-2027";
     var faseId = params.get("fase");
+    var periodoId = params.get("periodo");
     if (!faseId) {
       root.innerHTML = "<p>Parametro <code>fase</code> mancante. <a href=\"/admin/prototipi/periodizzazione/\">Torna all’hub</a></p>";
       return;
@@ -158,12 +163,19 @@
           root.innerHTML = "<p>Fase non trovata. <a href=\"/admin/prototipi/periodizzazione/\">Hub</a></p>";
           return;
         }
-        if (faseId === "ipertrofia-accumulo") {
-          return fetch(window.fqUrl ? window.fqUrl("/admin/data/blocco-1-fase1.json") : "/admin/data/blocco-1-fase1.json")
-            .then(function (r) { return r.json(); })
-            .then(function (blocco) { render(macro, fase, root, blocco); });
+        var bloccoUrl = window.fqBlocchi && window.fqBlocchi.urlFor(faseId);
+        if (!bloccoUrl) {
+          render(macro, fase, root, null, null);
+          return;
         }
-        render(macro, fase, root, null);
+        return fetch(bloccoUrl).then(function (r) { return r.json(); }).then(function (blocco) {
+          var periodo = null;
+          if (window.fqPeriodi && window.fqPeriodi.hasPeriodi(blocco)) {
+            periodo = window.fqPeriodi.get(blocco, periodoId) ||
+              window.fqPeriodi.get(blocco, window.fqPeriodi.defaultId(blocco));
+          }
+          render(macro, fase, root, blocco, periodo);
+        });
       })
       .catch(function (err) {
         root.innerHTML = "<p>Errore: " + err.message + "</p>";

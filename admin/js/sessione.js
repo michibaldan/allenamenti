@@ -129,13 +129,23 @@
       return;
     }
 
-    if (faseId === BLOCCO1_ID && window.fqSessioneDettaglio) {
+    var bloccoUrl = window.fqBlocchi && window.fqBlocchi.urlFor(faseId);
+    if (bloccoUrl && window.fqSessioneDettaglio) {
       Promise.all([
-        fetch(BLOCCO1_URL).then(function (r) { return r.json(); }),
+        fetch(bloccoUrl).then(function (r) { return r.json(); }),
         fetch(CATALOGO_URL).then(function (r) { return r.json(); })
       ])
         .then(function (res) {
-          window.fqSessioneDettaglio.renderBlocco1Session(res[0], sessionKey, res[1], root);
+          var blocco = res[0];
+          var periodo = params.get("periodo");
+          if (window.fqPeriodi && window.fqPeriodi.hasPeriodi(blocco) && !periodo) {
+            var def = window.fqPeriodi.defaultId(blocco);
+            var loc = new URL(window.location.href);
+            loc.searchParams.set("periodo", def);
+            window.location.replace(loc.pathname + loc.search);
+            return;
+          }
+          window.fqSessioneDettaglio.renderBlocco1Session(blocco, sessionKey, res[1], root);
         })
         .catch(function (err) { root.innerHTML = "<p>Errore: " + err.message + "</p>"; });
       return;

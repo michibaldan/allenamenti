@@ -115,6 +115,35 @@ if (!/75/.test(blocco.durataSeduta || "") || !/90/.test(blocco.durataSeduta || "
 } else pass("Blocco 1 durata 75/90");
 pass("Blocco 1 AB–CB con figure");
 
+const index = JSON.parse(readFileSync(join(REPO, "admin/data/blocchi-index.json"), "utf8"));
+["tensione-forza", "ipertrofia-classica-ii", "ricondizionamento"].forEach((id) => {
+  const file = index.blocchi[id];
+  if (!file) {
+    fail("blocchi-index manca " + id);
+    return;
+  }
+  const b = JSON.parse(readFileSync(join(REPO, "admin/data", file), "utf8"));
+  if (!b.periodi || b.periodi.length !== 4) fail(id + " deve avere 4 periodi");
+  else {
+    const nSchede = b.periodi.length * KEYS.length + b.periodi.length;
+    if (nSchede !== 16) fail(id + " schede " + nSchede + " (atteso 16)");
+    else pass(id + " 16 schede (4 periodi × 3 sedute + 4 PDF)");
+  }
+  b.periodi.forEach((p) => {
+    KEYS.forEach((k) => {
+      if (!p.sessioni[k]) fail(id + " " + p.id + " manca " + k);
+      const last = p.sessioni[k].esercizi.at(-1);
+      const kb = p.sessioni[k].esercizi.filter((e) => isKb(e.nome));
+      if (kb.length && !isKb(last.nome)) fail(id + " " + p.id + " " + k + ": kettlebell non ultimo");
+      (p.sessioni[k].esercizi || []).forEach((ex) => {
+        if (!ex.figura && !lookupCat(ex.nome)?.figura) {
+          fail(id + " " + p.id + " " + k + " " + ex.nome + " senza figura");
+        }
+      });
+    });
+  });
+});
+
 if (!hub.anni?.length) fail("hub-periodizzazione.json senza anni");
 else pass("hub anni: " + hub.anni.map((a) => a.id).join(", "));
 if (hub.profilo?.giorniSettimana !== 3) fail("hub giorniSettimana != 3");

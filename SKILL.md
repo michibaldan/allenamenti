@@ -68,7 +68,7 @@ MACROCICLO  ≈ 52 settimane (1 set 2026 – 31 ago 2027)
 ```
 
 - **4 fasi × 13 settimane.** Deload = **settimana 13 di ogni fase (−40% volume)**. Obbligatorio.
-- Stessi esercizi per tutta la fase. Cambiano serie, rep, RIR, recupero, kg.
+- Stessi esercizi per tutta la fase. **Dalla fase 2:** 4 periodi di progressione serie/rep (PI) → **16 schede** (4 periodi × 3 sedute AB/AC/CB + 4 PDF riassunto). Fase 1 resta 3 schede + 1 riassunto.
 - Non usare mesocicli da 3–6 settimane (modello “avanzato giovane”).
 - Kettlebell **ultimo** se c’è (Halo in **AC**). Mai in apertura.
 
@@ -124,24 +124,24 @@ Ogni fase in pagina ciclo **e** in testa alle schede/PDF deve mostrare: perché,
 
 ### Fase 2 · Tensione + forza (dic–feb)
 
-**Perché:** gli stessi esercizi, meno rep, più kg.
+**Perché:** unico picco kg dell’anno sui * (Project Invictus). ~30% esercizi ruotati vs fase 1.
 
-- Intensità: 1–6 tensione 6–8, RIR 1–2 · 7–12 forza 4–6, RIR 1–2 · **13 deload**
-- Recupero: * **2,5–3 min** (il recupero lungo è il metodo) · isolamento 60–75 s
+- Periodi (16 schede): `sett-1-6` 6–8 · `sett-7-8` 5–6 · `sett-9-10` 5 · `sett-11-12` **4 rep** · 13 deload
+- Recupero: * **2,5–3 min** · isolamento 60–75 s
 
 ### Fase 3 · Ipertrofia II (mar–mag)
 
-**Perché:** la forza nuova torna volume.
+**Perché:** rientro **8 rep** sui * (convertire forza in massa). Terzo schema.
 
-- Intensità: 8–12, RIR 1–2, volume pieno (eventuale +1 serie sui * in 9–12) · **13 deload**
+- Periodi (16 schede): `sett-1-5` 8–10 · `sett-6-8` 8 · `sett-9` −25% · `sett-10-12` **+1 serie** sui * · 13 deload
 - Recupero: come fase 1
 
 ### Fase 4 · Ricondizionamento (giu–ago)
 
-**Perché:** chiudere l’anno integri, non bruciati.
+**Perché:** chiudere l’anno integri. Quarto schema più guidato.
 
-- Intensità: 10–12, RIR 2–3, niente cedimento · **13 deload**
-- Recupero: può essere un po’ più corto (seduta più facile); tetto 90 resta
+- Periodi (16 schede): `sett-1-4` · `sett-5-8` · `sett-9-10` · `sett-11-12` (10–12, RIR 2–3) · 13 deload
+- Recupero: può essere più corto; tetto 90 resta
 
 JSON: `fase.perche` + `fase.intensitaRecupero` in `admin/data/macrociclo-2026-2027.json`.
 
@@ -153,8 +153,9 @@ JSON: `fase.perche` + `fase.intensitaRecupero` in `admin/data/macrociclo-2026-20
 |------|------|
 | Ciclo (home = admin) | `/` · `/admin/` |
 | Scheda online | `/admin/sessione/?ciclo=<fase-id>&sessione=ab\|ac\|cb` |
-| PDF sessione | `/admin/sessione/pdf/?ciclo=<id>&sessione=ab` |
-| PDF fase (3 schede) | `/admin/prototipi/periodizzazione/fase/?fase=<id>` |
+| PDF sessione | `/admin/sessione/pdf/?ciclo=<id>&sessione=ab` · fasi 2–4: `&periodo=sett-1-6` |
+| PDF fase / riassunto periodo | `/admin/prototipi/periodizzazione/fase/?fase=<id>&periodo=` |
+| Blocchi 2–4 | `admin/data/blocco-2-fase2.json` … `blocco-4-fase4.json` · `fasi-2-3-4.json` · `blocchi-index.json` |
 | Ciclo spiegato | `/ciclo/` — 4 mesocicli, glossario, PDF per fase |
 | Privacy / cookie | `/privacy/` · `/cookie/` |
 
@@ -165,9 +166,10 @@ PDF:
 - Log S1–Sn + note
 - In testa: perché della fase + intensità + recupero + durata 75/90
 - Figure SVG dal catalogo
+- **Fasi 2–4:** 4 periodi × AB/AC/CB + 4 PDF riassunto = **16 schede**. Rotazione ~25–35% esercizi a ogni cambio fase. Priorità Michele (parte alta 52–62%, glutei 2×) restano.
 - **Stampa palestra:** testo più grande dell’originale compatto; **max 2 facciate A4** per scheda sessione e PDF fase. Figure SVG visibili, log a due colonne, intro compatta.
 
-Dati: `admin/data/macrociclo-2026-2027.json`, `blocco-1-fase1.json` (dettaglio fase 1), `esercizi-catalogo.json`, `hub-periodizzazione.json`.
+Dati: `macrociclo-2026-2027.json`, `blocco-1-fase1.json`, `fasi-2-3-4.json`, `blocco-2-fase2.json` … `blocco-4-fase4.json`, `esercizi-catalogo.json`, `hub-periodizzazione.json`.
 
 Chiavi sessione: **`ab` `ac` `cb`**. Default `ab`.
 
@@ -180,6 +182,7 @@ Chiavi sessione: **`ab` `ac` `cb`**. Default `ab`.
 - Non deployare su `raasautomazioni.it`. URL: `https://michibaldan.github.io/allenamenti/`
 - Repo: `https://github.com/michibaldan/allenamenti`
 - Verifica: `npm run macro:verifica` (`tools/verifica-macrociclo.mjs`)
+- Genera fasi 2–4: `node tools/genera-blocchi-2-3-4.mjs` poi `node tools/sync-blocco-macrociclo.mjs --all`
 - Conversione split: `node tools/converti-ab-ac-cb.mjs` (non rilanciare se i JSON sono già AB/AC/CB senza bisogno)
 - Cartella locale canonica: `C:\Users\Utente\progetti\allenamenti` (origin `michibaldan/allenamenti`). `Michele-allenamenti` è copia di lavoro: allinearla, non farla divergere.
 
@@ -194,6 +197,7 @@ Chiavi sessione: **`ab` `ac` `cb`**. Default `ab`.
 - [ ] `perche` + `intensitaRecupero` in JSON **e** in UI/PDF
 - [ ] Pesi `—` / kg blank, PDF anonimo
 - [ ] Halo ultimo in AC se presente
+- [ ] Fasi 2–4: 4 periodi e 16 schede; Halo ultimo in AC
 - [ ] Figure da catalogo
 - [ ] Nessun dato clinico inventato; foto costume solo se fornite
 - [ ] Privacy/cookie: niente font/analytics di terza parte; banner e pagine legal allineate

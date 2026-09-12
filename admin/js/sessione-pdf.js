@@ -67,13 +67,17 @@
     return log;
   }
 
-  function adaptBloccoToFase(blocco) {
+  function adaptBloccoToFase(blocco, periodoId) {
+    var srcSessioni = window.fqPeriodi
+      ? window.fqPeriodi.resolveSessioni(blocco, periodoId)
+      : blocco.sessioni;
+    var periodo = window.fqPeriodi && window.fqPeriodi.get(blocco, periodoId);
     var sessioni = {};
     ["ab", "ac", "cb"].forEach(function (key) {
-      var s = blocco.sessioni[key];
+      var s = srcSessioni[key];
       if (!s) return;
       sessioni[key] = {
-        nome: s.codice + " · " + s.nome,
+        nome: s.nome,
         esercizi: s.esercizi.map(function (ex) {
           return {
             nome: ex.nome,
@@ -90,11 +94,11 @@
       };
     });
     return {
-      nome: blocco.nome,
+      nome: blocco.nome + (periodo ? " · " + periodo.label : ""),
       inizio: blocco.inizio,
       fine: blocco.fine,
-      settimane: blocco.settimane,
-      rir: blocco.rir || "sett. 6–8: RIR 1",
+      settimane: periodo ? periodo.settimane : blocco.settimane,
+      rir: periodo ? periodo.rir : (blocco.rir || "sett. 6–8: RIR 1"),
       obiettivo: blocco.schedaIntro,
       perche: blocco.perche,
       intensitaRecupero: blocco.intensitaRecupero,
@@ -102,8 +106,8 @@
     };
   }
 
-  function renderPdf(macro, catalogo, faseId, sessionKey, root, blocco) {
-    var fase = blocco ? adaptBloccoToFase(blocco) : findFase(macro, faseId);
+  function renderPdf(macro, catalogo, faseId, sessionKey, root, blocco, periodoId) {
+    var fase = blocco ? adaptBloccoToFase(blocco, periodoId) : findFase(macro, faseId);
     if (!fase || !fase.sessioni[sessionKey]) {
       root.innerHTML = "<p>Sessione non trovata.</p>";
       return;
@@ -213,6 +217,7 @@
     var params = new URLSearchParams(window.location.search);
     var faseId = params.get("ciclo");
     var sessionKey = (params.get("sessione") || "ab").toLowerCase();
+    var periodoId = params.get("periodo");
 
     var printBtn = document.getElementById("pdf-print-btn");
     if (printBtn) {
@@ -228,13 +233,20 @@
       return;
     }
 
-    if (faseId === BLOCCO1_ID) {
+    var bloccoUrl = window.fqBlocchi && window.fqBlocchi.urlFor(faseId);
+    if (bloccoUrl) {
       Promise.all([
         spriteReady,
-        fetch(BLOCCO1_URL).then(function (r) { return r.json(); }),
+        fetch(bloccoUrl).then(function (r) { return r.json(); }),
         fetch(CATALOGO_URL).then(function (r) { return r.json(); })
       ])
-        .then(function (res) { renderPdf(null, res[2], faseId, sessionKey, root, res[1]); })
+        .then(function (res) {
+          var blocco = res[1];
+          if (window.fqPeriodi && window.fqPeriodi.hasPeriodi(blocco) && !periodoId) {
+            periodoId = window.fqPeriodi.defaultId(blocco);
+          }
+          renderPdf(null, res[2], faseId, sessionKey, root, blocco, periodoId);
+        })
         .catch(function (err) { root.innerHTML = "<p>Errore: " + err.message + "</p>"; });
       return;
     }

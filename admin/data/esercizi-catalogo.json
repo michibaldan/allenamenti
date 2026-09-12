@@ -1,4 +1,12 @@
 {
+  "Panca piana con bilanciere": {
+    "figura": "fig-press-piano",
+    "primario": "Petto",
+    "secondario": "Deltoidi anteriori, tricipiti",
+    "setup": "Scapole addotte, piedi a terra, barra sopra il petto medio.",
+    "movimento": "Discesa controllata al petto, gomiti ~45°, spinta verticale senza rimbalzo.",
+    "errori": "Ponte eccessivo; gomiti a 90°; slancio."
+  },
   "Panca inclinata con manubri": {
     "figura": "fig-press-incl",
     "primario": "Petto alto",

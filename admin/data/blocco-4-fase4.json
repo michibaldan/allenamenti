@@ -1,0 +1,2108 @@
+{
+  "id": "ricondizionamento",
+  "codice": "BLOCCO 4",
+  "tipo": "RICONDIZIONAMENTO • ESTIVO",
+  "nome": "Fase 4 · Ricondizionamento",
+  "inizio": "2027-06-01",
+  "fine": "2027-08-31",
+  "settimane": 13,
+  "frequenza": "3 allenamenti/settimana",
+  "durataSeduta": "obiettivo 75 minuti · tetto 90 minuti",
+  "guida": "Chiudere l’anno integri. Quarto schema più guidato (chest press, squat MP, pulley). RIR 2–3, niente cedimento, niente peaking. Glutei restano (hip thrust + affondi + abduzione). Halo ultimo e più leggero. Tetto 90 resta.",
+  "schedaIntro": "3 allenamenti AB · AC · CB. Schema estivo: macchine, 10–12 rep, RIR 2–3. Nessuna corsa ai PR.",
+  "perche": "Chiudere l’anno integri, non bruciati. Mantenimento, non peaking.",
+  "intensitaRecupero": {
+    "intensita": "10–12 rep, RIR 2–3, niente cedimento. Sett. 11–12 opz. −1 serie accessori. Sett. 13 deload −40%.",
+    "recupero": "Può essere un po’ più corto. Tetto 90 resta. Deload 13 obbligatorio.",
+    "durataSeduta": "obiettivo 75 min, tetto 90 min",
+    "deload": "settimana 13 · −40% volume"
+  },
+  "rotazioneDaFase1": "~25% · chest press e squat MP al posto di inclinata/RDL pesante",
+  "periodizzazione": [
+    {
+      "fase": "Mantenimento",
+      "settimane": "1-4",
+      "rir": "2-3",
+      "obiettivo": "10–12 · macchine"
+    },
+    {
+      "fase": "Mantenimento",
+      "settimane": "5-8",
+      "rir": "2-3",
+      "obiettivo": "Stessi kg"
+    },
+    {
+      "fase": "Estate",
+      "settimane": "9-10",
+      "rir": "2-3",
+      "obiettivo": "Flessibilità calendario"
+    },
+    {
+      "fase": "Chiusura",
+      "settimane": "11-12",
+      "rir": "2-3",
+      "obiettivo": "Opz. −1 serie accessori"
+    },
+    {
+      "fase": "Deload",
+      "settimane": "13",
+      "rir": "3",
+      "obiettivo": "−40%"
+    }
+  ],
+  "recuperi": [
+    {
+      "tipologia": "Fondamentali",
+      "recupero": "150 sec"
+    },
+    {
+      "tipologia": "Multiarticolari",
+      "recupero": "120 sec"
+    },
+    {
+      "tipologia": "Complementari",
+      "recupero": "90 sec"
+    },
+    {
+      "tipologia": "Isolamento",
+      "recupero": "60 sec"
+    },
+    {
+      "tipologia": "Polpacci",
+      "recupero": "60 sec"
+    }
+  ],
+  "regoleBlocco": {
+    "sett1_4": [
+      "RIR 2-3 · 10–12 · quarto schema",
+      "Frequenza > intensità"
+    ],
+    "sett5_8": [
+      "Mantieni kg",
+      "Zero peaking"
+    ],
+    "sett9_10": [
+      "RIR 2-3",
+      "Riprendi AB→AC→CB se salti sedute"
+    ],
+    "sett11_12": [
+      "Opz. −1 serie accessori se caldo/fatica",
+      "Niente cedimento"
+    ],
+    "sett13": [
+      "Deload −40% · RIR 3",
+      "Preparazione nuovo anno"
+    ]
+  },
+  "guidaOperativa": {
+    "titolo": "Metodo Blocco 4 — ricondizionamento",
+    "sintesi": "Schema estivo guidato, 10–12 rep, RIR 2–3. Glutei restano. 4 periodi × 3 sedute + 4 PDF = 16 schede.",
+    "distribuzioneSettimanale": {
+      "schema": "AB – AC / C–B · 3 giorni + 4 riposi",
+      "consigliata": [
+        {
+          "giorno": "Lunedì",
+          "sessione": "AB",
+          "tipo": "A+B",
+          "focus": "Petto, laterali, tricipiti + hip thrust e pressa"
+        },
+        {
+          "giorno": "Martedì",
+          "sessione": "Riposo",
+          "tipo": "—",
+          "focus": "Recupero"
+        },
+        {
+          "giorno": "Mercoledì",
+          "sessione": "AC",
+          "tipo": "A+C",
+          "focus": "Dorso, lento, petto 2°, braccia · Halo ultimo"
+        },
+        {
+          "giorno": "Giovedì",
+          "sessione": "Riposo",
+          "tipo": "—",
+          "focus": "Recupero"
+        },
+        {
+          "giorno": "Venerdì",
+          "sessione": "CB",
+          "tipo": "C+B",
+          "focus": "Glutei principali + trap + bicipiti"
+        },
+        {
+          "giorno": "Sabato",
+          "sessione": "Riposo",
+          "tipo": "—",
+          "focus": "Recupero"
+        },
+        {
+          "giorno": "Domenica",
+          "sessione": "Riposo",
+          "tipo": "—",
+          "focus": "Recupero"
+        }
+      ],
+      "alternative": [
+        "Mar AB · Gio AC · Sab CB",
+        "Lun AB · Gio AC · Sab CB (se il mercoledì non è libero)"
+      ],
+      "regoleRecupero": [
+        "Non fare AB e CB in due giorni consecutivi: entrambi toccano B (gambe)",
+        "AC sta in mezzo: condivide A con AB e C con CB, e dà 48 ore alle gambe",
+        "Se salti una seduta: riprendi da quella saltata, non comprimere AB e CB nello stesso giorno",
+        "Ordine fisso: AB → AC → CB",
+        "Obiettivo 75 min, tetto 90: accoppia isolamento durante il recupero dei *"
+      ]
+    },
+    "regoleRirECedimento": {
+      "principio": "Il RIR stampato è il target nelle settimane 6–8. Non significa cedimento su tutte le serie.",
+      "fondamentali": [
+        "Esercizi con *: Panca inclinata AB, Pressa AB, Lento AC, Trap bar CB",
+        "Settimane 1–8: nessuna serie a cedimento sui fondamentali",
+        "Settimane 10–12: solo l’ultima serie di ogni * può andare a RIR 0–1",
+        "Settimana 13: RIR 4–5, mai cedimento"
+      ],
+      "isolamento": [
+        "Alzate, croci, hip thrust, abduzione, curl: ultime serie più vicine al cedimento tecnico",
+        "Hip Thrust e abduzione: ultime serie più vicine al cedimento tecnico",
+        "Halo: RIR 1, stop prima del cedimento"
+      ],
+      "tabellaCedimento": [
+        {
+          "periodo": "Sett. 1–8",
+          "fondamentali": "Mai cedimento",
+          "isolamento": "Ultima serie vicina al cedimento tecnico (se forma OK)"
+        },
+        {
+          "periodo": "Sett. 9",
+          "fondamentali": "Mai cedimento (scarico)",
+          "isolamento": "RIR 2, niente cedimento"
+        },
+        {
+          "periodo": "Sett. 10–12",
+          "fondamentali": "Solo ultima serie * a RIR 0–1",
+          "isolamento": "Ultima serie a cedimento tecnico"
+        },
+        {
+          "periodo": "Sett. 13",
+          "fondamentali": "RIR 4–5",
+          "isolamento": "RIR 4–5, zero cedimento"
+        }
+      ]
+    },
+    "periodizzazioneIntensita": [
+      {
+        "settimane": "1-4",
+        "intensita": "RIR 2-3",
+        "volume": "~85%",
+        "nota": "Avvio"
+      },
+      {
+        "settimane": "5-8",
+        "intensita": "RIR 2-3",
+        "volume": "~85%",
+        "nota": "Mantenimento"
+      },
+      {
+        "settimane": "9-10",
+        "intensita": "RIR 2-3",
+        "volume": "~85%",
+        "nota": "Estate"
+      },
+      {
+        "settimane": "11-12",
+        "intensita": "RIR 2-3",
+        "volume": "~80%",
+        "nota": "−1 accessori opz."
+      },
+      {
+        "settimane": "13",
+        "intensita": "RIR 3",
+        "volume": "−40%",
+        "nota": "Deload"
+      }
+    ],
+    "volumeSettimanaleFinale": [
+      {
+        "gruppo": "Petto",
+        "serie": 8,
+        "note": "AB panca 4 + croci 2 · AC chest press 2"
+      },
+      {
+        "gruppo": "Schiena",
+        "serie": 7,
+        "note": "AC: lat 4 + rematore 3"
+      },
+      {
+        "gruppo": "Spalle anteriori",
+        "serie": 3,
+        "note": "AC: lento 3 (+ overlap panca)"
+      },
+      {
+        "gruppo": "Spalle laterali",
+        "serie": 3,
+        "note": "AB: alzate 3"
+      },
+      {
+        "gruppo": "Tricipiti",
+        "serie": 6,
+        "note": "AB pushdown 3 · AC pushdown 3"
+      },
+      {
+        "gruppo": "Quadricipiti",
+        "serie": 6,
+        "note": "AB pressa 3 · CB affondi 3"
+      },
+      {
+        "gruppo": "Femorali / catena",
+        "serie": 7,
+        "note": "CB trap 4 · CB leg curl 3"
+      },
+      {
+        "gruppo": "Glutei",
+        "serie": 9,
+        "note": "AB hip 3 · CB hip 4 · CB abduzione 2"
+      },
+      {
+        "gruppo": "Bicipiti",
+        "serie": 6,
+        "note": "AC Scott 3 · CB martello 3"
+      },
+      {
+        "gruppo": "Finisher",
+        "serie": 2,
+        "note": "AC Halo ultimo"
+      }
+    ],
+    "volumePerSeduta": [
+      {
+        "sessione": "AB",
+        "petto": 6,
+        "spalleLat": 3,
+        "glutei": 3,
+        "quad": 3,
+        "tricipiti": 3
+      },
+      {
+        "sessione": "AC",
+        "schiena": 7,
+        "spalleAnt": 3,
+        "petto": 2,
+        "bicipiti": 3,
+        "tricipiti": 3,
+        "halo": 2
+      },
+      {
+        "sessione": "CB",
+        "trap": 4,
+        "glutei": 6,
+        "quad": 3,
+        "femorali": 3,
+        "bicipiti": 3
+      }
+    ],
+    "progressioneCarico": [
+      "Quando completi il tetto di ripetizioni con il RIR target per 2 sedute consecutive sullo stesso esercizio *, aumenta il carico",
+      "Fondamentali: +2,5–5 kg (upper) o +5% (lower/macchine)",
+      "Isolamento: +1 rep per serie, poi +2,5 kg o +5%",
+      "Settimana 9: stessi kg, meno serie",
+      "Settimana 13: stessi esercizi, −40% serie, kg all'80–85%"
+    ],
+    "checklistSeduta": [
+      "1. Riscaldamento 8–10 min",
+      "2. Esercizi nell’ordine della scheda; accoppia isolamento nel recupero dei *",
+      "3. Chiudi in 75 min se puoi, mai oltre 90",
+      "4. Annota kg, rep e RIR reale (PDF: campo Atleta vuoto)",
+      "5. Finisher Halo in AC sempre ultimo"
+    ]
+  },
+  "sessioni": {
+    "ab": {
+      "codice": "AB",
+      "nome": "Spinta A + glutei/gambe B brevi",
+      "esercizi": [
+        {
+          "nome": "Chest press alla macchina",
+          "gruppo": "Petto",
+          "serie": 3,
+          "ripetizioni": "10-12",
+          "tempo": "3-1-X-1",
+          "recupero": "120 sec",
+          "progressione": "Progressione principale *",
+          "rir": "2-3",
+          "figura": "fig-chest",
+          "progressionePrincipale": true,
+          "note": "Spinta guidata * · estate"
+        },
+        {
+          "nome": "Croci ai cavi",
+          "gruppo": "Petto",
+          "serie": 2,
+          "ripetizioni": "12-15",
+          "tempo": "2-1-3-1",
+          "recupero": "60 sec",
+          "progressione": "Isolamento morbido",
+          "rir": "2-3",
+          "figura": "fig-croci",
+          "progressionePrincipale": false,
+          "note": "Isolamento morbido"
+        },
+        {
+          "nome": "Alzate laterali",
+          "gruppo": "Deltoide laterale",
+          "serie": 3,
+          "ripetizioni": "12-15",
+          "tempo": "2-1-3-1",
+          "recupero": "60 sec",
+          "progressione": "Niente slancio",
+          "rir": "2-3",
+          "figura": "fig-alzate",
+          "progressionePrincipale": false,
+          "note": "Niente slancio"
+        },
+        {
+          "nome": "Hip Thrust",
+          "gruppo": "Glutei",
+          "serie": 3,
+          "ripetizioni": "10-12",
+          "tempo": "3-1-X-1",
+          "recupero": "75 sec",
+          "progressione": "Progressione principale *",
+          "rir": "2-3",
+          "figura": "fig-hip",
+          "progressionePrincipale": true,
+          "note": "Glutei restano in enfasi"
+        },
+        {
+          "nome": "Pressa",
+          "gruppo": "Quadricipiti",
+          "serie": 3,
+          "ripetizioni": "10-12",
+          "tempo": "3-1-X-1",
+          "recupero": "90 sec",
+          "progressione": "Gambe B brevi",
+          "rir": "2-3",
+          "figura": "fig-pressa",
+          "progressionePrincipale": false,
+          "note": "Gambe B brevi"
+        },
+        {
+          "nome": "Estensioni tricipiti al cavo",
+          "gruppo": "Tricipiti",
+          "serie": 2,
+          "ripetizioni": "12-15",
+          "tempo": "2-1-2-1",
+          "recupero": "60 sec",
+          "progressione": "Volume tricipiti ridotto vs Fase 3",
+          "rir": "2-3",
+          "figura": "fig-pushdown",
+          "progressionePrincipale": false,
+          "note": "Volume tricipiti ridotto vs Fase 3"
+        }
+      ],
+      "volumeSeduta": [
+        {
+          "gruppo": "Petto",
+          "serie": 5
+        },
+        {
+          "gruppo": "Deltoide laterale",
+          "serie": 3
+        },
+        {
+          "gruppo": "Glutei",
+          "serie": 3
+        },
+        {
+          "gruppo": "Quadricipiti",
+          "serie": 3
+        },
+        {
+          "gruppo": "Tricipiti",
+          "serie": 2
+        }
+      ],
+      "notaComplementare": "Chest press *, croci, laterali, hip thrust e pressa. Non accostare a CB.",
+      "notaSeduta": "Chest press *, croci, laterali, hip thrust e pressa. Non accostare a CB.",
+      "accoppiamento": "A + B"
+    },
+    "ac": {
+      "codice": "AC",
+      "nome": "Tirata C + spinta A + braccia",
+      "esercizi": [
+        {
+          "nome": "Lat machine",
+          "gruppo": "Dorsali",
+          "serie": 3,
+          "ripetizioni": "10-12",
+          "tempo": "3-1-X-1",
+          "recupero": "90 sec",
+          "progressione": "Progressione principale *",
+          "rir": "2-3",
+          "figura": "fig-lat",
+          "progressionePrincipale": true,
+          "note": "Trazione verticale * estiva"
+        },
+        {
+          "nome": "Pulley basso",
+          "gruppo": "Dorsali",
+          "serie": 3,
+          "ripetizioni": "10-12",
+          "tempo": "3-1-X-1",
+          "recupero": "90 sec",
+          "progressione": "Trazione orizzontale guidata vs rematore",
+          "rir": "2-3",
+          "figura": "fig-pulley-basso",
+          "progressionePrincipale": false,
+          "note": "Trazione orizzontale guidata vs rematore"
+        },
+        {
+          "nome": "Lento avanti bilanciere",
+          "gruppo": "Deltoide anteriore",
+          "serie": 3,
+          "ripetizioni": "10-12",
+          "tempo": "3-1-X-1",
+          "recupero": "90 sec",
+          "progressione": "Carichi moderati",
+          "rir": "2-3",
+          "figura": "fig-lento",
+          "progressionePrincipale": false,
+          "note": "Carichi moderati"
+        },
+        {
+          "nome": "Chest Press convergente",
+          "gruppo": "Petto",
+          "serie": 2,
+          "ripetizioni": "12-15",
+          "tempo": "3-1-X-1",
+          "recupero": "60 sec",
+          "progressione": "Secondo stimolo petto leggero",
+          "rir": "2-3",
+          "figura": "fig-chest-converg",
+          "progressionePrincipale": false,
+          "note": "Secondo stimolo petto leggero"
+        },
+        {
+          "nome": "Curl bilanciere EZ",
+          "gruppo": "Bicipiti",
+          "serie": 3,
+          "ripetizioni": "10-12",
+          "tempo": "2-1-2-1",
+          "recupero": "60 sec",
+          "progressione": "Sostituisce Scott",
+          "rir": "2-3",
+          "figura": "fig-curl-ez",
+          "progressionePrincipale": false,
+          "note": "Sostituisce Scott"
+        },
+        {
+          "nome": "Estensioni tricipiti al cavo",
+          "gruppo": "Tricipiti",
+          "serie": 2,
+          "ripetizioni": "12-15",
+          "tempo": "2-1-2-1",
+          "recupero": "60 sec",
+          "progressione": "Secondo stimolo tricipiti",
+          "rir": "2-3",
+          "figura": "fig-pushdown",
+          "progressionePrincipale": false,
+          "note": "Secondo stimolo tricipiti"
+        },
+        {
+          "nome": "Halo",
+          "gruppo": "Spalle",
+          "serie": 2,
+          "ripetizioni": "12",
+          "tempo": "3-1-X-1",
+          "recupero": "60 sec",
+          "progressione": "Finisher leggero — sempre ultimo",
+          "rir": "2-3",
+          "figura": "fig-halo",
+          "progressionePrincipale": false,
+          "note": "Finisher leggero — sempre ultimo"
+        }
+      ],
+      "volumeSeduta": [
+        {
+          "gruppo": "Dorsali",
+          "serie": 6
+        },
+        {
+          "gruppo": "Deltoide anteriore",
+          "serie": 3
+        },
+        {
+          "gruppo": "Petto",
+          "serie": 2
+        },
+        {
+          "gruppo": "Bicipiti",
+          "serie": 3
+        },
+        {
+          "gruppo": "Tricipiti",
+          "serie": 2
+        },
+        {
+          "gruppo": "Spalle",
+          "serie": 2
+        }
+      ],
+      "notaComplementare": "Lat *, pulley, lento, chest convergente e braccia. Halo ultimo e più leggero.",
+      "notaSeduta": "Lat *, pulley, lento, chest convergente e braccia. Halo ultimo e più leggero.",
+      "accoppiamento": "A + C"
+    },
+    "cb": {
+      "codice": "CB",
+      "nome": "Gambe/glutei B principali + chiusura braccia",
+      "esercizi": [
+        {
+          "nome": "Squat al multipower",
+          "gruppo": "Quadricipiti",
+          "serie": 3,
+          "ripetizioni": "10-12",
+          "tempo": "3-1-X-1",
+          "recupero": "120 sec",
+          "progressione": "Progressione principale *",
+          "rir": "2-3",
+          "figura": "fig-squat",
+          "progressionePrincipale": true,
+          "note": "Accosciata guidata * · niente hinge pesante d’estate"
+        },
+        {
+          "nome": "Hip Thrust",
+          "gruppo": "Glutei",
+          "serie": 3,
+          "ripetizioni": "10-12",
+          "tempo": "3-1-X-1",
+          "recupero": "75 sec",
+          "progressione": "Progressione principale *",
+          "rir": "2-3",
+          "figura": "fig-hip",
+          "progressionePrincipale": true,
+          "note": "Glutei restano"
+        },
+        {
+          "nome": "Affondi camminati manubri",
+          "gruppo": "Quadricipiti / glutei",
+          "serie": 3,
+          "ripetizioni": "10 per gamba",
+          "tempo": "3-1-X-1",
+          "recupero": "75 sec",
+          "progressione": "Unilaterale morbido",
+          "rir": "2-3",
+          "figura": "fig-affondi",
+          "progressionePrincipale": false,
+          "note": "Unilaterale morbido"
+        },
+        {
+          "nome": "Leg curl seduto",
+          "gruppo": "Femorali",
+          "serie": 3,
+          "ripetizioni": "12-15",
+          "tempo": "2-1-2-1",
+          "recupero": "60 sec",
+          "progressione": "Femorali senza stacco pesante",
+          "rir": "2-3",
+          "figura": "fig-legcurl",
+          "progressionePrincipale": false,
+          "note": "Femorali senza stacco pesante"
+        },
+        {
+          "nome": "Abduzione glutei alla macchina",
+          "gruppo": "Glutei",
+          "serie": 2,
+          "ripetizioni": "15",
+          "tempo": "2-1-3-1",
+          "recupero": "45 sec",
+          "progressione": "Gluteo medio",
+          "rir": "2-3",
+          "figura": "fig-doktor",
+          "progressionePrincipale": false,
+          "note": "Gluteo medio"
+        },
+        {
+          "nome": "Curl martello con manubri",
+          "gruppo": "Bicipiti",
+          "serie": 2,
+          "ripetizioni": "12-15",
+          "tempo": "2-1-2-1",
+          "recupero": "60 sec",
+          "progressione": "Chiusura braccia",
+          "rir": "2-3",
+          "figura": "fig-curl-mart",
+          "progressionePrincipale": false,
+          "note": "Chiusura braccia"
+        }
+      ],
+      "volumeSeduta": [
+        {
+          "gruppo": "Quadricipiti",
+          "serie": 3
+        },
+        {
+          "gruppo": "Glutei",
+          "serie": 5
+        },
+        {
+          "gruppo": "Quadricipiti / glutei",
+          "serie": 3
+        },
+        {
+          "gruppo": "Femorali",
+          "serie": 3
+        },
+        {
+          "gruppo": "Bicipiti",
+          "serie": 2
+        }
+      ],
+      "notaComplementare": "Squat MP * + hip thrust * + affondi + abduzione. Bicipiti chiusura. Lontano da AB.",
+      "notaSeduta": "Squat MP * + hip thrust * + affondi + abduzione. Bicipiti chiusura. Lontano da AB.",
+      "accoppiamento": "C + B"
+    }
+  },
+  "periodi": [
+    {
+      "id": "sett-1-4",
+      "label": "Avvio · sett. 1–4",
+      "settimane": "1-4",
+      "repFondamentali": "10-12",
+      "rir": "2-3",
+      "sintesi": "Quarto schema, macchine, 10–12.",
+      "regoleBlocco": {
+        "sett1_4": [
+          "RIR 2-3 · 10–12 · quarto schema",
+          "Frequenza > intensità"
+        ]
+      },
+      "sessioni": {
+        "ab": {
+          "codice": "AB",
+          "nome": "Spinta A + glutei/gambe B brevi",
+          "esercizi": [
+            {
+              "nome": "Chest press alla macchina",
+              "gruppo": "Petto",
+              "serie": 3,
+              "ripetizioni": "10-12",
+              "tempo": "3-1-X-1",
+              "recupero": "120 sec",
+              "progressione": "Progressione principale *",
+              "rir": "2-3",
+              "figura": "fig-chest",
+              "progressionePrincipale": true,
+              "note": "Spinta guidata * · estate"
+            },
+            {
+              "nome": "Croci ai cavi",
+              "gruppo": "Petto",
+              "serie": 2,
+              "ripetizioni": "12-15",
+              "tempo": "2-1-3-1",
+              "recupero": "60 sec",
+              "progressione": "Isolamento morbido",
+              "rir": "2-3",
+              "figura": "fig-croci",
+              "progressionePrincipale": false,
+              "note": "Isolamento morbido"
+            },
+            {
+              "nome": "Alzate laterali",
+              "gruppo": "Deltoide laterale",
+              "serie": 3,
+              "ripetizioni": "12-15",
+              "tempo": "2-1-3-1",
+              "recupero": "60 sec",
+              "progressione": "Niente slancio",
+              "rir": "2-3",
+              "figura": "fig-alzate",
+              "progressionePrincipale": false,
+              "note": "Niente slancio"
+            },
+            {
+              "nome": "Hip Thrust",
+              "gruppo": "Glutei",
+              "serie": 3,
+              "ripetizioni": "10-12",
+              "tempo": "3-1-X-1",
+              "recupero": "75 sec",
+              "progressione": "Progressione principale *",
+              "rir": "2-3",
+              "figura": "fig-hip",
+              "progressionePrincipale": true,
+              "note": "Glutei restano in enfasi"
+            },
+            {
+              "nome": "Pressa",
+              "gruppo": "Quadricipiti",
+              "serie": 3,
+              "ripetizioni": "10-12",
+              "tempo": "3-1-X-1",
+              "recupero": "90 sec",
+              "progressione": "Gambe B brevi",
+              "rir": "2-3",
+              "figura": "fig-pressa",
+              "progressionePrincipale": false,
+              "note": "Gambe B brevi"
+            },
+            {
+              "nome": "Estensioni tricipiti al cavo",
+              "gruppo": "Tricipiti",
+              "serie": 2,
+              "ripetizioni": "12-15",
+              "tempo": "2-1-2-1",
+              "recupero": "60 sec",
+              "progressione": "Volume tricipiti ridotto vs Fase 3",
+              "rir": "2-3",
+              "figura": "fig-pushdown",
+              "progressionePrincipale": false,
+              "note": "Volume tricipiti ridotto vs Fase 3"
+            }
+          ],
+          "volumeSeduta": [
+            {
+              "gruppo": "Petto",
+              "serie": 5
+            },
+            {
+              "gruppo": "Deltoide laterale",
+              "serie": 3
+            },
+            {
+              "gruppo": "Glutei",
+              "serie": 3
+            },
+            {
+              "gruppo": "Quadricipiti",
+              "serie": 3
+            },
+            {
+              "gruppo": "Tricipiti",
+              "serie": 2
+            }
+          ],
+          "notaComplementare": "Chest press *, croci, laterali, hip thrust e pressa. Non accostare a CB.",
+          "notaSeduta": "Chest press *, croci, laterali, hip thrust e pressa. Non accostare a CB.",
+          "accoppiamento": "A + B"
+        },
+        "ac": {
+          "codice": "AC",
+          "nome": "Tirata C + spinta A + braccia",
+          "esercizi": [
+            {
+              "nome": "Lat machine",
+              "gruppo": "Dorsali",
+              "serie": 3,
+              "ripetizioni": "10-12",
+              "tempo": "3-1-X-1",
+              "recupero": "90 sec",
+              "progressione": "Progressione principale *",
+              "rir": "2-3",
+              "figura": "fig-lat",
+              "progressionePrincipale": true,
+              "note": "Trazione verticale * estiva"
+            },
+            {
+              "nome": "Pulley basso",
+              "gruppo": "Dorsali",
+              "serie": 3,
+              "ripetizioni": "10-12",
+              "tempo": "3-1-X-1",
+              "recupero": "90 sec",
+              "progressione": "Trazione orizzontale guidata vs rematore",
+              "rir": "2-3",
+              "figura": "fig-pulley-basso",
+              "progressionePrincipale": false,
+              "note": "Trazione orizzontale guidata vs rematore"
+            },
+            {
+              "nome": "Lento avanti bilanciere",
+              "gruppo": "Deltoide anteriore",
+              "serie": 3,
+              "ripetizioni": "10-12",
+              "tempo": "3-1-X-1",
+              "recupero": "90 sec",
+              "progressione": "Carichi moderati",
+              "rir": "2-3",
+              "figura": "fig-lento",
+              "progressionePrincipale": false,
+              "note": "Carichi moderati"
+            },
+            {
+              "nome": "Chest Press convergente",
+              "gruppo": "Petto",
+              "serie": 2,
+              "ripetizioni": "12-15",
+              "tempo": "3-1-X-1",
+              "recupero": "60 sec",
+              "progressione": "Secondo stimolo petto leggero",
+              "rir": "2-3",
+              "figura": "fig-chest-converg",
+              "progressionePrincipale": false,
+              "note": "Secondo stimolo petto leggero"
+            },
+            {
+              "nome": "Curl bilanciere EZ",
+              "gruppo": "Bicipiti",
+              "serie": 3,
+              "ripetizioni": "10-12",
+              "tempo": "2-1-2-1",
+              "recupero": "60 sec",
+              "progressione": "Sostituisce Scott",
+              "rir": "2-3",
+              "figura": "fig-curl-ez",
+              "progressionePrincipale": false,
+              "note": "Sostituisce Scott"
+            },
+            {
+              "nome": "Estensioni tricipiti al cavo",
+              "gruppo": "Tricipiti",
+              "serie": 2,
+              "ripetizioni": "12-15",
+              "tempo": "2-1-2-1",
+              "recupero": "60 sec",
+              "progressione": "Secondo stimolo tricipiti",
+              "rir": "2-3",
+              "figura": "fig-pushdown",
+              "progressionePrincipale": false,
+              "note": "Secondo stimolo tricipiti"
+            },
+            {
+              "nome": "Halo",
+              "gruppo": "Spalle",
+              "serie": 2,
+              "ripetizioni": "12",
+              "tempo": "3-1-X-1",
+              "recupero": "60 sec",
+              "progressione": "Finisher leggero — sempre ultimo",
+              "rir": "2-3",
+              "figura": "fig-halo",
+              "progressionePrincipale": false,
+              "note": "Finisher leggero — sempre ultimo"
+            }
+          ],
+          "volumeSeduta": [
+            {
+              "gruppo": "Dorsali",
+              "serie": 6
+            },
+            {
+              "gruppo": "Deltoide anteriore",
+              "serie": 3
+            },
+            {
+              "gruppo": "Petto",
+              "serie": 2
+            },
+            {
+              "gruppo": "Bicipiti",
+              "serie": 3
+            },
+            {
+              "gruppo": "Tricipiti",
+              "serie": 2
+            },
+            {
+              "gruppo": "Spalle",
+              "serie": 2
+            }
+          ],
+          "notaComplementare": "Lat *, pulley, lento, chest convergente e braccia. Halo ultimo e più leggero.",
+          "notaSeduta": "Lat *, pulley, lento, chest convergente e braccia. Halo ultimo e più leggero.",
+          "accoppiamento": "A + C"
+        },
+        "cb": {
+          "codice": "CB",
+          "nome": "Gambe/glutei B principali + chiusura braccia",
+          "esercizi": [
+            {
+              "nome": "Squat al multipower",
+              "gruppo": "Quadricipiti",
+              "serie": 3,
+              "ripetizioni": "10-12",
+              "tempo": "3-1-X-1",
+              "recupero": "120 sec",
+              "progressione": "Progressione principale *",
+              "rir": "2-3",
+              "figura": "fig-squat",
+              "progressionePrincipale": true,
+              "note": "Accosciata guidata * · niente hinge pesante d’estate"
+            },
+            {
+              "nome": "Hip Thrust",
+              "gruppo": "Glutei",
+              "serie": 3,
+              "ripetizioni": "10-12",
+              "tempo": "3-1-X-1",
+              "recupero": "75 sec",
+              "progressione": "Progressione principale *",
+              "rir": "2-3",
+              "figura": "fig-hip",
+              "progressionePrincipale": true,
+              "note": "Glutei restano"
+            },
+            {
+              "nome": "Affondi camminati manubri",
+              "gruppo": "Quadricipiti / glutei",
+              "serie": 3,
+              "ripetizioni": "10 per gamba",
+              "tempo": "3-1-X-1",
+              "recupero": "75 sec",
+              "progressione": "Unilaterale morbido",
+              "rir": "2-3",
+              "figura": "fig-affondi",
+              "progressionePrincipale": false,
+              "note": "Unilaterale morbido"
+            },
+            {
+              "nome": "Leg curl seduto",
+              "gruppo": "Femorali",
+              "serie": 3,
+              "ripetizioni": "12-15",
+              "tempo": "2-1-2-1",
+              "recupero": "60 sec",
+              "progressione": "Femorali senza stacco pesante",
+              "rir": "2-3",
+              "figura": "fig-legcurl",
+              "progressionePrincipale": false,
+              "note": "Femorali senza stacco pesante"
+            },
+            {
+              "nome": "Abduzione glutei alla macchina",
+              "gruppo": "Glutei",
+              "serie": 2,
+              "ripetizioni": "15",
+              "tempo": "2-1-3-1",
+              "recupero": "45 sec",
+              "progressione": "Gluteo medio",
+              "rir": "2-3",
+              "figura": "fig-doktor",
+              "progressionePrincipale": false,
+              "note": "Gluteo medio"
+            },
+            {
+              "nome": "Curl martello con manubri",
+              "gruppo": "Bicipiti",
+              "serie": 2,
+              "ripetizioni": "12-15",
+              "tempo": "2-1-2-1",
+              "recupero": "60 sec",
+              "progressione": "Chiusura braccia",
+              "rir": "2-3",
+              "figura": "fig-curl-mart",
+              "progressionePrincipale": false,
+              "note": "Chiusura braccia"
+            }
+          ],
+          "volumeSeduta": [
+            {
+              "gruppo": "Quadricipiti",
+              "serie": 3
+            },
+            {
+              "gruppo": "Glutei",
+              "serie": 5
+            },
+            {
+              "gruppo": "Quadricipiti / glutei",
+              "serie": 3
+            },
+            {
+              "gruppo": "Femorali",
+              "serie": 3
+            },
+            {
+              "gruppo": "Bicipiti",
+              "serie": 2
+            }
+          ],
+          "notaComplementare": "Squat MP * + hip thrust * + affondi + abduzione. Bicipiti chiusura. Lontano da AB.",
+          "notaSeduta": "Squat MP * + hip thrust * + affondi + abduzione. Bicipiti chiusura. Lontano da AB.",
+          "accoppiamento": "C + B"
+        }
+      }
+    },
+    {
+      "id": "sett-5-8",
+      "label": "Mantenimento · sett. 5–8",
+      "settimane": "5-8",
+      "repFondamentali": "10-12",
+      "rir": "2-3",
+      "sintesi": "Stessi kg, zero peaking.",
+      "regoleBlocco": {
+        "sett5_8": [
+          "Mantieni kg",
+          "Zero peaking"
+        ]
+      },
+      "sessioni": {
+        "ab": {
+          "codice": "AB",
+          "nome": "Spinta A + glutei/gambe B brevi",
+          "esercizi": [
+            {
+              "nome": "Chest press alla macchina",
+              "gruppo": "Petto",
+              "serie": 3,
+              "ripetizioni": "10-12",
+              "tempo": "3-1-X-1",
+              "recupero": "120 sec",
+              "progressione": "Progressione principale *",
+              "rir": "2-3",
+              "figura": "fig-chest",
+              "progressionePrincipale": true,
+              "note": "Spinta guidata * · estate"
+            },
+            {
+              "nome": "Croci ai cavi",
+              "gruppo": "Petto",
+              "serie": 2,
+              "ripetizioni": "12-15",
+              "tempo": "2-1-3-1",
+              "recupero": "60 sec",
+              "progressione": "Isolamento morbido",
+              "rir": "2-3",
+              "figura": "fig-croci",
+              "progressionePrincipale": false,
+              "note": "Isolamento morbido"
+            },
+            {
+              "nome": "Alzate laterali",
+              "gruppo": "Deltoide laterale",
+              "serie": 3,
+              "ripetizioni": "12-15",
+              "tempo": "2-1-3-1",
+              "recupero": "60 sec",
+              "progressione": "Niente slancio",
+              "rir": "2-3",
+              "figura": "fig-alzate",
+              "progressionePrincipale": false,
+              "note": "Niente slancio"
+            },
+            {
+              "nome": "Hip Thrust",
+              "gruppo": "Glutei",
+              "serie": 3,
+              "ripetizioni": "10-12",
+              "tempo": "3-1-X-1",
+              "recupero": "75 sec",
+              "progressione": "Progressione principale *",
+              "rir": "2-3",
+              "figura": "fig-hip",
+              "progressionePrincipale": true,
+              "note": "Glutei restano in enfasi"
+            },
+            {
+              "nome": "Pressa",
+              "gruppo": "Quadricipiti",
+              "serie": 3,
+              "ripetizioni": "10-12",
+              "tempo": "3-1-X-1",
+              "recupero": "90 sec",
+              "progressione": "Gambe B brevi",
+              "rir": "2-3",
+              "figura": "fig-pressa",
+              "progressionePrincipale": false,
+              "note": "Gambe B brevi"
+            },
+            {
+              "nome": "Estensioni tricipiti al cavo",
+              "gruppo": "Tricipiti",
+              "serie": 2,
+              "ripetizioni": "12-15",
+              "tempo": "2-1-2-1",
+              "recupero": "60 sec",
+              "progressione": "Volume tricipiti ridotto vs Fase 3",
+              "rir": "2-3",
+              "figura": "fig-pushdown",
+              "progressionePrincipale": false,
+              "note": "Volume tricipiti ridotto vs Fase 3"
+            }
+          ],
+          "volumeSeduta": [
+            {
+              "gruppo": "Petto",
+              "serie": 5
+            },
+            {
+              "gruppo": "Deltoide laterale",
+              "serie": 3
+            },
+            {
+              "gruppo": "Glutei",
+              "serie": 3
+            },
+            {
+              "gruppo": "Quadricipiti",
+              "serie": 3
+            },
+            {
+              "gruppo": "Tricipiti",
+              "serie": 2
+            }
+          ],
+          "notaComplementare": "Chest press *, croci, laterali, hip thrust e pressa. Non accostare a CB.",
+          "notaSeduta": "Chest press *, croci, laterali, hip thrust e pressa. Non accostare a CB.",
+          "accoppiamento": "A + B"
+        },
+        "ac": {
+          "codice": "AC",
+          "nome": "Tirata C + spinta A + braccia",
+          "esercizi": [
+            {
+              "nome": "Lat machine",
+              "gruppo": "Dorsali",
+              "serie": 3,
+              "ripetizioni": "10-12",
+              "tempo": "3-1-X-1",
+              "recupero": "90 sec",
+              "progressione": "Progressione principale *",
+              "rir": "2-3",
+              "figura": "fig-lat",
+              "progressionePrincipale": true,
+              "note": "Trazione verticale * estiva"
+            },
+            {
+              "nome": "Pulley basso",
+              "gruppo": "Dorsali",
+              "serie": 3,
+              "ripetizioni": "10-12",
+              "tempo": "3-1-X-1",
+              "recupero": "90 sec",
+              "progressione": "Trazione orizzontale guidata vs rematore",
+              "rir": "2-3",
+              "figura": "fig-pulley-basso",
+              "progressionePrincipale": false,
+              "note": "Trazione orizzontale guidata vs rematore"
+            },
+            {
+              "nome": "Lento avanti bilanciere",
+              "gruppo": "Deltoide anteriore",
+              "serie": 3,
+              "ripetizioni": "10-12",
+              "tempo": "3-1-X-1",
+              "recupero": "90 sec",
+              "progressione": "Carichi moderati",
+              "rir": "2-3",
+              "figura": "fig-lento",
+              "progressionePrincipale": false,
+              "note": "Carichi moderati"
+            },
+            {
+              "nome": "Chest Press convergente",
+              "gruppo": "Petto",
+              "serie": 2,
+              "ripetizioni": "12-15",
+              "tempo": "3-1-X-1",
+              "recupero": "60 sec",
+              "progressione": "Secondo stimolo petto leggero",
+              "rir": "2-3",
+              "figura": "fig-chest-converg",
+              "progressionePrincipale": false,
+              "note": "Secondo stimolo petto leggero"
+            },
+            {
+              "nome": "Curl bilanciere EZ",
+              "gruppo": "Bicipiti",
+              "serie": 3,
+              "ripetizioni": "10-12",
+              "tempo": "2-1-2-1",
+              "recupero": "60 sec",
+              "progressione": "Sostituisce Scott",
+              "rir": "2-3",
+              "figura": "fig-curl-ez",
+              "progressionePrincipale": false,
+              "note": "Sostituisce Scott"
+            },
+            {
+              "nome": "Estensioni tricipiti al cavo",
+              "gruppo": "Tricipiti",
+              "serie": 2,
+              "ripetizioni": "12-15",
+              "tempo": "2-1-2-1",
+              "recupero": "60 sec",
+              "progressione": "Secondo stimolo tricipiti",
+              "rir": "2-3",
+              "figura": "fig-pushdown",
+              "progressionePrincipale": false,
+              "note": "Secondo stimolo tricipiti"
+            },
+            {
+              "nome": "Halo",
+              "gruppo": "Spalle",
+              "serie": 2,
+              "ripetizioni": "12",
+              "tempo": "3-1-X-1",
+              "recupero": "60 sec",
+              "progressione": "Finisher leggero — sempre ultimo",
+              "rir": "2-3",
+              "figura": "fig-halo",
+              "progressionePrincipale": false,
+              "note": "Finisher leggero — sempre ultimo"
+            }
+          ],
+          "volumeSeduta": [
+            {
+              "gruppo": "Dorsali",
+              "serie": 6
+            },
+            {
+              "gruppo": "Deltoide anteriore",
+              "serie": 3
+            },
+            {
+              "gruppo": "Petto",
+              "serie": 2
+            },
+            {
+              "gruppo": "Bicipiti",
+              "serie": 3
+            },
+            {
+              "gruppo": "Tricipiti",
+              "serie": 2
+            },
+            {
+              "gruppo": "Spalle",
+              "serie": 2
+            }
+          ],
+          "notaComplementare": "Lat *, pulley, lento, chest convergente e braccia. Halo ultimo e più leggero.",
+          "notaSeduta": "Lat *, pulley, lento, chest convergente e braccia. Halo ultimo e più leggero.",
+          "accoppiamento": "A + C"
+        },
+        "cb": {
+          "codice": "CB",
+          "nome": "Gambe/glutei B principali + chiusura braccia",
+          "esercizi": [
+            {
+              "nome": "Squat al multipower",
+              "gruppo": "Quadricipiti",
+              "serie": 3,
+              "ripetizioni": "10-12",
+              "tempo": "3-1-X-1",
+              "recupero": "120 sec",
+              "progressione": "Progressione principale *",
+              "rir": "2-3",
+              "figura": "fig-squat",
+              "progressionePrincipale": true,
+              "note": "Accosciata guidata * · niente hinge pesante d’estate"
+            },
+            {
+              "nome": "Hip Thrust",
+              "gruppo": "Glutei",
+              "serie": 3,
+              "ripetizioni": "10-12",
+              "tempo": "3-1-X-1",
+              "recupero": "75 sec",
+              "progressione": "Progressione principale *",
+              "rir": "2-3",
+              "figura": "fig-hip",
+              "progressionePrincipale": true,
+              "note": "Glutei restano"
+            },
+            {
+              "nome": "Affondi camminati manubri",
+              "gruppo": "Quadricipiti / glutei",
+              "serie": 3,
+              "ripetizioni": "10 per gamba",
+              "tempo": "3-1-X-1",
+              "recupero": "75 sec",
+              "progressione": "Unilaterale morbido",
+              "rir": "2-3",
+              "figura": "fig-affondi",
+              "progressionePrincipale": false,
+              "note": "Unilaterale morbido"
+            },
+            {
+              "nome": "Leg curl seduto",
+              "gruppo": "Femorali",
+              "serie": 3,
+              "ripetizioni": "12-15",
+              "tempo": "2-1-2-1",
+              "recupero": "60 sec",
+              "progressione": "Femorali senza stacco pesante",
+              "rir": "2-3",
+              "figura": "fig-legcurl",
+              "progressionePrincipale": false,
+              "note": "Femorali senza stacco pesante"
+            },
+            {
+              "nome": "Abduzione glutei alla macchina",
+              "gruppo": "Glutei",
+              "serie": 2,
+              "ripetizioni": "15",
+              "tempo": "2-1-3-1",
+              "recupero": "45 sec",
+              "progressione": "Gluteo medio",
+              "rir": "2-3",
+              "figura": "fig-doktor",
+              "progressionePrincipale": false,
+              "note": "Gluteo medio"
+            },
+            {
+              "nome": "Curl martello con manubri",
+              "gruppo": "Bicipiti",
+              "serie": 2,
+              "ripetizioni": "12-15",
+              "tempo": "2-1-2-1",
+              "recupero": "60 sec",
+              "progressione": "Chiusura braccia",
+              "rir": "2-3",
+              "figura": "fig-curl-mart",
+              "progressionePrincipale": false,
+              "note": "Chiusura braccia"
+            }
+          ],
+          "volumeSeduta": [
+            {
+              "gruppo": "Quadricipiti",
+              "serie": 3
+            },
+            {
+              "gruppo": "Glutei",
+              "serie": 5
+            },
+            {
+              "gruppo": "Quadricipiti / glutei",
+              "serie": 3
+            },
+            {
+              "gruppo": "Femorali",
+              "serie": 3
+            },
+            {
+              "gruppo": "Bicipiti",
+              "serie": 2
+            }
+          ],
+          "notaComplementare": "Squat MP * + hip thrust * + affondi + abduzione. Bicipiti chiusura. Lontano da AB.",
+          "notaSeduta": "Squat MP * + hip thrust * + affondi + abduzione. Bicipiti chiusura. Lontano da AB.",
+          "accoppiamento": "C + B"
+        }
+      }
+    },
+    {
+      "id": "sett-9-10",
+      "label": "Estate · sett. 9–10",
+      "settimane": "9-10",
+      "repFondamentali": "10-12",
+      "rir": "2-3",
+      "sintesi": "Flessibilità se viaggi; riprendi AB–CB.",
+      "regoleBlocco": {
+        "sett9_10": [
+          "RIR 2-3",
+          "Riprendi AB→AC→CB se salti sedute"
+        ]
+      },
+      "sessioni": {
+        "ab": {
+          "codice": "AB",
+          "nome": "Spinta A + glutei/gambe B brevi",
+          "esercizi": [
+            {
+              "nome": "Chest press alla macchina",
+              "gruppo": "Petto",
+              "serie": 3,
+              "ripetizioni": "10-12",
+              "tempo": "3-1-X-1",
+              "recupero": "120 sec",
+              "progressione": "Progressione principale *",
+              "rir": "2-3",
+              "figura": "fig-chest",
+              "progressionePrincipale": true,
+              "note": "Spinta guidata * · estate"
+            },
+            {
+              "nome": "Croci ai cavi",
+              "gruppo": "Petto",
+              "serie": 2,
+              "ripetizioni": "12-15",
+              "tempo": "2-1-3-1",
+              "recupero": "60 sec",
+              "progressione": "Isolamento morbido",
+              "rir": "2-3",
+              "figura": "fig-croci",
+              "progressionePrincipale": false,
+              "note": "Isolamento morbido"
+            },
+            {
+              "nome": "Alzate laterali",
+              "gruppo": "Deltoide laterale",
+              "serie": 3,
+              "ripetizioni": "12-15",
+              "tempo": "2-1-3-1",
+              "recupero": "60 sec",
+              "progressione": "Niente slancio",
+              "rir": "2-3",
+              "figura": "fig-alzate",
+              "progressionePrincipale": false,
+              "note": "Niente slancio"
+            },
+            {
+              "nome": "Hip Thrust",
+              "gruppo": "Glutei",
+              "serie": 3,
+              "ripetizioni": "10-12",
+              "tempo": "3-1-X-1",
+              "recupero": "75 sec",
+              "progressione": "Progressione principale *",
+              "rir": "2-3",
+              "figura": "fig-hip",
+              "progressionePrincipale": true,
+              "note": "Glutei restano in enfasi"
+            },
+            {
+              "nome": "Pressa",
+              "gruppo": "Quadricipiti",
+              "serie": 3,
+              "ripetizioni": "10-12",
+              "tempo": "3-1-X-1",
+              "recupero": "90 sec",
+              "progressione": "Gambe B brevi",
+              "rir": "2-3",
+              "figura": "fig-pressa",
+              "progressionePrincipale": false,
+              "note": "Gambe B brevi"
+            },
+            {
+              "nome": "Estensioni tricipiti al cavo",
+              "gruppo": "Tricipiti",
+              "serie": 2,
+              "ripetizioni": "12-15",
+              "tempo": "2-1-2-1",
+              "recupero": "60 sec",
+              "progressione": "Volume tricipiti ridotto vs Fase 3",
+              "rir": "2-3",
+              "figura": "fig-pushdown",
+              "progressionePrincipale": false,
+              "note": "Volume tricipiti ridotto vs Fase 3"
+            }
+          ],
+          "volumeSeduta": [
+            {
+              "gruppo": "Petto",
+              "serie": 5
+            },
+            {
+              "gruppo": "Deltoide laterale",
+              "serie": 3
+            },
+            {
+              "gruppo": "Glutei",
+              "serie": 3
+            },
+            {
+              "gruppo": "Quadricipiti",
+              "serie": 3
+            },
+            {
+              "gruppo": "Tricipiti",
+              "serie": 2
+            }
+          ],
+          "notaComplementare": "Chest press *, croci, laterali, hip thrust e pressa. Non accostare a CB.",
+          "notaSeduta": "Chest press *, croci, laterali, hip thrust e pressa. Non accostare a CB.",
+          "accoppiamento": "A + B"
+        },
+        "ac": {
+          "codice": "AC",
+          "nome": "Tirata C + spinta A + braccia",
+          "esercizi": [
+            {
+              "nome": "Lat machine",
+              "gruppo": "Dorsali",
+              "serie": 3,
+              "ripetizioni": "10-12",
+              "tempo": "3-1-X-1",
+              "recupero": "90 sec",
+              "progressione": "Progressione principale *",
+              "rir": "2-3",
+              "figura": "fig-lat",
+              "progressionePrincipale": true,
+              "note": "Trazione verticale * estiva"
+            },
+            {
+              "nome": "Pulley basso",
+              "gruppo": "Dorsali",
+              "serie": 3,
+              "ripetizioni": "10-12",
+              "tempo": "3-1-X-1",
+              "recupero": "90 sec",
+              "progressione": "Trazione orizzontale guidata vs rematore",
+              "rir": "2-3",
+              "figura": "fig-pulley-basso",
+              "progressionePrincipale": false,
+              "note": "Trazione orizzontale guidata vs rematore"
+            },
+            {
+              "nome": "Lento avanti bilanciere",
+              "gruppo": "Deltoide anteriore",
+              "serie": 3,
+              "ripetizioni": "10-12",
+              "tempo": "3-1-X-1",
+              "recupero": "90 sec",
+              "progressione": "Carichi moderati",
+              "rir": "2-3",
+              "figura": "fig-lento",
+              "progressionePrincipale": false,
+              "note": "Carichi moderati"
+            },
+            {
+              "nome": "Chest Press convergente",
+              "gruppo": "Petto",
+              "serie": 2,
+              "ripetizioni": "12-15",
+              "tempo": "3-1-X-1",
+              "recupero": "60 sec",
+              "progressione": "Secondo stimolo petto leggero",
+              "rir": "2-3",
+              "figura": "fig-chest-converg",
+              "progressionePrincipale": false,
+              "note": "Secondo stimolo petto leggero"
+            },
+            {
+              "nome": "Curl bilanciere EZ",
+              "gruppo": "Bicipiti",
+              "serie": 3,
+              "ripetizioni": "10-12",
+              "tempo": "2-1-2-1",
+              "recupero": "60 sec",
+              "progressione": "Sostituisce Scott",
+              "rir": "2-3",
+              "figura": "fig-curl-ez",
+              "progressionePrincipale": false,
+              "note": "Sostituisce Scott"
+            },
+            {
+              "nome": "Estensioni tricipiti al cavo",
+              "gruppo": "Tricipiti",
+              "serie": 2,
+              "ripetizioni": "12-15",
+              "tempo": "2-1-2-1",
+              "recupero": "60 sec",
+              "progressione": "Secondo stimolo tricipiti",
+              "rir": "2-3",
+              "figura": "fig-pushdown",
+              "progressionePrincipale": false,
+              "note": "Secondo stimolo tricipiti"
+            },
+            {
+              "nome": "Halo",
+              "gruppo": "Spalle",
+              "serie": 2,
+              "ripetizioni": "12",
+              "tempo": "3-1-X-1",
+              "recupero": "60 sec",
+              "progressione": "Finisher leggero — sempre ultimo",
+              "rir": "2-3",
+              "figura": "fig-halo",
+              "progressionePrincipale": false,
+              "note": "Finisher leggero — sempre ultimo"
+            }
+          ],
+          "volumeSeduta": [
+            {
+              "gruppo": "Dorsali",
+              "serie": 6
+            },
+            {
+              "gruppo": "Deltoide anteriore",
+              "serie": 3
+            },
+            {
+              "gruppo": "Petto",
+              "serie": 2
+            },
+            {
+              "gruppo": "Bicipiti",
+              "serie": 3
+            },
+            {
+              "gruppo": "Tricipiti",
+              "serie": 2
+            },
+            {
+              "gruppo": "Spalle",
+              "serie": 2
+            }
+          ],
+          "notaComplementare": "Lat *, pulley, lento, chest convergente e braccia. Halo ultimo e più leggero.",
+          "notaSeduta": "Lat *, pulley, lento, chest convergente e braccia. Halo ultimo e più leggero.",
+          "accoppiamento": "A + C"
+        },
+        "cb": {
+          "codice": "CB",
+          "nome": "Gambe/glutei B principali + chiusura braccia",
+          "esercizi": [
+            {
+              "nome": "Squat al multipower",
+              "gruppo": "Quadricipiti",
+              "serie": 3,
+              "ripetizioni": "10-12",
+              "tempo": "3-1-X-1",
+              "recupero": "120 sec",
+              "progressione": "Progressione principale *",
+              "rir": "2-3",
+              "figura": "fig-squat",
+              "progressionePrincipale": true,
+              "note": "Accosciata guidata * · niente hinge pesante d’estate"
+            },
+            {
+              "nome": "Hip Thrust",
+              "gruppo": "Glutei",
+              "serie": 3,
+              "ripetizioni": "10-12",
+              "tempo": "3-1-X-1",
+              "recupero": "75 sec",
+              "progressione": "Progressione principale *",
+              "rir": "2-3",
+              "figura": "fig-hip",
+              "progressionePrincipale": true,
+              "note": "Glutei restano"
+            },
+            {
+              "nome": "Affondi camminati manubri",
+              "gruppo": "Quadricipiti / glutei",
+              "serie": 3,
+              "ripetizioni": "10 per gamba",
+              "tempo": "3-1-X-1",
+              "recupero": "75 sec",
+              "progressione": "Unilaterale morbido",
+              "rir": "2-3",
+              "figura": "fig-affondi",
+              "progressionePrincipale": false,
+              "note": "Unilaterale morbido"
+            },
+            {
+              "nome": "Leg curl seduto",
+              "gruppo": "Femorali",
+              "serie": 3,
+              "ripetizioni": "12-15",
+              "tempo": "2-1-2-1",
+              "recupero": "60 sec",
+              "progressione": "Femorali senza stacco pesante",
+              "rir": "2-3",
+              "figura": "fig-legcurl",
+              "progressionePrincipale": false,
+              "note": "Femorali senza stacco pesante"
+            },
+            {
+              "nome": "Abduzione glutei alla macchina",
+              "gruppo": "Glutei",
+              "serie": 2,
+              "ripetizioni": "15",
+              "tempo": "2-1-3-1",
+              "recupero": "45 sec",
+              "progressione": "Gluteo medio",
+              "rir": "2-3",
+              "figura": "fig-doktor",
+              "progressionePrincipale": false,
+              "note": "Gluteo medio"
+            },
+            {
+              "nome": "Curl martello con manubri",
+              "gruppo": "Bicipiti",
+              "serie": 2,
+              "ripetizioni": "12-15",
+              "tempo": "2-1-2-1",
+              "recupero": "60 sec",
+              "progressione": "Chiusura braccia",
+              "rir": "2-3",
+              "figura": "fig-curl-mart",
+              "progressionePrincipale": false,
+              "note": "Chiusura braccia"
+            }
+          ],
+          "volumeSeduta": [
+            {
+              "gruppo": "Quadricipiti",
+              "serie": 3
+            },
+            {
+              "gruppo": "Glutei",
+              "serie": 5
+            },
+            {
+              "gruppo": "Quadricipiti / glutei",
+              "serie": 3
+            },
+            {
+              "gruppo": "Femorali",
+              "serie": 3
+            },
+            {
+              "gruppo": "Bicipiti",
+              "serie": 2
+            }
+          ],
+          "notaComplementare": "Squat MP * + hip thrust * + affondi + abduzione. Bicipiti chiusura. Lontano da AB.",
+          "notaSeduta": "Squat MP * + hip thrust * + affondi + abduzione. Bicipiti chiusura. Lontano da AB.",
+          "accoppiamento": "C + B"
+        }
+      }
+    },
+    {
+      "id": "sett-11-12",
+      "label": "Chiusura · sett. 11–12",
+      "settimane": "11-12",
+      "repFondamentali": "10-12",
+      "rir": "2-3",
+      "sintesi": "Opz. −1 serie sugli accessori.",
+      "regoleBlocco": {
+        "sett11_12": [
+          "Opz. −1 serie accessori se caldo/fatica",
+          "Niente cedimento"
+        ]
+      },
+      "sessioni": {
+        "ab": {
+          "codice": "AB",
+          "nome": "Spinta A + glutei/gambe B brevi",
+          "esercizi": [
+            {
+              "nome": "Chest press alla macchina",
+              "gruppo": "Petto",
+              "serie": 3,
+              "ripetizioni": "10-12",
+              "tempo": "3-1-X-1",
+              "recupero": "120 sec",
+              "progressione": "Progressione principale *",
+              "rir": "2-3",
+              "figura": "fig-chest",
+              "progressionePrincipale": true,
+              "note": "Spinta guidata * · estate"
+            },
+            {
+              "nome": "Croci ai cavi",
+              "gruppo": "Petto",
+              "serie": 1,
+              "ripetizioni": "12-15",
+              "tempo": "2-1-3-1",
+              "recupero": "60 sec",
+              "progressione": "Isolamento morbido",
+              "rir": "2-3",
+              "figura": "fig-croci",
+              "progressionePrincipale": false,
+              "note": "Isolamento morbido"
+            },
+            {
+              "nome": "Alzate laterali",
+              "gruppo": "Deltoide laterale",
+              "serie": 2,
+              "ripetizioni": "12-15",
+              "tempo": "2-1-3-1",
+              "recupero": "60 sec",
+              "progressione": "Niente slancio",
+              "rir": "2-3",
+              "figura": "fig-alzate",
+              "progressionePrincipale": false,
+              "note": "Niente slancio"
+            },
+            {
+              "nome": "Hip Thrust",
+              "gruppo": "Glutei",
+              "serie": 3,
+              "ripetizioni": "10-12",
+              "tempo": "3-1-X-1",
+              "recupero": "75 sec",
+              "progressione": "Progressione principale *",
+              "rir": "2-3",
+              "figura": "fig-hip",
+              "progressionePrincipale": true,
+              "note": "Glutei restano in enfasi"
+            },
+            {
+              "nome": "Pressa",
+              "gruppo": "Quadricipiti",
+              "serie": 2,
+              "ripetizioni": "10-12",
+              "tempo": "3-1-X-1",
+              "recupero": "90 sec",
+              "progressione": "Gambe B brevi",
+              "rir": "2-3",
+              "figura": "fig-pressa",
+              "progressionePrincipale": false,
+              "note": "Gambe B brevi"
+            },
+            {
+              "nome": "Estensioni tricipiti al cavo",
+              "gruppo": "Tricipiti",
+              "serie": 1,
+              "ripetizioni": "12-15",
+              "tempo": "2-1-2-1",
+              "recupero": "60 sec",
+              "progressione": "Volume tricipiti ridotto vs Fase 3",
+              "rir": "2-3",
+              "figura": "fig-pushdown",
+              "progressionePrincipale": false,
+              "note": "Volume tricipiti ridotto vs Fase 3"
+            }
+          ],
+          "volumeSeduta": [
+            {
+              "gruppo": "Petto",
+              "serie": 4
+            },
+            {
+              "gruppo": "Deltoide laterale",
+              "serie": 2
+            },
+            {
+              "gruppo": "Glutei",
+              "serie": 3
+            },
+            {
+              "gruppo": "Quadricipiti",
+              "serie": 2
+            },
+            {
+              "gruppo": "Tricipiti",
+              "serie": 1
+            }
+          ],
+          "notaComplementare": "Chest press *, croci, laterali, hip thrust e pressa. Non accostare a CB.",
+          "notaSeduta": "Chest press *, croci, laterali, hip thrust e pressa. Non accostare a CB.",
+          "accoppiamento": "A + B"
+        },
+        "ac": {
+          "codice": "AC",
+          "nome": "Tirata C + spinta A + braccia",
+          "esercizi": [
+            {
+              "nome": "Lat machine",
+              "gruppo": "Dorsali",
+              "serie": 3,
+              "ripetizioni": "10-12",
+              "tempo": "3-1-X-1",
+              "recupero": "90 sec",
+              "progressione": "Progressione principale *",
+              "rir": "2-3",
+              "figura": "fig-lat",
+              "progressionePrincipale": true,
+              "note": "Trazione verticale * estiva"
+            },
+            {
+              "nome": "Pulley basso",
+              "gruppo": "Dorsali",
+              "serie": 2,
+              "ripetizioni": "10-12",
+              "tempo": "3-1-X-1",
+              "recupero": "90 sec",
+              "progressione": "Trazione orizzontale guidata vs rematore",
+              "rir": "2-3",
+              "figura": "fig-pulley-basso",
+              "progressionePrincipale": false,
+              "note": "Trazione orizzontale guidata vs rematore"
+            },
+            {
+              "nome": "Lento avanti bilanciere",
+              "gruppo": "Deltoide anteriore",
+              "serie": 2,
+              "ripetizioni": "10-12",
+              "tempo": "3-1-X-1",
+              "recupero": "90 sec",
+              "progressione": "Carichi moderati",
+              "rir": "2-3",
+              "figura": "fig-lento",
+              "progressionePrincipale": false,
+              "note": "Carichi moderati"
+            },
+            {
+              "nome": "Chest Press convergente",
+              "gruppo": "Petto",
+              "serie": 1,
+              "ripetizioni": "12-15",
+              "tempo": "3-1-X-1",
+              "recupero": "60 sec",
+              "progressione": "Secondo stimolo petto leggero",
+              "rir": "2-3",
+              "figura": "fig-chest-converg",
+              "progressionePrincipale": false,
+              "note": "Secondo stimolo petto leggero"
+            },
+            {
+              "nome": "Curl bilanciere EZ",
+              "gruppo": "Bicipiti",
+              "serie": 2,
+              "ripetizioni": "10-12",
+              "tempo": "2-1-2-1",
+              "recupero": "60 sec",
+              "progressione": "Sostituisce Scott",
+              "rir": "2-3",
+              "figura": "fig-curl-ez",
+              "progressionePrincipale": false,
+              "note": "Sostituisce Scott"
+            },
+            {
+              "nome": "Estensioni tricipiti al cavo",
+              "gruppo": "Tricipiti",
+              "serie": 1,
+              "ripetizioni": "12-15",
+              "tempo": "2-1-2-1",
+              "recupero": "60 sec",
+              "progressione": "Secondo stimolo tricipiti",
+              "rir": "2-3",
+              "figura": "fig-pushdown",
+              "progressionePrincipale": false,
+              "note": "Secondo stimolo tricipiti"
+            },
+            {
+              "nome": "Halo",
+              "gruppo": "Spalle",
+              "serie": 1,
+              "ripetizioni": "12",
+              "tempo": "3-1-X-1",
+              "recupero": "60 sec",
+              "progressione": "Finisher leggero — sempre ultimo",
+              "rir": "2-3",
+              "figura": "fig-halo",
+              "progressionePrincipale": false,
+              "note": "Finisher leggero — sempre ultimo"
+            }
+          ],
+          "volumeSeduta": [
+            {
+              "gruppo": "Dorsali",
+              "serie": 5
+            },
+            {
+              "gruppo": "Deltoide anteriore",
+              "serie": 2
+            },
+            {
+              "gruppo": "Petto",
+              "serie": 1
+            },
+            {
+              "gruppo": "Bicipiti",
+              "serie": 2
+            },
+            {
+              "gruppo": "Tricipiti",
+              "serie": 1
+            },
+            {
+              "gruppo": "Spalle",
+              "serie": 1
+            }
+          ],
+          "notaComplementare": "Lat *, pulley, lento, chest convergente e braccia. Halo ultimo e più leggero.",
+          "notaSeduta": "Lat *, pulley, lento, chest convergente e braccia. Halo ultimo e più leggero.",
+          "accoppiamento": "A + C"
+        },
+        "cb": {
+          "codice": "CB",
+          "nome": "Gambe/glutei B principali + chiusura braccia",
+          "esercizi": [
+            {
+              "nome": "Squat al multipower",
+              "gruppo": "Quadricipiti",
+              "serie": 3,
+              "ripetizioni": "10-12",
+              "tempo": "3-1-X-1",
+              "recupero": "120 sec",
+              "progressione": "Progressione principale *",
+              "rir": "2-3",
+              "figura": "fig-squat",
+              "progressionePrincipale": true,
+              "note": "Accosciata guidata * · niente hinge pesante d’estate"
+            },
+            {
+              "nome": "Hip Thrust",
+              "gruppo": "Glutei",
+              "serie": 3,
+              "ripetizioni": "10-12",
+              "tempo": "3-1-X-1",
+              "recupero": "75 sec",
+              "progressione": "Progressione principale *",
+              "rir": "2-3",
+              "figura": "fig-hip",
+              "progressionePrincipale": true,
+              "note": "Glutei restano"
+            },
+            {
+              "nome": "Affondi camminati manubri",
+              "gruppo": "Quadricipiti / glutei",
+              "serie": 2,
+              "ripetizioni": "10 per gamba",
+              "tempo": "3-1-X-1",
+              "recupero": "75 sec",
+              "progressione": "Unilaterale morbido",
+              "rir": "2-3",
+              "figura": "fig-affondi",
+              "progressionePrincipale": false,
+              "note": "Unilaterale morbido"
+            },
+            {
+              "nome": "Leg curl seduto",
+              "gruppo": "Femorali",
+              "serie": 2,
+              "ripetizioni": "12-15",
+              "tempo": "2-1-2-1",
+              "recupero": "60 sec",
+              "progressione": "Femorali senza stacco pesante",
+              "rir": "2-3",
+              "figura": "fig-legcurl",
+              "progressionePrincipale": false,
+              "note": "Femorali senza stacco pesante"
+            },
+            {
+              "nome": "Abduzione glutei alla macchina",
+              "gruppo": "Glutei",
+              "serie": 1,
+              "ripetizioni": "15",
+              "tempo": "2-1-3-1",
+              "recupero": "45 sec",
+              "progressione": "Gluteo medio",
+              "rir": "2-3",
+              "figura": "fig-doktor",
+              "progressionePrincipale": false,
+              "note": "Gluteo medio"
+            },
+            {
+              "nome": "Curl martello con manubri",
+              "gruppo": "Bicipiti",
+              "serie": 1,
+              "ripetizioni": "12-15",
+              "tempo": "2-1-2-1",
+              "recupero": "60 sec",
+              "progressione": "Chiusura braccia",
+              "rir": "2-3",
+              "figura": "fig-curl-mart",
+              "progressionePrincipale": false,
+              "note": "Chiusura braccia"
+            }
+          ],
+          "volumeSeduta": [
+            {
+              "gruppo": "Quadricipiti",
+              "serie": 3
+            },
+            {
+              "gruppo": "Glutei",
+              "serie": 4
+            },
+            {
+              "gruppo": "Quadricipiti / glutei",
+              "serie": 2
+            },
+            {
+              "gruppo": "Femorali",
+              "serie": 2
+            },
+            {
+              "gruppo": "Bicipiti",
+              "serie": 1
+            }
+          ],
+          "notaComplementare": "Squat MP * + hip thrust * + affondi + abduzione. Bicipiti chiusura. Lontano da AB.",
+          "notaSeduta": "Squat MP * + hip thrust * + affondi + abduzione. Bicipiti chiusura. Lontano da AB.",
+          "accoppiamento": "C + B"
+        }
+      }
+    }
+  ]
+}

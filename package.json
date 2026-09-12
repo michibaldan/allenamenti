@@ -7,6 +7,7 @@
     "macro:allinea": "node tools/allinea-amico.mjs",
     "macro:sync": "node tools/sync-blocco1-macrociclo.mjs",
     "macro:verifica": "node tools/verifica-macrociclo.mjs",
+    "macro:blocchi234": "node tools/genera-blocchi-2-3-4.mjs && node tools/sync-blocco-macrociclo.mjs --all",
     "macro:rebalance": "node tools/rebalance-macrociclo-55.mjs",
     "macro:converti": "node tools/converti-ab-ac-cb.mjs"
   }
