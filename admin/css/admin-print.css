@@ -1,10 +1,10 @@
-/* Admin PDF overrides — compatto, max 2 facciate */
-.scheda-a4--admin .scheda-a4__head-period { font-size: 14pt; }
+/* Admin PDF overrides */
+.scheda-a4--admin .scheda-a4__head-period { font-size: 6.5pt; }
 .scheda-a4--admin table th,
-.scheda-a4--admin table td { font-size: 8pt; padding: 0.7mm 1mm; }
-.scheda-a4--admin .scheda-a4__quad h2 { font-size: 11pt; }
+.scheda-a4--admin table td { font-size: 6pt; padding: 0.45mm 0.8mm; }
+.scheda-a4--admin .scheda-a4__quad h2 { font-size: 6.5pt; }
 .scheda-a4--admin .scheda-a4__osservazioni {
-  margin-bottom: 0;
+  margin-bottom: 1.5mm;
 }
 
 .pdf-cycle-select {
@@ -35,11 +35,58 @@
 }
 
 .scheda-a4__intro-fase {
-  margin-bottom: 0 !important;
+  margin-bottom: 2mm !important;
 }
 .scheda-a4__intro-text {
-  margin: 0.7mm 0 0;
-  font-size: 8pt;
-  line-height: 1.22;
+  margin: 0.8mm 0 0;
+  font-size: 6pt;
+  line-height: 1.25;
   color: #333;
+}
+
+.scheda-a4--admin .scheda-a4__quad table {
+  table-layout: fixed;
+}
+
+.scheda-a4--admin table th:nth-child(1),
+.scheda-a4--admin table td:nth-child(1) {
+  width: 27%;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  word-wrap: break-word;
+  vertical-align: top;
+}
+
+.scheda-a4--admin table th:nth-child(2),
+.scheda-a4--admin table td:nth-child(2) {
+  width: 16%;
+}
+
+.scheda-a4--admin table th:nth-child(3),
+.scheda-a4--admin table td:nth-child(3),
+.scheda-a4--admin table th:nth-child(4),
+.scheda-a4--admin table td:nth-child(4) {
+  width: 10%;
+}
+
+.scheda-a4--admin table th:nth-child(5),
+.scheda-a4--admin table td:nth-child(5),
+.scheda-a4--admin table th:nth-child(6),
+.scheda-a4--admin table td:nth-child(6),
+.scheda-a4--admin table th:nth-child(7),
+.scheda-a4--admin table td:nth-child(7) {
+  width: 6.5%;
+  min-width: 0;
+}
+
+@media (max-width: 900px) {
+  .scheda-a4--admin table th:nth-child(1),
+  .scheda-a4--admin table td:nth-child(1) {
+    width: 24%;
+  }
+  .scheda-a4--admin table th:nth-child(2),
+  .scheda-a4--admin table td:nth-child(2) {
+    width: 18%;
+    min-width: 2.5rem;
+  }
 }
